@@ -5,6 +5,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
 
@@ -101,7 +102,7 @@ const KATEX = `
 
 function build() {
   const t0 = Date.now();
-  const layout = read(path.join(DIR.templates, 'layout.html'));
+  let layout = read(path.join(DIR.templates, 'layout.html'));
   const homeTpl = read(path.join(DIR.templates, 'home.html'));
   const postTpl = read(path.join(DIR.templates, 'post.html'));
 
@@ -109,6 +110,18 @@ function build() {
   fs.rmSync(DIR.out, { recursive: true, force: true });
   fs.mkdirSync(DIR.out, { recursive: true });
   fs.cpSync(DIR.static, DIR.out, { recursive: true });
+  // Cache-busting: asset URLs carry a hash of their contents, so browsers never pair
+  // new HTML with a stale stylesheet or script.
+  const hash = (f) => createHash('sha256').update(read(path.join(DIR.out, f))).digest('hex').slice(0, 10);
+  const v = { css: hash('style.css'), vault: hash('vault.js') };
+  const sitePath = path.join(DIR.out, 'site.js');
+  fs.writeFileSync(sitePath, read(sitePath).replace("'/vault.js'", `'/vault.js?v=${v.vault}'`));
+  v.site = hash('site.js');
+  const withAssets = (html) => html
+    .replace('href="/style.css"', `href="/style.css?v=${v.css}"`)
+    .replace('src="/site.js"', `src="/site.js?v=${v.site}"`);
+  layout = withAssets(layout);
+
   // vault ciphertext only — plaintext in vault/ never reaches dist/
   fs.cpSync(DIR.sealed, path.join(DIR.out, 'v'), { recursive: true });
 
