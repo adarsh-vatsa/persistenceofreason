@@ -1,18 +1,19 @@
 /* ---------- tokens ----------
    Monochrome. Every text color clears WCAG AA (4.5:1) against the paper. */
 :root {
-  --paper: #fdfdfc;
-  --ink: #141414;      /* 18:1 */
-  --muted: #474747;    /* 9:1  */
-  --faint: #646464;    /* 5.9:1 */
-  --rule: #d6d6d6;
-  --rule-strong: #8a8a8a;
-  --tint: #f4f4f2;
-  --code-bg: #f2f2f0;
-  --select: #dadada;
-  --accent: #141414;
+  --paper: #f2e8d0;    /* papyrus */
+  --ink: #231c12;      /* 14:1 */
+  --muted: #4f4434;    /* 8.5:1 */
+  --faint: #6a5c47;    /* 5.3:1 */
+  --rule: #d4c5a3;
+  --rule-strong: #9a8a6c;
+  --tint: rgba(120, 85, 30, 0.07);
+  --code-bg: rgba(120, 85, 30, 0.08);
+  --select: #e0cc9c;
+  --accent: #231c12;
 
-  --serif: "Source Serif 4", "Source Serif Pro", "Iowan Old Style", Georgia, serif;
+  --serif: "Alegreya", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sc: "Alegreya SC", "Alegreya", Georgia, serif;
   --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
   --measure: 40rem;
@@ -23,16 +24,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #131313;
-    --ink: #e9e9e7;      /* 15:1 */
-    --muted: #c0c0bd;    /* 10:1 */
-    --faint: #9a9a97;    /* 6.4:1 */
-    --rule: #363636;
-    --rule-strong: #6a6a6a;
-    --tint: #1b1b1b;
-    --code-bg: #1d1d1d;
-    --select: #444;
-    --accent: #e9e9e7;
+    --paper: #1d1a15;
+    --ink: #ece2cc;      /* 14:1 */
+    --muted: #c9bea6;    /* 10:1 */
+    --faint: #a39780;    /* 5.9:1 */
+    --rule: #3b352b;
+    --rule-strong: #6e6452;
+    --tint: rgba(255, 235, 190, 0.04);
+    --code-bg: rgba(255, 235, 190, 0.05);
+    --select: #4a4030;
+    --accent: #ece2cc;
     color-scheme: dark;
   }
 }
@@ -40,11 +41,11 @@
 /* ---------- base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 
-html { font-size: 18px; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { font-size: 19px; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--paper);
+  background-color: var(--paper);
   color: var(--ink);
   font-family: var(--serif);
   font-optical-sizing: auto;
@@ -66,15 +67,16 @@ a {
 a:hover, a:focus-visible { text-decoration-color: var(--ink); text-decoration-thickness: 2px; }
 
 p { margin: 0 0 1em; }
-b, strong { font-weight: 600; }
-h1, h2, h3 { font-weight: 600; line-height: 1.25; }
+b, strong { font-weight: 700; }
+h1, h2, h3 { font-weight: 700; line-height: 1.25; }
 
 .label {
-  font-variant: all-small-caps;
-  letter-spacing: 0.06em;
+  font-family: var(--sc);
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
   color: var(--faint);
-  font-size: 1.12rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 .muted { color: var(--muted); }
 .small { font-size: 0.8rem; }
@@ -110,9 +112,9 @@ time { font-variant-numeric: lining-nums tabular-nums; }
   -webkit-tap-highlight-color: transparent;
 }
 .site-title {
-  font-variant: small-caps;
-  letter-spacing: 0.04em;
-  font-weight: 600;
+  font-family: var(--sc);
+  letter-spacing: 0.03em;
+  font-weight: 700;
   text-decoration: none;
   line-height: 1.15;
 }
@@ -163,9 +165,9 @@ time { font-variant-numeric: lining-nums tabular-nums; }
 .page-head { text-align: center; margin-bottom: 2rem; }
 .page-head h1 {
   margin: 0;
-  font-size: 2.1rem;
-  font-weight: 400;
-  font-variant: small-caps;
+  font-family: var(--sc);
+  font-size: 2.2rem;
+  font-weight: 500;
   letter-spacing: 0.02em;
   text-wrap: balance;
 }
@@ -176,7 +178,7 @@ time { font-variant-numeric: lining-nums tabular-nums; }
   font-style: italic;
 }
 .meta time { font-style: normal; }
-.status { font-style: normal; font-variant: all-small-caps; letter-spacing: 0.05em; }
+.status { font-style: normal; font-family: var(--sc); text-transform: lowercase; letter-spacing: 0.04em; }
 
 .abstract {
   background: var(--tint);
@@ -190,8 +192,9 @@ time { font-variant-numeric: lining-nums tabular-nums; }
 section { margin-bottom: 2.75rem; scroll-margin-top: 1.5rem; }
 
 main h2 {
-  font-size: 1.35rem;
-  font-variant: small-caps;
+  font-family: var(--sc);
+  font-size: 1.4rem;
+  font-weight: 500;
   letter-spacing: 0.03em;
   margin: 0 0 1rem;
   padding-bottom: 0.25rem;
