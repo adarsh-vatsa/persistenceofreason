@@ -21,7 +21,7 @@
 })();
 
 (() => {
-  const door = document.querySelector('.squiggle');
+  const door = document.querySelector('.logo');
   if (!door) return;
   let taps = [];
   door.addEventListener('click', () => {

@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
 
 const SITE = {
-  title: 'Adarsh Vatsa',
+  title: 'Persistence of Reason',
   url: 'https://persistenceofreason.com',
   description: 'Notes and ideas from Adarsh Vatsa.',
 };
@@ -132,7 +132,7 @@ function build() {
       title: escapeHtml(p.title || p.slug),
       date: p.date,
       minutes: readingTime(p.body),
-      status: p.status ? `<span class="status">${escapeHtml(p.status)}</span>` : '',
+      status: p.status ? ` · <span class="status">${escapeHtml(p.status)}</span>` : "",
       content: html,
       older: older ? `<a href="/writing/${older.slug}/">← ${escapeHtml(older.title)}</a>` : '<span></span>',
       newer: newer ? `<a href="/writing/${newer.slug}/">${escapeHtml(newer.title)} →</a>` : '<span></span>',
@@ -161,7 +161,7 @@ function build() {
   noteId = 0;
   notePrefix = 'home-';
   fs.writeFileSync(path.join(DIR.out, 'index.html'), fill(layout, {
-    title: SITE.title,
+    title: `${SITE.title} — Adarsh Vatsa`,
     description: escapeHtml(SITE.description),
     head: '',
     bodyClass: 'home',

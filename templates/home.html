@@ -1,59 +1,58 @@
-<header class="masthead">
-  <h1>
-    Adarsh Vatsa
-    <svg class="squiggle" viewBox="0 0 220 14" aria-hidden="true" preserveAspectRatio="none">
-      <path d="M2 9 C 20 2, 34 13, 52 7 S 86 2, 104 8 S 140 13, 158 6 S 196 3, 218 8" />
-      <path class="hit" d="M2 9 C 20 2, 34 13, 52 7 S 86 2, 104 8 S 140 13, 158 6 S 196 3, 218 8" />
-    </svg>
-  </h1>
-  <p class="tagline">Teaching language models to write things a verifier will sign off on.</p>
-  <nav class="links">
-    <a href="mailto:avatsa@stevens.edu">email</a>
-    <a href="https://scholar.google.com/citations?user=OBiz9FQAAAAJ&amp;hl=en">scholar</a>
-    <a href="/feed.xml">rss</a>
-  </nav>
+<header class="page-head">
+  <h1>Adarsh Vatsa</h1>
+  <p class="subtitle">PhD student, Computer Science · Stevens Institute of Technology</p>
 </header>
 
-<section>
-  <h2 class="label">about</h2>
-  <p>I'm a PhD student in computer science at the Stevens Institute of Technology, working with
-    William Eiers.
-    My research sits where language models meet formal verification. I build systems that turn
-    natural-language access-control requirements into policies a symbolic checker can actually
-    prove correct, then use that checker's feedback to train the models.<label for="sn-about" class="sn-ref" aria-label="note"></label><input type="checkbox" id="sn-about" class="sn-toggle"><span class="sidenote">A policy that <em>reads</em> right and a policy that <em>is</em> right are surprisingly different things. Most of my work lives in that gap.</span></p>
-  <p>Outside of that, I like math, deep learning, and ideas that are not quite finished yet.
-    This site is where I put those.</p>
-</section>
+<div class="abstract">
+  <p>I'm interested in reasoning: how it works, where it breaks, and what it takes to make it
+    hold up, in machines and in people. Most of my days are spent on language models and formal
+    methods; most of my evenings, on mathematics and whatever question won't leave me alone.</p>
+  <p>This site is a notebook. Essays, half-finished ideas, and notes on what I'm reading, kept
+    in public so I have to think them through properly.</p>
+</div>
 
-<section>
-  <h2 class="label">now</h2>
-  <p class="now">Thinking about how a verifier's feedback should shape what a model <em>explores</em>,
-    not just what it's rewarded for. <span class="stamp">oct 2026</span></p>
-</section>
-
-<section>
-  <h2 class="label">writing</h2>
+<section id="writing">
+  <h2>Writing</h2>
   {{posts}}
 </section>
 
-<section>
-  <h2 class="label">papers</h2>
+<section id="research">
+  <h2>Research</h2>
+  <p>I study how to make machine reasoning <em>checkable</em>: pairing language models with
+    formal tools, so that what a model produces can be verified rather than trusted, and using
+    the verifier's feedback to make the model better. My current thread applies this to
+    access-control policy synthesis; the broader question is how learning and proof can work
+    together.</p>
+  <p class="interests"><span class="label">interests</span>
+    language models · formal verification · reinforcement learning · deep learning · mathematics</p>
+
+  <h3>Selected papers</h3>
   <ol class="entries papers">
     <li><time>2026</time>
       <span><a href="https://arxiv.org/abs/2609.33796">RAISE: Reinforcing Access Control Policy Synthesis in LLMs via Symbolic Evaluation</a>
-        <span class="authors">Yingming Zhou, <b>Adarsh Vatsa</b>, William Eiers</span>
-        <span class="venue">arXiv preprint</span></span></li>
+        <span class="authors">Y. Zhou, <b>A. Vatsa</b>, W. Eiers · <i>arXiv</i></span></span></li>
     <li><time>2026</time>
       <span><a href="https://arxiv.org/abs/2607.03656">AutoCedar: An Agentic Framework for Verifier-Guided Access Control Policy Synthesis</a>
-        <span class="authors"><b>Adarsh Vatsa</b>, Sachi Shome, Yingming Zhou, William Eiers</span>
-        <span class="venue">arXiv preprint</span></span></li>
+        <span class="authors"><b>A. Vatsa</b>, S. Shome, Y. Zhou, W. Eiers · <i>arXiv</i></span></span></li>
     <li><time>2025</time>
       <span><a href="https://arxiv.org/abs/2510.20692">Neurosymbolic Characterization for Reliable Access Control Policy Analysis</a>
-        <span class="authors"><b>Adarsh Vatsa</b>, Bethel Hall, William Eiers</span>
-        <span class="venue">arXiv preprint</span></span></li>
+        <span class="authors"><b>A. Vatsa</b>, B. Hall, W. Eiers · <i>arXiv</i></span></span></li>
     <li><time>2025</time>
       <span><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=OBiz9FQAAAAJ&amp;citation_for_view=OBiz9FQAAAAJ:u5HHmVD_uO8C">Synthesizing Access Control Policies Using Large Language Models</a>
-        <span class="authors"><b>Adarsh Vatsa</b>, P. Patel, William Eiers</span>
-        <span class="venue">NLBSE @ ICSE 2025</span></span></li>
+        <span class="authors"><b>A. Vatsa</b>, P. Patel, W. Eiers · <i>NLBSE @ ICSE 2025</i></span></span></li>
   </ol>
+  <p class="more"><a href="https://scholar.google.com/citations?user=OBiz9FQAAAAJ&amp;hl=en">All papers on Google Scholar →</a></p>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I'm a PhD student at Stevens Institute of Technology in Hoboken, New Jersey.
+    The best way to reach me is email; I'm always happy to hear from people thinking about
+    similar things.</p>
+  <ul class="contact">
+    <li><span class="label">email</span><a href="mailto:avatsa@stevens.edu">avatsa@stevens.edu</a></li>
+    <li><span class="label">scholar</span><a href="https://scholar.google.com/citations?user=OBiz9FQAAAAJ&amp;hl=en">Google Scholar</a></li>
+    <li><span class="label">github</span><a href="https://github.com/adarsh-vatsa">adarsh-vatsa</a></li>
+    <li><span class="label">feed</span><a href="/feed.xml">RSS</a></li>
+  </ul>
 </section>

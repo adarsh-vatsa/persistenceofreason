@@ -8,7 +8,7 @@ math: true
 
 Most of my thinking happens in half-finished notes: a question I can't put down, a proof
 that almost works, an experiment whose result surprised me. This site is where some of
-those notes will end up, roughly as they are.^[The status pill under each title says how
+those notes will end up, roughly as they are.^[The label under each title says how
 finished an idea is. *Half-baked* means exactly that.]
 
 ## The rules
@@ -19,23 +19,19 @@ finished an idea is. *Half-baked* means exactly that.]
 
 ## A small test of the machinery
 
-Math renders when it needs to. For instance, the policy-synthesis problem I spend most of my time on can be
-written as finding a policy $\pi$ such that for every request $r$,
+Math renders when it needs to. A favorite example of how little it takes to reason well
+under uncertainty is Bayes' rule,
 
-$$\llbracket \pi \rrbracket(r) = \llbracket \varphi \rrbracket(r)$$
+$$P(H \mid E) = \frac{P(E \mid H)\,P(H)}{P(E)},$$
 
-where $\varphi$ is the intended meaning of a natural-language requirement. Getting $\varphi$ right is
-often harder than writing $\pi$.^[That observation is more or less the whole motivation behind
-[AutoCedar](https://arxiv.org/abs/2607.03656).]
+which says that how much a piece of evidence $E$ should move you depends on how surprising it
+would be if your hypothesis $H$ were false.^[Most arguments that go wrong skip the denominator.]
 
 And code looks like this:
 
-```cedar
-permit (
-  principal in Role::"reviewer",
-  action == Action::"read",
-  resource in Folder::"drafts"
-) unless { resource.confidential };
+```python
+def update(prior, likelihood, evidence):
+    return likelihood * prior / evidence
 ```
 
 That's it. More soon.
