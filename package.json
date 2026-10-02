@@ -1,0 +1,13 @@
+{
+  "name": "adarsh-vatsa-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --serve",
+    "seal": "node seal.mjs"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}
