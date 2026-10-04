@@ -21,15 +21,25 @@
 })();
 
 (() => {
-  const door = document.querySelector('.logo');
-  if (!door) return;
-  let taps = [];
-  door.addEventListener('click', () => {
-    const now = Date.now();
-    taps = taps.filter((t) => now - t < 2500).concat(now);
-    if (taps.length < 5) return;
-    taps = [];
+  const openVault = () => {
     if (window.__vault) return window.__vault.open();
     document.head.append(Object.assign(document.createElement('script'), { src: '/vault.js' }));
+  };
+
+  // double-tap the ∴
+  const door = document.querySelector('.logo');
+  let last = 0;
+  door?.addEventListener('click', () => {
+    const now = Date.now();
+    if (now - last < 600) { last = 0; openVault(); } else last = now;
   });
+
+  // or go straight to /#vault (bookmarkable)
+  const fromHash = () => {
+    if (location.hash !== '#vault') return;
+    history.replaceState(null, '', location.pathname + location.search); // so the link works again
+    openVault();
+  };
+  fromHash();
+  window.addEventListener('hashchange', fromHash);
 })();

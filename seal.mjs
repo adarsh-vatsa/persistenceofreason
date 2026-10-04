@@ -1,6 +1,6 @@
 // Encrypts everything in vault/ into sealed/ (which is safe to publish and commit).
-//   npm run seal                 → prompts for the passphrase
-//   VAULT_PASSPHRASE=… npm run seal
+//   npm run seal   → uses the passphrase in .vault-pass (gitignored, never published),
+//                    or $VAULT_PASSPHRASE, or asks for it
 //
 // Format (matches static/vault.js):
 //   sealed/index.bin   = salt(16) | iv(12) | AES-GCM(manifest JSON)
@@ -49,15 +49,16 @@ if (!fs.existsSync(SRC)) {
 }
 
 const files = walk(SRC);
-if (!files.length) { console.log('vault/ is empty, nothing to seal.'); process.exit(0); }
 
-let pass = process.env.VAULT_PASSPHRASE;
+const PASS_FILE = path.join(ROOT, '.vault-pass');
+let pass = process.env.VAULT_PASSPHRASE ||
+  (fs.existsSync(PASS_FILE) ? fs.readFileSync(PASS_FILE, 'utf8').trim() : '');
 if (!pass) {
   pass = await ask('vault passphrase: ');
   if ((await ask('again: ')) !== pass) { console.error('passphrases did not match.'); process.exit(1); }
 }
-if (pass.length < 12) {
-  console.error('use at least 12 characters — a few random words is ideal.');
+if (pass.length < 8) {
+  console.error('use at least 8 characters. A few random words is ideal.');
   process.exit(1);
 }
 

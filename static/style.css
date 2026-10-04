@@ -110,6 +110,7 @@ time { font-variant-numeric: lining-nums tabular-nums; }
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 .site-title {
   font-family: var(--sc);
@@ -393,6 +394,8 @@ dialog.vault { width: min(30rem, calc(100vw - 2rem)); max-width: none; }
   outline: none;
 }
 .vault input:focus { border-color: var(--accent); }
+.vault-remember { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.7rem; color: var(--muted); cursor: pointer; }
+.vault-remember input { accent-color: var(--ink); width: auto; margin: 0; }
 .vault-status { min-height: 1.2em; color: var(--accent); margin: 0.6rem 0 0; }
 .vault .entries { max-height: 55vh; overflow-y: auto; margin-bottom: 1rem; }
 .vault .entries a.busy { color: var(--faint); cursor: progress; }

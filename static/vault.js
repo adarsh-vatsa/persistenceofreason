@@ -1,4 +1,4 @@
-// Private vault. Loaded only after the easter egg fires.
+// Private vault. Loaded after a double-tap on the ∴, or by visiting /#vault.
 // Everything is decrypted and rendered here in the browser; the server only ever holds ciphertext.
 (() => {
   if (window.__vault) return window.__vault.open();
@@ -19,7 +19,31 @@
   dlg.setAttribute('aria-label', 'vault');
   document.body.append(dlg);
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
-  dlg.addEventListener('close', () => { revoke(); dlg.classList.remove('reading'); });
+  dlg.addEventListener('close', () => {
+    revoke();
+    dlg.classList.remove('reading');
+  });
+
+  // ---------- remembered device ----------
+  // The derived AES key is stored in IndexedDB as a non-extractable CryptoKey. Scripts on
+  // this site can use it to decrypt, but nothing can read the key out, and the passphrase
+  // itself is never stored. Re-sealing changes the salt, which quietly invalidates it.
+  const idb = (mode, fn) => new Promise((res, rej) => {
+    const req = indexedDB.open('vault', 1);
+    req.onupgradeneeded = () => req.result.createObjectStore('keys');
+    req.onerror = () => rej(req.error);
+    req.onsuccess = () => {
+      const tx = req.result.transaction('keys', mode);
+      const r = fn(tx.objectStore('keys'));
+      tx.oncomplete = () => res(r?.result);
+      tx.onerror = () => rej(tx.error);
+    };
+  });
+  const remembered = {
+    get: () => idb('readonly', (st) => st.get('key')).catch(() => null),
+    set: (k) => idb('readwrite', (st) => st.put(k, 'key')).catch(() => {}),
+    forget: () => idb('readwrite', (st) => st.delete('key')).catch(() => {}),
+  };
 
   // ---------- crypto ----------
   async function fetchBytes(name) {
@@ -31,18 +55,33 @@
   const decrypt = (buf) =>
     crypto.subtle.decrypt({ name: 'AES-GCM', iv: buf.slice(0, 12) }, key, buf.slice(12));
 
-  async function unlock(pass) {
+  async function readManifest(k) {
     const raw = await fetchBytes('index.bin');
-    const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pass), 'PBKDF2', false, ['deriveKey']);
-    key = await crypto.subtle.deriveKey(
-      { name: 'PBKDF2', hash: 'SHA-256', salt: raw.slice(0, 16), iterations: ITERATIONS },
-      base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+    key = k;
     try {
       manifest = JSON.parse(new TextDecoder().decode(await decrypt(raw.slice(16))));
     } catch {
-      key = null;
+      key = manifest = null;
       throw new Error('wrong');
     }
+  }
+
+  async function unlock(pass, remember) {
+    const raw = await fetchBytes('index.bin');
+    const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pass), 'PBKDF2', false, ['deriveKey']);
+    const k = await crypto.subtle.deriveKey(
+      { name: 'PBKDF2', hash: 'SHA-256', salt: raw.slice(0, 16), iterations: ITERATIONS },
+      base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+    await readManifest(k);
+    if (remember) await remembered.set(k);
+  }
+
+  // Try the remembered key first. Returns true if the vault opened without a passphrase.
+  async function autoUnlock() {
+    const k = await remembered.get();
+    if (!k) return false;
+    try { await readManifest(k); return true; }
+    catch { await remembered.forget(); return false; }
   }
 
   // ---------- file kinds ----------
@@ -253,22 +292,25 @@
   function renderLock(msg = '') {
     const input = el('input', { type: 'password', placeholder: 'passphrase', autocomplete: 'current-password', required: true });
     const status = el('p', { className: 'vault-status mono small', textContent: msg });
+    const remember = el('input', { type: 'checkbox', checked: true });
     const form = el('form', {},
       el('p', { className: 'label', textContent: 'vault' }),
       el('p', { className: 'vault-intro', textContent: 'Nothing to see here, unless you know the words.' }),
-      input, status);
+      input,
+      el('label', { className: 'vault-remember small' }, remember, ' remember this device'),
+      status);
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       status.textContent = 'deriving key…';
       input.disabled = true;
       try {
-        await unlock(input.value);
+        await unlock(input.value, remember.checked);
         renderList();
       } catch (err) {
         input.disabled = false;
         input.value = '';
         input.focus();
-        status.textContent = err.message === 'missing' ? 'the vault is empty.' : 'nope.';
+        status.textContent = err.message === 'missing' ? 'Nothing has been sealed yet.' : 'nope.';
         form.classList.remove('shake'); void form.offsetWidth; form.classList.add('shake');
       }
     });
@@ -287,11 +329,12 @@
       return el('li', {}, el('time', { textContent: f.modified }),
         el('span', {}, a, el('span', { className: 'summary', textContent: `${ext(f.name) || 'file'} · ${fmtSize(f.size)}` })));
     });
-    const lock = el('button', { type: 'button', className: 'vault-lock', textContent: 'lock' });
-    lock.addEventListener('click', () => { key = manifest = null; dlg.close(); });
+    const lock = el('button', { type: 'button', className: 'vault-lock', textContent: 'lock and forget this device' });
+    lock.addEventListener('click', async () => { key = manifest = null; await remembered.forget(); dlg.close(); });
     dlg.replaceChildren(
       el('p', { className: 'label', textContent: `vault · ${n} file${n === 1 ? '' : 's'}` }),
-      el('ol', { className: 'entries' }, ...items),
+      n ? el('ol', { className: 'entries' }, ...items)
+        : el('p', { className: 'vault-intro', textContent: 'Empty for now. Add files to vault/ and run npm run seal.' }),
       el('p', { className: 'mono small muted', textContent: `sealed ${manifest.sealed.slice(0, 10)} · ` }, lock));
   }
 
@@ -316,8 +359,8 @@
     }
   }
 
-  const open = () => {
-    if (manifest) renderList(); else renderLock();
+  const open = async () => {
+    if (manifest || await autoUnlock()) renderList(); else renderLock();
     if (!dlg.open) dlg.showModal();
   };
   window.__vault = { open };
