@@ -8,7 +8,7 @@ then proving the final policy meets that meaning.
 
 AutoCedar splits schema and policy authoring into small intent atoms, reviewable claims about
 vocabulary and behavior. Atoms that pass mechanical validation and human review become a fixed
-target that the model cannot change. Floors state what access must remain possible, ceilings
+target that the model cannot change.^[the model never touches the target] Floors state what access must remain possible, ceilings
 state what must never leak, and liveness slices keep approved workflows reachable.
 
 The model proposes a candidate policy and a symbolic verifier checks it against the target.
@@ -23,7 +23,7 @@ decision.
 ## Results
 
 AutoCedar converges on all 221 tasks of CedarBench, a new benchmark of authorization tasks
-paired with executable semantic boundaries. Direct generation from the same approved schema
+paired with executable semantic boundaries.^[221 of 221, every one verified] Direct generation from the same approved schema
 still produces policies that pass validation and break floor or ceiling properties. Across
 three requirements corpora in healthcare, education and conference management, AutoCedar
 turns noisy prose into reviewed schemas, formal checks and a globally verified Cedar policy

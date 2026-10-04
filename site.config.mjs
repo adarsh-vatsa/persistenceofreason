@@ -28,6 +28,7 @@ export default {
   papers: [
     {
       slug: 'raise',
+      note: '+13 pts over frontier models, at 9B',
       figure: '/research/raise/method.svg',
       takeaway: 'Reinforcement learning from a formal verifier trains a 9B model to beat zero-shot frontier models at writing correct Cedar policies.',
       title: 'RAISE: Reinforcing Access Control Policy Synthesis in LLMs via Symbolic Evaluation',
@@ -46,6 +47,7 @@ export default {
     },
     {
       slug: 'autocedar',
+      note: '221 of 221 tasks verified',
       figure: '/research/autocedar/sandwich.png',
       takeaway: 'Fix the intended meaning first, then let a verifier steer the model to a provably correct policy. Converges on all 221 CedarBench tasks.',
       title: 'AutoCedar: An Agentic Framework for Verifier-Guided Access Control Policy Synthesis',
@@ -64,6 +66,7 @@ export default {
     },
     {
       slug: 'policysummarizer',
+      note: 'review accuracy 39% → 93%',
       figure: '/research/policysummarizer/pipeline.png',
       takeaway: 'Automata and model counting keep LLM policy summaries faithful. Raised change-review accuracy from 39 to 93 percent in a user study.',
       title: 'Neurosymbolic Characterization for Reliable Access Control Policy Analysis',
@@ -81,6 +84,7 @@ export default {
     },
     {
       slug: 'policy-synthesis',
+      note: 'valid is not correct',
       figure: '/research/policy-synthesis/structured.png',
       takeaway: 'Zero-shot LLMs write valid cloud policies, and only precise, structured specifications make them correct.',
       title: 'Synthesizing Access Control Policies Using Large Language Models',

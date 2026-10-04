@@ -210,7 +210,7 @@ function layout({ title, description, body, section = '', head = '', bodyClass =
 <meta property="og:description" content="${esc(description || CFG.description)}">
 <meta property="og:url" content="${CFG.url}${canonical}">
 <link rel="canonical" href="${CFG.url}${canonical}">
-<meta name="theme-color" content="#fffefb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#161513" media="(prefers-color-scheme: dark)">
 <link rel="alternate" type="application/rss+xml" title="${esc(CFG.author)}" href="/feed.xml">
 <link rel="icon" href="${ASSET['favicon.svg']}" type="image/svg+xml">
@@ -283,6 +283,7 @@ const paperCard = (p) => `<a class="pcard" href="${paperHref(p)}">
         <span class="pcard__title">${esc(p.title)}</span>
         ${p.takeaway ? `<span class="pcard__take">${esc(p.takeaway)}</span>` : ''}
       </span>
+      ${p.note ? `<span class="pcard__note" aria-hidden="true">${esc(p.note)}</span>` : ''}
     </a>`;
 const paperLinks = (p) => `<span class="plinks">
       ${p.pdf ? `<a href="${esc(p.pdf)}" rel="noopener">pdf</a>` : ''}
@@ -319,7 +320,6 @@ function homeBody(posts) {
   return `
 <header class="titleblock">
   <h1>${esc(CFG.author)}</h1>
-  <p class="affil">${esc(CFG.affiliation)}</p>
 </header>
 <div class="cornell">
   ${row('Abstract', `<div class="cn-abstract">${CFG.abstract.map((p) => `<p>${esc(p)}</p>`).join('')}</div>`, { note: CFG.marginNote })}
@@ -385,7 +385,6 @@ function researchBody() {
   return `
 <header class="titleblock">
   <h1>Research</h1>
-  <p class="affil">${esc(CFG.affiliation)}</p>
 </header>
 <div class="cornell">
   ${row('Abstract', `<div class="cn-abstract">${intro.map((p) => renderMarkdown(p).html).join('')}</div>`)}
@@ -401,7 +400,6 @@ function aboutBody() {
   return `
 <header class="titleblock">
   <h1>About</h1>
-  <p class="affil">${esc(CFG.affiliation)}</p>
 </header>
 <div class="cornell page-prose">
   <div class="cn-prose"><div class="prose">${html}</div></div>

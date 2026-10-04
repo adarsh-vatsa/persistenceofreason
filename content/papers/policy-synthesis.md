@@ -12,7 +12,7 @@ structured syntax.
 
 ## Results
 
-From concrete request lists, all 100 generated policies are syntactically valid and classify
+From concrete request lists, all 100 generated policies are syntactically valid^[100 of 100 valid] and classify
 most requests correctly, with errors growing as lists get longer and more varied.
 
 ![Concrete request lists.](/research/policy-synthesis/concrete.png "Misclassified requests against total requests for each policy synthesized from a concrete request list.")
@@ -23,6 +23,6 @@ broader than intended.
 ![Natural-language specifications.](/research/policy-synthesis/natural-language.png "How policies synthesized from loose natural language compare to the ground truth.")
 
 With the structured syntax, the model produces a precise policy in the majority of cases. Precise,
-structured specifications are what make zero-shot policy synthesis reliable.
+structured specifications are what make zero-shot policy synthesis reliable.^[structure in the spec, precision in the policy]
 
 ![Structured specifications.](/research/policy-synthesis/structured.png "How policies synthesized from structured specifications compare to the ground truth.")
