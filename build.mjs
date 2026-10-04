@@ -264,7 +264,7 @@ function postRow(p) {
 
 const refItem = (p, i, full = false) => `<li id="paper-${i + 1}">
       <span class="au">${esc(p.authors).replace(esc(CFG.author), `<b>${esc(CFG.author)}</b>`)}.</span>
-      <a class="ti" href="${esc(p.url)}" rel="noopener">${esc(p.title)}</a>.
+      <a class="ti" href="${esc(paperHref(p))}">${esc(p.title)}</a>.
       <span class="ve">${esc(p.venue)}, ${p.year}.</span>
       ${full ? `<div class="acts">
         ${p.abstract ? `<details><summary>abstract</summary><p>${esc(p.abstract)}</p></details>` : ''}
@@ -273,6 +273,38 @@ const refItem = (p, i, full = false) => `<li id="paper-${i + 1}">
         ${p.bibtex ? `<button type="button" data-copy-text="${esc(p.bibtex)}">bibtex</button>` : ''}
       </div>` : ''}
     </li>`;
+
+const paperHref = (p) => p.slug ? `/research/${p.slug}/` : p.url;
+const authorsHtml = (p) => esc(p.authors).replace(esc(CFG.author), `<b>${esc(CFG.author)}</b>`);
+const paperCard = (p) => `<a class="pcard" href="${paperHref(p)}">
+      ${p.figure ? `<span class="pcard__fig"><img src="${esc(p.figure)}" alt="" loading="lazy"></span>` : ''}
+      <span class="pcard__body">
+        <span class="pcard__venue">${esc(p.venue)}${String(p.venue).includes(String(p.year)) ? '' : `, ${p.year}`}</span>
+        <span class="pcard__title">${esc(p.title)}</span>
+        ${p.takeaway ? `<span class="pcard__take">${esc(p.takeaway)}</span>` : ''}
+      </span>
+    </a>`;
+const paperLinks = (p) => `<span class="plinks">
+      ${p.pdf ? `<a href="${esc(p.pdf)}" rel="noopener">pdf</a>` : ''}
+      ${p.url.includes('arxiv') ? `<a href="${esc(p.url)}" rel="noopener">arxiv</a>` : ''}
+      ${p.bibtex ? `<button type="button" data-copy-text="${esc(p.bibtex)}">bibtex</button>` : ''}
+    </span>`;
+
+function paperBody(p) {
+  const { html } = renderMarkdown(read(path.join(DIR.content, 'papers', p.slug + '.md')));
+  return `
+<header class="titleblock">
+  <h1>${esc(p.title)}</h1>
+  <p class="byline">${authorsHtml(p)}</p>
+  <p class="post-meta"><span>${esc(p.venue)}${String(p.venue).includes(String(p.year)) ? '' : `, ${p.year}`}</span>${paperLinks(p)}</p>
+</header>
+<div class="cornell paper-page">
+  <div class="cn-prose"><div class="prose">${html}</div></div>
+</div>
+<nav class="post-foot" aria-label="More research">
+  <a href="/research/"><small>research</small><span>All papers</span></a>
+</nav>`;
+}
 
 const row = (cue, body, { id = '', cls = '', note = '', more = '' } = {}) => `
   <section class="cn-row ${cls}"${id ? ` id="${id}"` : ''}>
@@ -293,7 +325,7 @@ function homeBody(posts) {
   ${row('Abstract', `<div class="cn-abstract">${CFG.abstract.map((p) => `<p>${esc(p)}</p>`).join('')}</div>`, { note: CFG.marginNote })}
   ${posts.length ? row(num(++n, 'Writing'), `<ol class="toclist">${posts.slice(0, 8).map(postRow).join('')}</ol>`,
     { id: 'writing', more: '<a class="cue-more" href="/writing/">full index</a>' }) : ''}
-  ${row(num(++n, 'Research'), `<ol class="refs">${CFG.papers.slice(0, 3).map((p, i) => refItem(p, i)).join('')}</ol>`,
+  ${row(num(++n, 'Research'), `<div class="pgrid">${CFG.papers.map(paperCard).join('')}</div>`,
     { id: 'research', more: '<a class="cue-more" href="/research/">all papers</a>' })}
   ${row(num(++n, 'Correspondence'), `<dl class="corr">
       ${CFG.links.map((l) => `<dt>${esc(l.label.toLowerCase())}</dt><dd><a href="${esc(l.href)}">${esc(l.text || l.href)}</a></dd>`).join('\n      ')}
@@ -358,7 +390,8 @@ function researchBody() {
 <div class="cornell">
   ${row('Abstract', `<div class="cn-abstract">${intro.map((p) => renderMarkdown(p).html).join('')}</div>`)}
   ${row(num(1, 'Interests'), `<p class="interests">${CFG.interests.map(esc).join(', ')}.</p>`)}
-  ${row(num(2, 'Papers'), `<ol class="refs">${CFG.papers.map((p, i) => refItem(p, i, true)).join('')}</ol>`,
+  ${row(num(2, 'Papers'), `<div class="pgrid">${CFG.papers.map(paperCard).join('')}</div>`)}
+  ${row(num(3, 'References'), `<ol class="refs">${CFG.papers.map((p, i) => refItem(p, i, true)).join('')}</ol>`,
     { more: `<a class="cue-more" href="${esc(CFG.links.find((l) => /scholar/i.test(l.label))?.href || '#')}" rel="noopener">google scholar</a>` })}
 </div>`;
 }
@@ -436,6 +469,9 @@ async function build() {
     }));
   });
 
+  for (const p of CFG.papers.filter((x) => x.slug && fs.existsSync(path.join(DIR.content, 'papers', x.slug + '.md')))) {
+    write(`research/${p.slug}/index.html`, layout({ title: p.title, description: p.takeaway, section: '/research/', canonical: `/research/${p.slug}/`, body: paperBody(p), bodyClass: 'is-paper' }));
+  }
   write('index.html', layout({ body: homeBody(posts), bodyClass: 'is-home' }));
   write('writing/index.html', layout({ title: 'Writing', section: '/writing/', canonical: '/writing/', body: archiveBody(posts, tags) }));
   write('research/index.html', layout({ title: 'Research', section: '/research/', canonical: '/research/', body: researchBody() }));
@@ -451,7 +487,8 @@ async function build() {
     ...posts.map((p) => ({ kind: 'post', title: p.title, url: postHref(p), summary: p.summary, date: fmtDate(p.date),
       status: p.status, mark: p.status ? STATUS[p.status].mark : '', statusLabel: p.status ? STATUS[p.status].label : '',
       tags: p.tags, minutes: p.minutes, headings: p.toc.map((h) => ({ id: h.id, text: h.text })), text: p.text.slice(0, 20000) })),
-    ...CFG.papers.map((p, i) => ({ kind: 'paper', title: p.title, url: `/research/#paper-${i + 1}`, summary: `${p.venue} · ${p.year}`, text: p.abstract || '' })),
+    ...CFG.papers.map((p, i) => ({ kind: 'paper', title: p.title, url: p.slug ? `/research/${p.slug}/` : `/research/#paper-${i + 1}`, summary: p.takeaway || p.venue,
+      text: p.slug && fs.existsSync(path.join(DIR.content, 'papers', p.slug + '.md')) ? stripTags(renderMarkdown(read(path.join(DIR.content, 'papers', p.slug + '.md'))).html) : (p.abstract || '') })),
   ];
   write('search.json', JSON.stringify(index));
 
@@ -475,7 +512,7 @@ ${posts.map((p) => `  <item>
 
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${['/', '/writing/', '/research/', '/about/', ...posts.map(postHref)].map((u) => `  <url><loc>${CFG.url}${u}</loc></url>`).join('\n')}
+${['/', '/writing/', '/research/', '/about/', ...CFG.papers.filter((p) => p.slug).map((p) => `/research/${p.slug}/`), ...posts.map(postHref)].map((u) => `  <url><loc>${CFG.url}${u}</loc></url>`).join('\n')}
 </urlset>
 `);
 

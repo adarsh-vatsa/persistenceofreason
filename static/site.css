@@ -23,9 +23,9 @@
   --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
   --display: var(--serif); --text: var(--serif); --ui: var(--serif);
 
-  --col: 37rem;
-  --cue: 10.5rem;
-  --gap: 3rem;
+  --col: 46rem;          /* longest comfortable line of running text */
+  --cue: clamp(10.5rem, 15vw, 16rem);
+  --gap: clamp(2rem, 3.5vw, 4rem);
   --margin-line: rgba(179, 58, 23, 0.32);
   color-scheme: light;
 }
@@ -58,6 +58,8 @@ body {
   font-variant-numeric: oldstyle-nums proportional-nums;
 }
 @media (max-width: 600px) { body { font-size: 17px; } }
+@media (min-width: 1300px) { body { font-size: clamp(18px, 0.45vw + 11.5px, 21px); } }
+@media (min-width: 1500px) { :root { --col: 52rem; } }
 ::selection { background: var(--highlight); color: inherit; }
 a { color: inherit; text-decoration: none; }
 p { margin: 0 0 1em; }
@@ -83,7 +85,7 @@ time, .num { font-variant-numeric: lining-nums tabular-nums; }
 .prose a:hover, .link:hover, .abstract a:hover { text-decoration-color: var(--ink); }
 
 /* ---------- frame ---------- */
-.page { max-width: calc(var(--cue) + var(--gap) + var(--col) + 44px); margin: 0 auto; padding: 0 22px; }
+.page { margin: 0; padding: 0 clamp(20px, 4.5vw, 96px); }
 .top { display: flex; align-items: baseline; gap: 2px 20px; flex-wrap: wrap; padding: 28px 0 0; margin-bottom: 72px; font-size: 16px; }
 .top__home { margin-right: auto; font-variant: small-caps; letter-spacing: 0.06em; color: var(--ink-2); cursor: pointer; user-select: none; -webkit-user-select: none; touch-action: manipulation; }
 .top__home:hover { color: var(--ink); }
@@ -408,3 +410,35 @@ body:not(.is-post) .progress { display: none; }
   .cn-prose .prose .sn-ref { cursor: pointer; }
   .cn-prose-wrap .toc { display: block; }
 }
+
+/* ---------- full-width layout: text keeps a readable measure, everything else spreads out ---------- */
+.cn-abstract, .cn-body > p, .interests, .refs, .corr { max-width: var(--col); }
+.prose > p, .prose > ul, .prose > ol, .prose > blockquote, .prose > .thm, .prose > h3, .prose > h4 { max-width: var(--col); }
+.toclist { max-width: 80rem; }
+.titleblock h1 { max-width: 60rem; margin-left: auto; margin-right: auto; }
+
+/* paper cards */
+.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 21rem), 1fr)); gap: 18px; }
+.pcard {
+  display: flex; flex-direction: column; border: 1px solid var(--line); background: var(--card);
+  transition: border-color 0.15s, transform 0.2s, box-shadow 0.2s; overflow: hidden;
+}
+.pcard:hover { border-color: var(--line-2); transform: translateY(-2px); box-shadow: var(--shadow); }
+.pcard__fig { display: block; height: 12rem; padding: 14px; background: #fff; border-bottom: 1px solid var(--line); overflow: hidden; }
+.pcard__fig img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.pcard__body { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px 16px; }
+.pcard__venue { font-variant: small-caps; letter-spacing: 0.05em; color: var(--red); font-size: 15px; }
+.pcard__title { font-weight: 600; line-height: 1.3; }
+.pcard__take { color: var(--ink-2); font-size: 16px; line-height: 1.45; font-style: italic; }
+
+/* paper pages */
+.plinks { display: inline-flex; gap: 14px; }
+.plinks a, .plinks button { font: inherit; font-variant: small-caps; letter-spacing: 0.05em; color: var(--ink-3); background: none; border: 0; padding: 0; cursor: pointer; transition: color 0.15s; }
+.plinks a:hover, .plinks button:hover { color: var(--ink); }
+.titleblock .byline b { font-weight: 600; }
+.paper-page .prose { counter-reset: h2 fig; }
+.prose .figure { counter-increment: fig; }
+.prose .figure { margin: 1.6em 0 2.2em; max-width: 100%; }
+.prose .figure img { display: block; width: 100%; height: auto; max-height: 34rem; object-fit: contain; background: #fff; padding: 18px; border: 1px solid var(--line); margin: 0; }
+.prose .figure figcaption { text-align: left; font-size: 16px; color: var(--ink-2); margin-top: 8px; max-width: var(--col); }
+.prose .figure figcaption::before { content: "Figure " counter(fig) ". "; font-weight: 600; font-variant: small-caps; letter-spacing: 0.04em; }

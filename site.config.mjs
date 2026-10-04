@@ -27,6 +27,9 @@ export default {
 
   papers: [
     {
+      slug: 'raise',
+      figure: '/research/raise/method.svg',
+      takeaway: 'Reinforcement learning from a formal verifier trains a 9B model to beat zero-shot frontier models at writing correct Cedar policies.',
       title: 'RAISE: Reinforcing Access Control Policy Synthesis in LLMs via Symbolic Evaluation',
       authors: 'Yingming Zhou, Adarsh Vatsa, William Eiers',
       venue: 'arXiv preprint',
@@ -42,6 +45,9 @@ export default {
 }`,
     },
     {
+      slug: 'autocedar',
+      figure: '/research/autocedar/sandwich.png',
+      takeaway: 'Fix the intended meaning first, then let a verifier steer the model to a provably correct policy. Converges on all 221 CedarBench tasks.',
       title: 'AutoCedar: An Agentic Framework for Verifier-Guided Access Control Policy Synthesis',
       authors: 'Adarsh Vatsa, Sachi Shome, Yingming Zhou, William Eiers',
       venue: 'arXiv preprint',
@@ -57,25 +63,38 @@ export default {
 }`,
     },
     {
+      slug: 'policysummarizer',
+      figure: '/research/policysummarizer/pipeline.png',
+      takeaway: 'Automata and model counting keep LLM policy summaries faithful. Raised change-review accuracy from 39 to 93 percent in a user study.',
       title: 'Neurosymbolic Characterization for Reliable Access Control Policy Analysis',
       authors: 'Adarsh Vatsa, Bethel Hall, William Eiers',
-      venue: 'arXiv preprint',
-      year: 2025,
+      venue: 'ISSRE 2026',
+      year: 2026,
       url: 'https://arxiv.org/abs/2510.20692',
       pdf: 'https://arxiv.org/pdf/2510.20692',
-      bibtex: `@article{vatsa2025neurosymbolic,
-  title   = {Neurosymbolic Characterization for Reliable Access Control Policy Analysis},
-  author  = {Vatsa, Adarsh and Hall, Bethel and Eiers, William},
-  journal = {arXiv preprint arXiv:2510.20692},
-  year    = {2025}
+      bibtex: `@inproceedings{vatsa2026neurosymbolic,
+  title     = {Neurosymbolic Characterization for Reliable Access Control Policy Analysis},
+  author    = {Vatsa, Adarsh and Hall, Bethel and Eiers, William},
+  booktitle = {IEEE International Symposium on Software Reliability Engineering (ISSRE)},
+  year      = {2026}
 }`,
     },
     {
+      slug: 'policy-synthesis',
+      figure: '/research/policy-synthesis/structured.png',
+      takeaway: 'Zero-shot LLMs write valid cloud policies, and only precise, structured specifications make them correct.',
       title: 'Synthesizing Access Control Policies Using Large Language Models',
       authors: 'Adarsh Vatsa, P. Patel, William Eiers',
       venue: 'NLBSE @ ICSE 2025',
       year: 2025,
-      url: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OBiz9FQAAAAJ&citation_for_view=OBiz9FQAAAAJ:u5HHmVD_uO8C',
+      url: 'https://arxiv.org/abs/2503.11573',
+      pdf: 'https://arxiv.org/pdf/2503.11573',
+      bibtex: `@inproceedings{vatsa2025synthesizing,
+  title     = {Synthesizing Access Control Policies Using Large Language Models},
+  author    = {Vatsa, Adarsh and Patel, P. and Eiers, William},
+  booktitle = {IEEE/ACM International Workshop on Natural Language-Based Software Engineering (NLBSE)},
+  year      = {2025}
+}`,
     },
   ],
 };
