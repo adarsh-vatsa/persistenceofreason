@@ -3,13 +3,14 @@ title: A notebook, in public
 date: 2026-10-01
 summary: Why this site exists, and the few rules it follows.
 status: settled
+tags: meta, writing
 math: true
 ---
 
 Most of my thinking happens in half-finished notes. A question I can't put down, a proof
 that almost works, an experiment whose result surprised me. This site is where some of
-those notes will end up, roughly as they are.^[The label under each title says how
-finished an idea is. *Half-baked* means exactly that.]
+those notes will end up, roughly as they are.^[The mark under each title says how
+finished an idea is. A *conjecture* is exactly that.]
 
 ## The rules
 

@@ -19,20 +19,28 @@ npm run dev        # http://localhost:4000, rebuilds on save
 
 Copy `posts/_template.md` to `posts/some-idea.md`, fill in the frontmatter, delete `draft: true`.
 
-- `^[a note]` → margin note
+- `## Heading` → a numbered section, shown as a cue in the left column (Cornell style)
+- `^[a note]` → a handwritten margin note in the cue column
+- `> [!claim]`, `> [!conjecture]`, `> [!definition]`, `> [!proof]` … → numbered, theorem-style blocks
 - `$x$`, `$$…$$` → math (set `math: true` in the frontmatter)
-- `status: half-baked` → small pill under the title
+- `summary:` → the Cornell summary at the foot of the piece
+- `status: conjecture | sketch | settled` and `tags: a, b` → shown under the title
+
+Your name, abstract, links and papers live in `site.config.mjs`. The about and research
+text live in `content/`.
 
 ## The vault
 
-1. Put files in `vault/` (subfolders are fine). Almost anything renders in the browser:
+1. Put files in `vault/`. Subfolders show up as folders in the vault's sidebar. Text inside PDFs, notes and documents is indexed (encrypted) so the vault's search finds
+   words inside files and jumps to the right page. Almost anything renders in the browser:
    PDF, images, video, audio, Markdown (with math), Jupyter notebooks, CSV/Excel, Word (.docx),
    HTML (sandboxed), and code/text (.py, .tex, .bib, .json, …). Anything else gets a download button.
 2. `npm run seal`. It uses the passphrase saved in `.vault-pass` (gitignored, never uploaded)
    and re-encrypts the whole vault into `sealed/`.
 3. Commit and push. Only the encrypted copies are uploaded.
 
-**To open it**, double-tap the ∴ in the sidebar on any page, or go to
+**To open it**, double-click your name in the top corner of any page, type `vault` into the
+⌘K search, or go to
 `persistenceofreason.com/#vault` (worth bookmarking). Leave "remember this device" ticked and
 that browser opens the vault without the passphrase from then on. "Lock and forget this
 device" undoes that.

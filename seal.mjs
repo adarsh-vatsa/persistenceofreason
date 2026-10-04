@@ -3,15 +3,16 @@
 //                    or $VAULT_PASSPHRASE, or asks for it
 //
 // Format (matches static/vault.js):
-//   sealed/index.bin   = salt(16) | iv(12) | AES-GCM(manifest JSON)
-//   sealed/<id>.bin    = iv(12) | AES-GCM(file bytes)
+//   sealed/index.bin    = salt(16) | iv(12) | AES-GCM(manifest JSON)
+//   sealed/<id>.bin     = iv(12) | AES-GCM(file bytes)
+//   sealed/<id>.t.bin   = iv(12) | AES-GCM(extracted text JSON), powers search inside the vault
 // Key = PBKDF2-SHA256(passphrase, salt, 600k iterations) → AES-256-GCM.
 
 import fs from 'node:fs';
 import path from 'node:path';
 import readline from 'node:readline';
 import { fileURLToPath } from 'node:url';
-import { webcrypto as crypto } from 'node:crypto';
+import { webcrypto as crypto, createHash } from 'node:crypto';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const SRC = path.join(ROOT, 'vault');
@@ -42,9 +43,66 @@ async function encrypt(key, data) {
   return Buffer.concat([iv, ct]);
 }
 
+// ---------- text extraction (for titles, excerpts and full-text search) ----------
+
+const TEXTY = new Set(('txt md markdown log tex bib py js mjs ts tsx jsx java c h cpp rs go rb jl r sh yaml yml toml ' +
+  'json jsonl csv tsv xml sql lean v smt2 cedar css scss rst org html htm').split(' '));
+const clean = (s) => s.replace(/\s+/g, ' ').trim();
+
+async function extract(rel, bytes) {
+  const ext = path.extname(rel).slice(1).toLowerCase();
+  try {
+    if (ext === 'pdf') {
+      const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
+      const doc = await pdfjs.getDocument({ data: new Uint8Array(bytes), verbosity: 0 }).promise;
+      const pages = [];
+      for (let i = 1; i <= doc.numPages; i++) {
+        const tc = await (await doc.getPage(i)).getTextContent();
+        pages.push(clean(tc.items.map((it) => it.str + (it.hasEOL ? ' ' : '')).join('')));
+      }
+      const info = (await doc.getMetadata().catch(() => null))?.info || {};
+      await doc.destroy();
+      return { title: clean(info.Title || ''), pages };
+    }
+    if (ext === 'docx') {
+      const mammoth = (await import('mammoth')).default;
+      return { text: clean((await mammoth.extractRawText({ buffer: bytes })).value) };
+    }
+    if (ext === 'ipynb') {
+      const nb = JSON.parse(bytes.toString('utf8'));
+      return { text: clean((nb.cells || []).map((c) => [].concat(c.source).join('')).join('\n')) };
+    }
+    if (TEXTY.has(ext)) {
+      let t = bytes.toString('utf8');
+      if (ext === 'html' || ext === 'htm') t = t.replace(/<(script|style)[\s\S]*?<\/\1>/g, ' ').replace(/<[^>]+>/g, ' ');
+      const title = ext === 'md' || ext === 'markdown' ? (t.match(/^#\s+(.+)$/m)?.[1] || '') : '';
+      return { title: clean(title), text: clean(t).slice(0, 400_000) };
+    }
+  } catch (e) {
+    console.warn(`  could not read text from ${rel} (${e.message}), it will still be sealed`);
+  }
+  return null;
+}
+
+function excerptOf(t) {
+  const all = t.pages ? t.pages.join(' ') : t.text || '';
+  const abs = /\babstract\b[.:\s]*/i.exec(all);
+  const from = abs && abs.index < 4000 ? abs.index + abs[0].length : 0;
+  let s = all.slice(from, from + 400);
+  if (!abs && t.title && s.startsWith(t.title)) s = s.slice(t.title.length);
+  s = s.trim();
+  // keep whole sentences, up to about 260 characters
+  const sentences = s.match(/[^.!?]+[.!?]+(\s|$)/g) || [s];
+  let out = '';
+  for (const x of sentences) { if ((out + x).length > 280 && out) break; out += x; }
+  return out.trim();
+}
+
+// ---------- seal ----------
+
 if (!fs.existsSync(SRC)) {
   fs.mkdirSync(SRC);
-  console.log('created vault/ — drop your private files in there and run this again.');
+  console.log('created vault/. Drop your private files in there and run this again.');
   process.exit(0);
 }
 
@@ -75,15 +133,30 @@ for (const f of fs.readdirSync(OUT)) if (f.endsWith('.bin')) fs.unlinkSync(path.
 const manifest = { sealed: new Date().toISOString(), files: [] };
 for (const rel of files.sort()) {
   const id = hex(crypto.getRandomValues(new Uint8Array(12)));
+  const name = rel.split(path.sep).join('/');
   const bytes = fs.readFileSync(path.join(SRC, rel));
   fs.writeFileSync(path.join(OUT, `${id}.bin`), await encrypt(key, bytes));
-  manifest.files.push({
-    id, name: rel.split(path.sep).join('/'), size: bytes.length,
+
+  const entry = {
+    id, name, size: bytes.length,
+    // stable across re-seals, so bookmarks and reading positions keep working
+    slug: createHash('sha256').update(name).digest('hex').slice(0, 10),
     modified: fs.statSync(path.join(SRC, rel)).mtime.toISOString().slice(0, 10),
-  });
+  };
+  const t = await extract(rel, bytes);
+  if (t) {
+    if (t.title) entry.title = t.title;
+    if (t.pages) entry.pages = t.pages.length;
+    entry.excerpt = excerptOf(t);
+    entry.words = (t.pages ? t.pages.join(' ') : t.text).split(' ').filter(Boolean).length;
+    entry.text = true;
+    fs.writeFileSync(path.join(OUT, `${id}.t.bin`), await encrypt(key, new TextEncoder().encode(JSON.stringify(t))));
+  }
+  manifest.files.push(entry);
+  console.log(`  ${name}${entry.pages ? ` (${entry.pages} pages)` : ''}`);
 }
 
 const index = await encrypt(key, new TextEncoder().encode(JSON.stringify(manifest)));
 fs.writeFileSync(path.join(OUT, 'index.bin'), Buffer.concat([salt, index]));
 
-console.log(`sealed ${files.length} file(s) into sealed/. run \`npm run build\` to publish.`);
+console.log(`sealed ${files.length} file(s) into sealed/. Commit and push to publish.`);
