@@ -177,13 +177,14 @@
   };
   window.__openVault = openVault;
   // your name in the corner is a link home, and a double-click on it opens the vault
-  const door = $('[data-door]');
-  let tapTimer = null;
-  door?.addEventListener('click', (e) => {
-    if (e.metaKey || e.ctrlKey || e.shiftKey) return;
-    e.preventDefault();
-    if (tapTimer) { clearTimeout(tapTimer); tapTimer = null; openVault(); return; }
-    tapTimer = setTimeout(() => { tapTimer = null; location.href = door.href; }, 320);
+  $$('[data-door]').forEach((door) => {
+    let tapTimer = null;
+    door.addEventListener('click', (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault();
+      if (tapTimer) { clearTimeout(tapTimer); tapTimer = null; openVault(); return; }
+      tapTimer = setTimeout(() => { tapTimer = null; if (door.href) location.href = door.href; }, 320);
+    });
   });
   const fromHash = () => { if (location.hash.startsWith('#vault')) openVault(location.hash.slice(1)); };
   fromHash();

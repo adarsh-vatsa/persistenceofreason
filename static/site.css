@@ -106,11 +106,11 @@ body:not(.is-post) .progress { display: none; }
 
 /* ---------- title block (home + posts) ---------- */
 .titleblock { text-align: center; padding-bottom: 28px; margin-bottom: 0; border-bottom: 3px double var(--line-2); }
-.titleblock h1 { font-size: 2.1em; font-weight: 500; letter-spacing: -0.01em; line-height: 1.15; margin-bottom: 12px; }
+.titleblock h1 { font-size: 1.6em; font-weight: 500; letter-spacing: -0.01em; line-height: 1.15; margin-bottom: 12px; }
 .titleblock .byline { color: var(--ink-2); margin: 0; }
 .titleblock .affil { font-variant: small-caps; letter-spacing: 0.06em; color: var(--ink-3); margin: 2px 0 0; font-size: 16px; }
 .titleblock .date { color: var(--ink-3); margin: 10px 0 0; font-size: 16px; }
-@media (max-width: 600px) { .titleblock h1 { font-size: 1.7em; } }
+@media (max-width: 600px) { .titleblock h1 { font-size: 1.4em; } }
 
 .abstract { margin: 0 auto 48px; max-width: 33rem; font-size: 16.5px; line-height: 1.6; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
 .abstract p { margin: 0 0 0.7em; }
@@ -460,3 +460,8 @@ body:not(.is-post) .progress { display: none; }
   position: absolute; right: 14px; top: calc(12rem - 22px); padding: 0 6px; background: var(--card);
   font-family: var(--hand); font-size: 1.15em; line-height: 1.1; color: var(--red); transform: rotate(-3deg); transform-origin: right center;
 }
+
+/* home opens like a paper: a modest title, the author as a byline, no duplicate label in the corner */
+.titleblock--home h1 { font-size: 1.6em; cursor: default; user-select: none; -webkit-user-select: none; touch-action: manipulation; }
+.titleblock--home .byline { font-size: 1em; }
+.is-home .top__home { visibility: hidden; }

@@ -198,7 +198,7 @@ const KATEX = `
   onload="renderMathInElement(document.querySelector('.prose'),{throwOnError:false})"></script>`;
 
 function layout({ title, description, body, section = '', head = '', bodyClass = '', canonical = '/' }) {
-  const fullTitle = title ? `${title} · ${CFG.author}` : CFG.author;
+  const fullTitle = title ? `${title} · ${CFG.title}` : `${CFG.title} · ${CFG.author}`;
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -226,7 +226,7 @@ ${head}
 <div class="progress" aria-hidden="true"></div>
 <div class="page">
   <header class="top">
-    <a class="top__home" href="/" data-door>${esc(CFG.author)}</a>
+    <a class="top__home" href="/" data-door>${esc(CFG.title)}</a>
     <nav class="top__nav" aria-label="Main">
       ${NAV.map(([l, h]) => `<a href="${h}"${section === h ? ' aria-current="page"' : ''}>${l.toLowerCase()}</a>`).join('\n      ')}
       <button type="button" class="tool" data-palette aria-label="Search">${icon('search')}<kbd data-mod>⌘K</kbd></button>
@@ -318,8 +318,9 @@ const summaryRow = (text) => text ? row('Summary', `<p>${esc(text)}</p>`, { cls:
 function homeBody(posts) {
   let n = 0;
   return `
-<header class="titleblock">
-  <h1>${esc(CFG.author)}</h1>
+<header class="titleblock titleblock--home">
+  <h1 data-door>${esc(CFG.title)}</h1>
+  <p class="byline">${esc(CFG.author)}</p>
 </header>
 <div class="cornell">
   ${row('Abstract', `<div class="cn-abstract">${CFG.abstract.map((p) => `<p>${esc(p)}</p>`).join('')}</div>`, { note: CFG.marginNote })}
