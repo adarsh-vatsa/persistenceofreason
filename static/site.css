@@ -465,3 +465,17 @@ body:not(.is-post) .progress { display: none; }
 .titleblock--home h1 { font-size: 1.6em; cursor: default; user-select: none; -webkit-user-select: none; touch-action: manipulation; }
 .titleblock--home .byline { font-size: 1em; }
 .is-home .top__home { visibility: hidden; }
+
+/* wide screens: annotations move into the open right margin, arrow pointing back at the text */
+@media (min-width: 1440px) {
+  .cn-prose .prose > p, .cn-prose .prose > ul, .cn-prose .prose > ol { max-width: min(var(--col), calc(100% - 20rem)); }
+  .cn-prose .prose .sidenote, .cn-prose .prose .sn-toggle:checked + .sidenote {
+    float: right; clear: right; width: 15rem; margin: -0.1em -19rem 1.2em 0;
+    padding: 0 0 0 14px; border-left: 1.5px dashed var(--line-2);
+    transform: rotate(-1.5deg); transform-origin: left top;
+  }
+  .cn-prose .prose .sidenote::after {
+    right: auto; left: -50px; top: 0.35em; transform: scaleX(-1) rotate(-6deg);
+  }
+  .cn-prose .prose .figure, .cn-prose .prose .code, .cn-prose .prose table, .cn-prose .math-display, .cn-prose .cn-break { clear: both; }
+}
