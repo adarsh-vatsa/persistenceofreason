@@ -12,13 +12,9 @@ export default {
   // The home page opens like a paper. Plain sentences, no colons or semicolons.
   abstract: [
     'I study reasoning, how it works, where it breaks, and what it takes to make it hold up, in machines and in people. My research pairs language models with formal methods, so that what a model produces can be checked rather than trusted.',
-    'This site is a working notebook. It collects essays, notes and unfinished arguments on learning, proof and the space between them.',
   ],
-  // A single handwritten note in the margin of the home page. Set to '' to remove it.
-  marginNote: 'half-formed on purpose',
-  // The Cornell summary at the foot of the home and about pages.
-  summary: 'A PhD student working where language models meet formal methods, keeping a public notebook on reasoning.',
-  researchSummary: 'Make the model propose, make the verifier check, and let the checking teach the model.',
+  // An optional handwritten note in the margin beside the abstract.
+  marginNote: '',
 
   links: [
     { label: 'Email', href: 'mailto:avatsa@stevens.edu', icon: 'mail', text: 'avatsa@stevens.edu' },

@@ -240,7 +240,7 @@ ${body}
 
   <footer class="foot">
     <span>© ${new Date().getFullYear()} ${esc(CFG.author)}</span>
-    <span><a href="/feed.xml">RSS</a> · <a href="/about/#colophon">Colophon</a> · Press <kbd>?</kbd> for shortcuts</span>
+    <span><a href="/feed.xml">RSS</a></span>
   </footer>
 </div>
 <script src="${ASSET['site.js']}" data-vault="${ASSET['vault.js']}" data-vault-css="${ASSET['vault.css']}" defer></script>
@@ -283,7 +283,7 @@ const num = (n, label) => `<span class="n">${n}</span>${label}`;
 const summaryRow = (text) => text ? row('Summary', `<p>${esc(text)}</p>`, { cls: 'cn-summary' }) : '';
 
 function homeBody(posts) {
-  const research = read(path.join(DIR.content, 'research.md')).split(/\n\s*\n/)[0];
+  let n = 0;
   return `
 <header class="titleblock">
   <h1>${esc(CFG.author)}</h1>
@@ -291,14 +291,13 @@ function homeBody(posts) {
 </header>
 <div class="cornell">
   ${row('Abstract', `<div class="cn-abstract">${CFG.abstract.map((p) => `<p>${esc(p)}</p>`).join('')}</div>`, { note: CFG.marginNote })}
-  ${row(num(1, 'Writing'), posts.length ? `<ol class="toclist">${posts.slice(0, 8).map(postRow).join('')}</ol>` : '<p class="empty">Nothing yet.</p>',
-    { id: 'writing', more: '<a class="cue-more" href="/writing/">full index</a>' })}
-  ${row(num(2, 'Research'), `${renderMarkdown(research).html}<ol class="refs">${CFG.papers.slice(0, 3).map((p, i) => refItem(p, i)).join('')}</ol>`,
+  ${posts.length ? row(num(++n, 'Writing'), `<ol class="toclist">${posts.slice(0, 8).map(postRow).join('')}</ol>`,
+    { id: 'writing', more: '<a class="cue-more" href="/writing/">full index</a>' }) : ''}
+  ${row(num(++n, 'Research'), `<ol class="refs">${CFG.papers.slice(0, 3).map((p, i) => refItem(p, i)).join('')}</ol>`,
     { id: 'research', more: '<a class="cue-more" href="/research/">all papers</a>' })}
-  ${row(num(3, 'Correspondence'), `<dl class="corr">
+  ${row(num(++n, 'Correspondence'), `<dl class="corr">
       ${CFG.links.map((l) => `<dt>${esc(l.label.toLowerCase())}</dt><dd><a href="${esc(l.href)}">${esc(l.text || l.href)}</a></dd>`).join('\n      ')}
     </dl>`, { id: 'correspondence' })}
-  ${summaryRow(CFG.summary)}
 </div>`;
 }
 
@@ -333,10 +332,9 @@ function archiveBody(posts, tags) {
   return `
 <header class="titleblock">
   <h1>Writing</h1>
-  <p class="affil">essays, notes and unfinished arguments</p>
 </header>
 <div class="cornell archive">
-  ${row('Filter', `<div class="filters" role="search">
+  ${!posts.length ? '' : row('Filter', `<div class="filters" role="search">
     <label class="filter-search">${icon('search')}<input type="search" placeholder="Filter by title or topic" data-filter-text aria-label="Filter writing"></label>
     <div class="filter-group" data-filter-status>
       <button type="button" class="chip is-on" data-v="">all</button>
@@ -345,8 +343,8 @@ function archiveBody(posts, tags) {
     ${tags.length ? `<div class="filter-group" data-filter-tag>${tags.map(([t]) => `<button type="button" class="chip" data-v="${esc(t)}">#${esc(t)}</button>`).join('')}</div>` : ''}
   </div>`, { cls: 'cn-filters' })}
   ${years.map((y) => `<div data-year>${row(`<span class="num">${y}</span>`, `<ol class="toclist">${posts.filter((p) => p.date.startsWith(y)).map(postRow).join('')}</ol>`)}</div>`).join('')}
+  ${posts.length ? '' : '<p class="empty">Nothing here yet.</p>'}
   <p class="empty" data-empty hidden>Nothing matches.</p>
-  ${summaryRow(`${posts.length} piece${posts.length === 1 ? '' : 's'} so far, newest first. Each carries a status that says how settled the thinking is.`)}
 </div>`;
 }
 
@@ -362,7 +360,6 @@ function researchBody() {
   ${row(num(1, 'Interests'), `<p class="interests">${CFG.interests.map(esc).join(', ')}.</p>`)}
   ${row(num(2, 'Papers'), `<ol class="refs">${CFG.papers.map((p, i) => refItem(p, i, true)).join('')}</ol>`,
     { more: `<a class="cue-more" href="${esc(CFG.links.find((l) => /scholar/i.test(l.label))?.href || '#')}" rel="noopener">google scholar</a>` })}
-  ${summaryRow(CFG.researchSummary)}
 </div>`;
 }
 
@@ -375,7 +372,6 @@ function aboutBody() {
 </header>
 <div class="cornell page-prose">
   <div class="cn-prose"><div class="prose">${html}</div></div>
-  ${summaryRow(CFG.summary)}
 </div>`;
 }
 
@@ -449,9 +445,9 @@ async function build() {
   // search index for the ⌘K palette and link previews
   const index = [
     { kind: 'page', title: 'Home', url: '/', summary: CFG.description },
-    { kind: 'page', title: 'Writing', url: '/writing/', summary: 'Every piece in the notebook, by year.' },
-    { kind: 'page', title: 'Research', url: '/research/', summary: 'Papers and the questions behind them.' },
-    { kind: 'page', title: 'About', url: '/about/', summary: 'Who I am, how this notebook works, and how to reach me.' },
+    { kind: 'page', title: 'Writing', url: '/writing/', summary: 'All writing, by year.' },
+    { kind: 'page', title: 'Research', url: '/research/', summary: 'Papers.' },
+    { kind: 'page', title: 'About', url: '/about/', summary: 'Background and contact.' },
     ...posts.map((p) => ({ kind: 'post', title: p.title, url: postHref(p), summary: p.summary, date: fmtDate(p.date),
       status: p.status, mark: p.status ? STATUS[p.status].mark : '', statusLabel: p.status ? STATUS[p.status].label : '',
       tags: p.tags, minutes: p.minutes, headings: p.toc.map((h) => ({ id: h.id, text: h.text })), text: p.text.slice(0, 20000) })),

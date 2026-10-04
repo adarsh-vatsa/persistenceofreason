@@ -237,7 +237,7 @@
       el('div', { className: 'vx-lock__card' },
         el('div', { className: 'vx-lock__mark', innerHTML: '<svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>' }),
         el('h2', { textContent: 'The vault' }),
-        el('p', { textContent: 'Nothing to see here, unless you know the words.' }),
+        el('p', { textContent: 'Enter the passphrase.' }),
         form)));
     setTimeout(() => input.focus(), 40);
   }
