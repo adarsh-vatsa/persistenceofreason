@@ -28,18 +28,22 @@ Copy `posts/_template.md` to `posts/some-idea.md`, fill in the frontmatter, dele
 1. Put files in `vault/` (subfolders are fine). Almost anything renders in the browser:
    PDF, images, video, audio, Markdown (with math), Jupyter notebooks, CSV/Excel, Word (.docx),
    HTML (sandboxed), and code/text (.py, .tex, .bib, .json, …). Anything else gets a download button.
-2. `npm run seal` and type your passphrase. This re-encrypts the whole vault into `sealed/`.
-3. `npm run build` (or let `npm run dev` pick it up) and deploy.
+2. `npm run seal`. It uses the passphrase saved in `.vault-pass` (gitignored, never uploaded)
+   and re-encrypts the whole vault into `sealed/`.
+3. Commit and push. Only the encrypted copies are uploaded.
 
-**To open it:** on the home page, tap the squiggle under your name 5 times quickly.
+**To open it**, double-tap the ∴ in the sidebar on any page, or go to
+`persistenceofreason.com/#vault` (worth bookmarking). Leave "remember this device" ticked and
+that browser opens the vault without the passphrase from then on. "Lock and forget this
+device" undoes that.
 
 How it's protected: files are encrypted with AES-256-GCM, using a key derived from your passphrase
 (PBKDF2-SHA256, 600k iterations). The server and anyone scraping it only ever see random-named
 ciphertext. Decryption happens in your browser. The easter egg is only the door; the encryption is
 the lock. So:
 
-- Use a strong passphrase (4–5 random words). Nothing can reset it. If it's lost, re-seal from `vault/`.
-- Seal again with the same passphrase every time you add files.
+- A longer passphrase (a few random words) is much harder to crack offline than a word plus digits.
+- To change the passphrase, edit `.vault-pass` and run `npm run seal` again. Remembered devices will ask once more.
 - `vault/` is in `.gitignore`. Keep it that way if the repo is ever public.
 
 ## Deploying
