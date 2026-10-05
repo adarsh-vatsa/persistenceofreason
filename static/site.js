@@ -95,6 +95,59 @@
     [ref, note].forEach((n) => { n.addEventListener('mouseenter', () => on(true)); n.addEventListener('mouseleave', () => on(false)); });
   });
 
+  // ---------- conference calendar: countdowns, filters, day highlights ----------
+  const confs = $('.confs');
+  if (confs) {
+    // A deadline "anywhere on earth" ends at 23:59 in UTC-12.
+    const OFFSETS = { AoE: -12, UTC: 0, PT: -7, PST: -8, PDT: -7, ET: -4, EST: -5, EDT: -4, CET: 1, CEST: 2 };
+    const end = (d, tz) => Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1, +d.slice(8, 10), 23, 59, 59) - (OFFSETS[tz] ?? -12) * 3600e3;
+    $$('.agenda--next [data-deadline]', confs).forEach((li) => {
+      const days = Math.ceil((end(li.dataset.deadline, li.dataset.tz) - Date.now()) / 86400e3);
+      if (days < 0) li.classList.add('is-closed');
+      $('.ag__body', li).append(el('span', { className: 'cd',
+        textContent: days < 0 ? 'closed' : days === 0 ? 'today' : days === 1 ? 'tomorrow' : `in ${days} days` }));
+    });
+    $$('.ag[data-deadline]', confs).forEach((li) => {
+      if (end(li.dataset.deadline, li.dataset.tz) < Date.now()) li.classList.add('is-closed');
+    });
+
+    const cells = (li) => li.dataset.days.split(' ').map((d) => $(`.mini [data-day="${d}"]`, confs)).filter(Boolean);
+    confs.addEventListener('mouseover', (e) => { const li = e.target.closest('.ag'); if (li) cells(li).forEach((c) => c.classList.add('is-hl')); });
+    confs.addEventListener('mouseout', (e) => { const li = e.target.closest('.ag'); if (li) cells(li).forEach((c) => c.classList.remove('is-hl')); });
+
+    const text = $('[data-filter-text]', confs);
+    const params = new URLSearchParams(location.search);
+    let field = params.get('field') || '';
+    let kind = params.get('kind') || '';
+    const groups = { field: $('[data-filter-field]', confs), kind: $('[data-filter-kind]', confs) };
+    const apply = () => {
+      const q = text.value.trim().toLowerCase();
+      const match = (r) => (!field || r.dataset.field.split(' ').includes(field)) && (!kind || r.dataset.kind === kind) &&
+        (!q || !r.dataset.text || r.dataset.text.includes(q));
+      let shown = 0;
+      $$('.ag', confs).forEach((r) => { r.hidden = !match(r); if (!r.hidden && !r.closest('.agenda--next')) shown++; });
+      $$('.venues li', confs).forEach((r) => (r.hidden = !match(r)));
+      // Redraw the marks in each small month from what is still listed.
+      $$('.mini .d', confs).forEach((c) => c.classList.remove('has-dl', 'has-ev', 'has-nt'));
+      $$('.cn-month .ag:not([hidden])', confs).forEach((li) => {
+        const mark = li.classList.contains('ag--dl') ? 'has-dl' : li.classList.contains('ag--ev') ? 'has-ev' : 'has-nt';
+        cells(li).forEach((c) => c.classList.add(mark));
+      });
+      $$('.cn-month', confs).forEach((m) => m.classList.toggle('is-empty', !$$('.ag:not([hidden])', m).length));
+      $('[data-empty]', confs).hidden = shown > 0;
+      $$('.chip', groups.field).forEach((c) => c.classList.toggle('is-on', c.dataset.v === field));
+      $$('.chip', groups.kind).forEach((c) => c.classList.toggle('is-on', c.dataset.v === kind));
+      const u = new URL(location.href);
+      field ? u.searchParams.set('field', field) : u.searchParams.delete('field');
+      kind ? u.searchParams.set('kind', kind) : u.searchParams.delete('kind');
+      history.replaceState(null, '', u);
+    };
+    groups.field.addEventListener('click', (e) => { const c = e.target.closest('.chip'); if (c) { field = c.dataset.v; apply(); } });
+    groups.kind.addEventListener('click', (e) => { const c = e.target.closest('.chip'); if (c) { kind = c.dataset.v; apply(); } });
+    text.addEventListener('input', apply);
+    apply();
+  }
+
   // ---------- writing archive filters ----------
   const archive = $('.archive');
   if (archive) {

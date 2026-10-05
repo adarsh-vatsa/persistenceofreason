@@ -1,0 +1,3192 @@
+[
+ {
+  "id": "aaai-2027",
+  "name": "AAAI",
+  "full": "AAAI Conference on Artificial Intelligence",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1980,
+  "origin": "AAAI is the annual conference of the Association for the Advancement of Artificial Intelligence, first held at Stanford in 1980.",
+  "url": "https://aaai.org/conference/aaai/aaai-27/",
+  "edition": "AAAI-27",
+  "start": "2027-02-16",
+  "end": "2027-02-23",
+  "location": "Montréal, Canada",
+  "deadlines": [
+   {
+    "label": "notification",
+    "date": "2026-11-30",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://aaai.org/conference/aaai/aaai-27/",
+  "note": "Paper deadline passed (abstract Jul 21, paper Jul 28, 2026), in review. Camera-ready Dec 14, 2026."
+ },
+ {
+  "id": "aaai-2028",
+  "name": "AAAI",
+  "full": "AAAI Conference on Artificial Intelligence",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1980,
+  "origin": "AAAI is the annual conference of the Association for the Advancement of Artificial Intelligence, first held at Stanford in 1980.",
+  "url": "https://aaai.org/aaai-conference/",
+  "edition": "AAAI-28",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-07-20",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-07-27",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://aaai.org/conference/aaai/aaai-27/",
+  "note": "estimated from 2025–2026 pattern (AAAI-26 Jul 25/Aug 1, AAAI-27 Jul 21/28). Not announced. Conference expected Jan-Feb 2028."
+ },
+ {
+  "id": "aamas-2027",
+  "name": "AAMAS",
+  "full": "International Conference on Autonomous Agents and Multiagent Systems",
+  "field": [
+   "agents"
+  ],
+  "kind": "flagship",
+  "since": 2002,
+  "origin": "Formed in 2002 by merging the International Conference on Autonomous Agents, the International Conference on Multiagent Systems and the ATAL workshop, with the first edition held in Bologna.",
+  "url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/",
+  "edition": "AAMAS 2027",
+  "start": "2027-05-03",
+  "end": "2027-05-07",
+  "location": "Hanoi, Vietnam",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-10-08",
+    "tz": "AoE"
+   },
+   {
+    "label": "workshop proposals",
+    "date": "2026-10-29",
+    "tz": "AoE"
+   },
+   {
+    "label": "blue sky abstract",
+    "date": "2026-11-05",
+    "tz": "AoE"
+   },
+   {
+    "label": "blue sky paper",
+    "date": "2026-11-12",
+    "tz": "AoE"
+   },
+   {
+    "label": "tutorial proposals",
+    "date": "2026-12-10",
+    "tz": "AoE"
+   },
+   {
+    "label": "AAAI fast track",
+    "date": "2026-12-11",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/",
+  "note": "Main-track abstract deadline 2026-10-01 already passed."
+ },
+ {
+  "id": "aamas-2028",
+  "name": "AAMAS",
+  "full": "International Conference on Autonomous Agents and Multiagent Systems",
+  "field": [
+   "agents"
+  ],
+  "kind": "flagship",
+  "since": 2002,
+  "origin": "Formed in 2002 by merging the International Conference on Autonomous Agents, the International Conference on Multiagent Systems and the ATAL workshop, with the first edition held in Bologna.",
+  "url": "https://www.ifaamas.org/",
+  "edition": "AAMAS 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-10-01",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-10-08",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/",
+  "note": "estimated from 2025–2026 pattern (October 1 abstract and October 8 paper both years)."
+ },
+ {
+  "id": "acl-2027",
+  "name": "ACL",
+  "full": "Annual Meeting of the Association for Computational Linguistics",
+  "field": [
+   "nlp"
+  ],
+  "kind": "flagship",
+  "since": 1962,
+  "origin": "ACL is the annual meeting of the Association for Computational Linguistics, founded in 1962 as the main society for NLP research.",
+  "url": "https://2027.aclweb.org/",
+  "edition": "ACL 2027",
+  "start": "2027-08-17",
+  "end": "2027-08-22",
+  "location": "Kyoto, Japan",
+  "deadlines": [
+   {
+    "label": "ARR submission",
+    "date": "2027-01-04",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://2027.aclweb.org/",
+  "note": "Fed by the ARR January 2027 cycle. Commitment deadline TBA. Main conference Aug 20-22."
+ },
+ {
+  "id": "cais-2027",
+  "name": "ACM CAIS",
+  "full": "ACM Conference on AI and Agentic Systems",
+  "field": [
+   "agents",
+   "systems",
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2026,
+  "origin": "ACM conference on compound AI and agentic systems whose first edition was held in San Jose in May 2026, with a steering committee including Jeff Dean, Ion Stoica, Monica Lam, Omar Khattab and Dawn Song.",
+  "url": "https://www.caisconf.org/",
+  "edition": "CAIS 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-02-27",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://www.caisconf.org/pages/cfp/",
+  "note": "Not announced (site invites sign-ups for CAIS 2027 updates). Deadline is a rough estimate from the inaugural 2026 edition (event May 26–29, 2026 in San Jose)."
+ },
+ {
+  "id": "agent-2027",
+  "name": "AGENT",
+  "full": "International Workshop on Agentic Engineering (ICSE)",
+  "field": [
+   "se",
+   "agents"
+  ],
+  "kind": "new",
+  "since": 2026,
+  "origin": "International Workshop on Agentic Engineering co-located with ICSE since 2026, co-chaired by Qinghua Lu, Liming Zhu, David Lo and Ahmed E. Hassan, on engineering agentic AI systems.",
+  "url": "https://conf.researchr.org/home/icse-2027/agent-2027",
+  "edition": "AGENT 2027",
+  "start": null,
+  "end": null,
+  "location": "Dublin, Ireland",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-11-13",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/track/icse-2027/agent-2027-papers",
+  "note": "Second edition. The ICSE 2027 dates page and the track's own dates sidebar say 2026-11-13, while the call-for-papers text on the same page says 2026-11-27. Listing the earlier date, so check before submitting. Notification Dec 11, 2026."
+ },
+ {
+  "id": "agent-2028",
+  "name": "AGENT",
+  "full": "International Workshop on Agentic Engineering (ICSE)",
+  "field": [
+   "se",
+   "agents"
+  ],
+  "kind": "new",
+  "since": 2026,
+  "origin": "International Workshop on Agentic Engineering co-located with ICSE since 2026, co-chaired by Qinghua Lu, Liming Zhu, David Lo and Ahmed E. Hassan, on engineering agentic AI systems.",
+  "url": "https://conf.researchr.org/series/agent",
+  "edition": "AGENT 2028",
+  "start": null,
+  "end": null,
+  "location": "Hawaii, USA",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-11-26",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/track/icse-2027/agent-2027-papers",
+  "note": "Not announced. Deadline estimated from 2026-2027 pattern (Nov 7 then Nov 27)."
+ },
+ {
+  "id": "agentic-ai-summit-2027",
+  "name": "Agentic AI Summit",
+  "full": "Berkeley Agentic AI Summit",
+  "field": [
+   "agents"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "Hosted by Berkeley RDI, co-directed by Dawn Song, the summit began in 2025 and drew over 2,000 in-person attendees and about 40,000 livestream viewers in its first year.",
+  "url": "https://rdi.berkeley.edu/events/agentic-ai-summit-2026",
+  "edition": "Agentic AI Summit 2027",
+  "start": null,
+  "end": null,
+  "location": "Berkeley, USA",
+  "deadlines": [],
+  "confirmed": false,
+  "source": "https://newsroom.haas.berkeley.edu/2026-agentic-ai-summit-brings-top-minds-to-campus/",
+  "note": "Not announced. 2026 edition was August 1–2 at UC Berkeley with 200+ posters, so expect early August 2027."
+ },
+ {
+  "id": "agents4science-next",
+  "name": "Agents4Science",
+  "full": "Open Conference of AI Agents for Science",
+  "field": [
+   "agents",
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2025,
+  "origin": "Virtual conference first held in October 2025, chaired by James Zou, Owen Queen, Nitya Thakkar and Eric Sun of Stanford with Federico Bianchi of Together AI, in which AI agents are the primary authors and AI reviewers take part in review.",
+  "url": "https://agents4science.stanford.edu",
+  "edition": "Agents4Science (next edition)",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [],
+  "confirmed": false,
+  "source": "https://agents4science.stanford.edu",
+  "note": "No edition after the 2025 one (deadline 2025-09-15, virtual event 2025-10-22) has been announced as of 2026-10-04. Dates left blank rather than guessed."
+ },
+ {
+  "id": "agentverify-2027",
+  "name": "AGENTVERIFY",
+  "full": "International Workshop on Infrastructure for Trustworthy Software Agents (ICSE)",
+  "field": [
+   "se",
+   "agents",
+   "verification"
+  ],
+  "kind": "new",
+  "since": 2027,
+  "origin": "New ICSE 2027 workshop on infrastructure for evaluating, observing and safely deploying software agents, organized by Song Wang, Gias Uddin, Jinqiu Yang, Lin Shi and Nachiappan Nagappan.",
+  "url": "https://agentverify2027.github.io/",
+  "edition": "AGENTVERIFY 2027",
+  "start": "2027-04-25",
+  "end": "2027-04-25",
+  "location": "Dublin, Ireland",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2026-11-01",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2026-11-06",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://agentverify2027.github.io/",
+  "note": "First edition, co-located with ICSE 2027."
+ },
+ {
+  "id": "agntcon-eu-2027",
+  "name": "AGNTCon + MCPCon",
+  "full": "AGNTCon + MCPCon and MCP Dev Summits (Agentic AI Foundation)",
+  "field": [
+   "agents"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "MCP Dev Summits began in 2025, and since 2026 they and AGNTCon + MCPCon have been run by the Linux Foundation's Agentic AI Foundation, which hosts MCP, goose and AGENTS.md.",
+  "url": "https://events.linuxfoundation.org/aaif-events/",
+  "edition": "AGNTCon + MCPCon Europe 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [],
+  "confirmed": false,
+  "source": "https://events.linuxfoundation.org/agntcon-mcpcon-europe/program/cfp",
+  "note": "Estimated from 2026 pattern (Amsterdam Sept 17–18, 2026, CFP closed June 8, 2026 CEST). Expect September 2027 with a June CFP."
+ },
+ {
+  "id": "agntcon-na-2026",
+  "name": "AGNTCon + MCPCon",
+  "full": "AGNTCon + MCPCon and MCP Dev Summits (Agentic AI Foundation)",
+  "field": [
+   "agents"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "MCP Dev Summits began in 2025, and since 2026 they and AGNTCon + MCPCon have been run by the Linux Foundation's Agentic AI Foundation, which hosts MCP, goose and AGENTS.md.",
+  "url": "https://events.linuxfoundation.org/agntcon-mcpcon-north-america/",
+  "edition": "AGNTCon + MCPCon North America 2026",
+  "start": "2026-10-22",
+  "end": "2026-10-23",
+  "location": "San Jose, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://events.linuxfoundation.org/agntcon-mcpcon-north-america/",
+  "note": "Formerly MCP Dev Summit. CFP closed, 3,500+ expected attendees."
+ },
+ {
+  "id": "agntcon-na-2027",
+  "name": "AGNTCon + MCPCon",
+  "full": "AGNTCon + MCPCon and MCP Dev Summits (Agentic AI Foundation)",
+  "field": [
+   "agents"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "MCP Dev Summits began in 2025, and since 2026 they and AGNTCon + MCPCon have been run by the Linux Foundation's Agentic AI Foundation, which hosts MCP, goose and AGENTS.md.",
+  "url": "https://events.linuxfoundation.org/agntcon-mcpcon-north-america/",
+  "edition": "AGNTCon + MCPCon North America 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [],
+  "confirmed": false,
+  "source": "https://events.linuxfoundation.org/agntcon-mcpcon-north-america/",
+  "note": "Estimated from 2026 pattern (San Jose Oct 22–23, 2026). Expect October 2027 with a CFP closing around mid-year."
+ },
+ {
+  "id": "mcpdevsummit-nyc-2027",
+  "name": "AGNTCon + MCPCon",
+  "full": "AGNTCon + MCPCon and MCP Dev Summits (Agentic AI Foundation)",
+  "field": [
+   "agents"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "MCP Dev Summits began in 2025, and since 2026 they and AGNTCon + MCPCon have been run by the Linux Foundation's Agentic AI Foundation, which hosts MCP, goose and AGENTS.md.",
+  "url": "https://events.linuxfoundation.org/aaif-events/",
+  "edition": "MCP Dev Summit New York 2027",
+  "start": null,
+  "end": null,
+  "location": "New York, USA",
+  "deadlines": [],
+  "confirmed": false,
+  "source": "https://aaif.io/press/agentic-ai-foundation-announces-global-2026-events-program-anchored-by-agntcon-mcpcon-north-america-and-europe/",
+  "note": "Estimated from 2026 pattern (MCP Dev Summit NYC April 2–3, 2026). Expect spring 2027 with CFP on Sessionize roughly 3–4 months prior."
+ },
+ {
+  "id": "aidev-sf-2027",
+  "name": "AI Dev",
+  "full": "AI Dev (DeepLearning.AI developer conference)",
+  "field": [
+   "agents",
+   "ml"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "First held in San Francisco in March 2025, AI Dev is a hands-on developer conference hosted by DeepLearning.AI and Andrew Ng that now holds editions in San Francisco and New York.",
+  "url": "https://ai-dev.deeplearning.ai/",
+  "edition": "AI Dev 27 San Francisco",
+  "start": null,
+  "end": null,
+  "location": "San Francisco, USA",
+  "deadlines": [],
+  "confirmed": false,
+  "source": "https://ai-dev.deeplearning.ai/past-events/sf",
+  "note": "Estimated from 2025–2026 pattern (SF March 14, 2025 and April 28–29, 2026). Expect spring 2027."
+ },
+ {
+  "id": "aidev-nyc-2026",
+  "name": "AI Dev",
+  "full": "AI Dev (DeepLearning.AI developer conference)",
+  "field": [
+   "agents",
+   "ml"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "First held in San Francisco in March 2025, AI Dev is a hands-on developer conference hosted by DeepLearning.AI and Andrew Ng that now holds editions in San Francisco and New York.",
+  "url": "https://ai-dev.deeplearning.ai/",
+  "edition": "AI Dev NYC 2026",
+  "start": "2026-11-30",
+  "end": "2026-12-01",
+  "location": "New York, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://ai-dev.deeplearning.ai/",
+  "note": "Chelsea Piers, about 2,500 attendees. No public speaker CFP deadline posted."
+ },
+ {
+  "id": "aidev-nyc-2027",
+  "name": "AI Dev",
+  "full": "AI Dev (DeepLearning.AI developer conference)",
+  "field": [
+   "agents",
+   "ml"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "First held in San Francisco in March 2025, AI Dev is a hands-on developer conference hosted by DeepLearning.AI and Andrew Ng that now holds editions in San Francisco and New York.",
+  "url": "https://ai-dev.deeplearning.ai/",
+  "edition": "AI Dev NYC 2027",
+  "start": null,
+  "end": null,
+  "location": "New York, USA",
+  "deadlines": [],
+  "confirmed": false,
+  "source": "https://ai-dev.deeplearning.ai/past-events/nyc",
+  "note": "Estimated from 2025–2026 pattern (NYC Nov 14, 2025 and Nov 30 – Dec 1, 2026). Expect late November 2027."
+ },
+ {
+  "id": "aie-europe-2027",
+  "name": "AI Engineer Europe",
+  "full": "AI Engineer Europe",
+  "field": [
+   "agents",
+   "systems"
+  ],
+  "kind": "visibility",
+  "since": 2023,
+  "origin": "Co-founded by swyx (Shawn Wang) and Benjamin Dunphy, AI Engineer began with the AI Engineer Summit in San Francisco in October 2023 and livestreams its talks online.",
+  "url": "https://ai.engineer/europe/2027",
+  "edition": "AI Engineer Europe 2027",
+  "start": "2027-02-17",
+  "end": "2027-02-19",
+  "location": "London, UK",
+  "deadlines": [
+   {
+    "label": "talk proposals",
+    "date": "2027-01-06",
+    "tz": "PT"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://ai.engineer/europe/2027",
+  "note": "Event dates and ExCeL London venue confirmed. CFP not yet open, deadline estimated from the 2026 pattern (CFP closed about six weeks before the event)."
+ },
+ {
+  "id": "aie-nyc-2026",
+  "name": "AI Engineer NYC",
+  "full": "AI Engineer New York",
+  "field": [
+   "agents",
+   "systems"
+  ],
+  "kind": "visibility",
+  "since": 2023,
+  "origin": "Co-founded by swyx (Shawn Wang) and Benjamin Dunphy, AI Engineer began with the AI Engineer Summit in San Francisco in October 2023 and livestreams its talks online.",
+  "url": "https://www.ai.engineer/nyc/2026",
+  "edition": "AI Engineer NYC 2026",
+  "start": "2026-10-12",
+  "end": "2026-10-14",
+  "location": "New York, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://www.ai.engineer/nyc",
+  "note": "Focus on AI in financial services. No public CFP deadline listed."
+ },
+ {
+  "id": "aiewf-2027",
+  "name": "AI Engineer World's Fair",
+  "full": "AI Engineer World's Fair",
+  "field": [
+   "agents",
+   "systems",
+   "se"
+  ],
+  "kind": "visibility",
+  "since": 2023,
+  "origin": "Co-founded by swyx (Shawn Wang) and Benjamin Dunphy, AI Engineer began with the AI Engineer Summit in San Francisco in October 2023 and livestreams its talks online.",
+  "url": "https://www.ai.engineer/worldsfair/2027",
+  "edition": "AI Engineer World's Fair 2027",
+  "start": "2027-06-29",
+  "end": "2027-07-01",
+  "location": "San Francisco, USA",
+  "deadlines": [
+   {
+    "label": "talk proposals",
+    "date": "2027-05-30",
+    "tz": "PT"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://www.ai.engineer/worldsfair/2027",
+  "note": "Event dates and Moscone West venue confirmed. CFP not open yet, deadline estimated from the 2026 pattern (CFP May 1 to May 30)."
+ },
+ {
+  "id": "ai4math-2027",
+  "name": "AI for Math Workshop",
+  "full": "AI for Math Workshop (ICML)",
+  "field": [
+   "ml",
+   "verification"
+  ],
+  "kind": "visibility",
+  "since": 2024,
+  "origin": "ICML workshop on AI for mathematics held since 2024, covering autoformalization, automated theorem proving and formal verification, with organizers including Sean Welleck, Pan Lu and Isabelle Guyon.",
+  "url": "https://icml.cc/virtual/2026/84161",
+  "edition": "AI for Math Workshop @ ICML 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-05-25",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://icml.cc/virtual/2026/84161",
+  "note": "Estimated from 2024–2026 pattern (3rd edition at ICML 2026 on July 10, 2026), assuming re-acceptance. ICML 2027 expected mid-July in South America, city TBA."
+ },
+ {
+  "id": "aie-code-2026",
+  "name": "AIE Code Summit",
+  "full": "AI Engineer Code Summit",
+  "field": [
+   "agents",
+   "se"
+  ],
+  "kind": "visibility",
+  "since": 2023,
+  "origin": "Co-founded by swyx (Shawn Wang) and Benjamin Dunphy, AI Engineer began with the AI Engineer Summit in San Francisco in October 2023 and livestreams its talks online.",
+  "url": "https://www.ai.engineer/code/2026",
+  "edition": "AIE CODE Summit SF 2026",
+  "start": "2026-11-10",
+  "end": "2026-11-12",
+  "location": "San Francisco, USA",
+  "deadlines": [
+   {
+    "label": "talk proposals",
+    "date": "2026-10-11",
+    "tz": "PT"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://www.ai.engineer/code/2026",
+  "note": "Nov 10–12 at the Hilton Union Square. Speaker applications close Oct 11, 2026 at 11:59pm PT."
+ },
+ {
+  "id": "aie-code-2027",
+  "name": "AIE Code Summit",
+  "full": "AI Engineer Code Summit",
+  "field": [
+   "agents",
+   "se"
+  ],
+  "kind": "visibility",
+  "since": 2023,
+  "origin": "Co-founded by swyx (Shawn Wang) and Benjamin Dunphy, AI Engineer began with the AI Engineer Summit in San Francisco in October 2023 and livestreams its talks online.",
+  "url": "https://www.ai.engineer/code",
+  "edition": "AIE Code Summit 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "talk proposals",
+    "date": "2027-10-11",
+    "tz": "PT"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://sessionize.com/aiecode26/",
+  "note": "Not announced. estimated from 2025–2026 pattern (event in November, CFP closing about a month before)."
+ },
+ {
+  "id": "aistats-2027",
+  "name": "AISTATS",
+  "full": "International Conference on Artificial Intelligence and Statistics",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1985,
+  "origin": "AISTATS began in 1985 as a workshop bridging AI and statistics and is run by the Society for Artificial Intelligence and Statistics.",
+  "url": "https://virtual.aistats.org/Conferences/2027",
+  "edition": "AISTATS 2027",
+  "start": "2027-05-03",
+  "end": "2027-05-06",
+  "location": "Montréal, Canada",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-10-06",
+    "tz": "AoE"
+   },
+   {
+    "label": "notification",
+    "date": "2027-01-20",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://virtual.aistats.org/Conferences/2027",
+  "note": "Abstract deadline (Sep 29, 2026) passed. Reviews Nov 16, 2026."
+ },
+ {
+  "id": "aistats-2028",
+  "name": "AISTATS",
+  "full": "International Conference on Artificial Intelligence and Statistics",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1985,
+  "origin": "AISTATS began in 1985 as a workshop bridging AI and statistics and is run by the Society for Artificial Intelligence and Statistics.",
+  "url": "https://aistats.org",
+  "edition": "AISTATS 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-09-28",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-10-05",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://virtual.aistats.org/Conferences/2027",
+  "note": "estimated from 2025–2026 pattern (2026 Sep 25/Oct 2, 2027 Sep 29/Oct 6). Conference expected early May 2028."
+ },
+ {
+  "id": "aitp-2027",
+  "name": "AITP",
+  "full": "Conference on Artificial Intelligence and Theorem Proving",
+  "field": [
+   "verification",
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 2016,
+  "origin": "First held in 2016 at Obergurgl in the Austrian Alps with Cezary Kaliszyk and Josef Urban among its organizers, it covers AI and machine learning methods for automated and interactive theorem proving.",
+  "url": "http://aitp-conference.org/",
+  "edition": "AITP 2027",
+  "start": "2027-08-29",
+  "end": "2027-09-03",
+  "location": "Aussois, France",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-05-05",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "http://aitp-conference.org/2026/",
+  "note": "Dates estimated from 2025–2026 pattern (2025 Aug 31–Sep 5, 2026 Aug 30–Sep 4, both Aussois, 2-page abstract deadline early May)."
+ },
+ {
+  "id": "aiware-2027",
+  "name": "AIware",
+  "full": "ACM International Conference on AI-powered Software",
+  "field": [
+   "se",
+   "ml",
+   "agents"
+  ],
+  "kind": "new",
+  "since": 2024,
+  "origin": "ACM International Conference on AI-powered Software, first held with FSE 2024, with Ahmed E. Hassan of Queen's University as steering committee chair.",
+  "url": "https://conf.researchr.org/series/aiware",
+  "edition": "AIware 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-02-15",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/track/aiware-2026/aiware-2026-papers",
+  "note": "Not announced. Past editions co-located with FSE 2024, ASE 2025 and FSE 2026, so co-location with FSE 2027 (Shenzhen, July) is likely but unconfirmed. Deadline estimated from 2026 pattern (Feb 15, OpenReview)."
+ },
+ {
+  "id": "ase-2026",
+  "name": "ASE",
+  "full": "IEEE/ACM International Conference on Automated Software Engineering",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1986,
+  "origin": "Began as the Knowledge-Based Software Engineering conference and became the premier forum on automating software analysis, testing and maintenance.",
+  "url": "https://conf.researchr.org/home/ase-2026",
+  "edition": "ASE 2026",
+  "start": "2026-10-12",
+  "end": "2026-10-16",
+  "location": "Munich, Germany",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/dates/ase-2026",
+  "note": "Research paper deadline was 2026-03-26 (passed)."
+ },
+ {
+  "id": "ase-2027",
+  "name": "ASE",
+  "full": "IEEE/ACM International Conference on Automated Software Engineering",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1986,
+  "origin": "Began as the Knowledge-Based Software Engineering conference and became the premier forum on automating software analysis, testing and maintenance.",
+  "url": "https://conf.researchr.org/series/ase",
+  "edition": "ASE 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-03-26",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/series/ase",
+  "note": "Not announced. Deadline estimated from 2025-2026 pattern (2025-05-30 then 2026-03-26), so it could fall anywhere from late March to late May. Conference expected October or November 2027."
+ },
+ {
+  "id": "automl-2027",
+  "name": "AutoML Conf",
+  "full": "International Conference on Automated Machine Learning",
+  "field": [
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2022,
+  "origin": "Launched in 2022 with a first edition in Baltimore, it replaced the AutoML workshop series held at ICML since 2014, with Frank Hutter and Marius Lindauer among its organizers.",
+  "url": "https://automl.cc/",
+  "edition": "AutoML 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-04-30",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://mldeadlines.com/conference/automl/",
+  "note": "Not announced. estimated from 2025–2026 pattern (2025 deadline late March, 2026 deadline April 30 extended to May 14, events in September)."
+ },
+ {
+  "id": "cain-2027",
+  "name": "CAIN",
+  "full": "IEEE/ACM International Conference on AI Engineering – Software Engineering for AI",
+  "field": [
+   "se",
+   "agents"
+  ],
+  "kind": "new",
+  "since": 2022,
+  "origin": "Started in 2022 as an ICSE co-located conference following the 2021 WAIN workshop, and its 2027 call names engineering and quality assurance for agentic software as a focus area.",
+  "url": "https://conf.researchr.org/home/cain-2027",
+  "edition": "CAIN 2027",
+  "start": null,
+  "end": null,
+  "location": "Dublin, Ireland",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-10-30",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/track/cain-2027/cain-2027-call-for-papers",
+  "note": "Co-located with ICSE 2027 (ICSE week April 25 – May 1, 2027). Exact CAIN days TBA. Notification Jan 11, 2027."
+ },
+ {
+  "id": "cain-2028",
+  "name": "CAIN",
+  "full": "IEEE/ACM International Conference on AI Engineering – Software Engineering for AI",
+  "field": [
+   "se",
+   "agents"
+  ],
+  "kind": "new",
+  "since": 2022,
+  "origin": "Started in 2022 as an ICSE co-located conference following the 2021 WAIN workshop, and its 2027 call names engineering and quality assurance for agentic software as a focus area.",
+  "url": "https://conf.researchr.org/series/cain",
+  "edition": "CAIN 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-10-29",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/series/cain",
+  "note": "Deadline estimated from 2025–2026 pattern (late October). Will co-locate with ICSE 2028."
+ },
+ {
+  "id": "cav-2027",
+  "name": "CAV",
+  "full": "International Conference on Computer-Aided Verification",
+  "field": [
+   "verification"
+  ],
+  "kind": "flagship",
+  "since": 1989,
+  "origin": "The flagship conference on computer-aided formal analysis of hardware and software systems.",
+  "url": "https://conferences.i-cav.org/2027/",
+  "edition": "CAV 2027",
+  "start": "2027-07-19",
+  "end": "2027-07-23",
+  "location": "Amsterdam, Netherlands",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-01-20",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://conferences.i-cav.org/2027/",
+  "note": "Workshops Jul 19-20, main conference Jul 21-23."
+ },
+ {
+  "id": "clear-2027",
+  "name": "CLeaR",
+  "full": "Conference on Causal Learning and Reasoning",
+  "field": [
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2022,
+  "origin": "First held in 2022 in Eureka, California with Bernhard Schölkopf, Caroline Uhler and Kun Zhang as chairs, and described at launch as the first international conference on causal learning and reasoning.",
+  "url": "https://www.cclear.cc/2027",
+  "edition": "CLeaR 2027",
+  "start": "2027-05-03",
+  "end": "2027-05-05",
+  "location": "Paris, France",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-11-16",
+    "tz": "AoE"
+   },
+   {
+    "label": "notification",
+    "date": "2027-02-22",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://www.cclear.cc/2027/CallforPapers",
+  "note": "Official call for papers lists paper deadline Nov 16, 2026 AoE, reviews Jan 19, rebuttals Jan 26, decisions Feb 22, camera-ready Apr 5, 2027. Venue is the Sorbonne University Pierre and Marie Curie Campus in Paris."
+ },
+ {
+  "id": "clear-2028",
+  "name": "CLeaR",
+  "full": "Conference on Causal Learning and Reasoning",
+  "field": [
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2022,
+  "origin": "First held in 2022 in Eureka, California with Bernhard Schölkopf, Caroline Uhler and Kun Zhang as chairs, and described at launch as the first international conference on causal learning and reasoning.",
+  "url": "https://www.cclear.cc/",
+  "edition": "CLeaR 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-11-15",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://mldeadlines.com/conference/clear/",
+  "note": "Not announced. Deadline is a rough estimate based on the 2027 edition (Nov 16, 2026)."
+ },
+ {
+  "id": "collas-2027",
+  "name": "CoLLAs",
+  "full": "Conference on Lifelong Learning Agents",
+  "field": [
+   "ml",
+   "agents"
+  ],
+  "kind": "new",
+  "since": 2022,
+  "origin": "First held in 2022 at McGill University in Montréal, organized by Sarath Chandar, Razvan Pascanu and Doina Precup as a conference on lifelong and continual learning agents.",
+  "url": "https://lifelong-ml.cc/",
+  "edition": "CoLLAs 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-04-10",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-04-15",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://aihub.org/events/conference-on-lifelong-learning-agents-collas-2026/",
+  "note": "Not announced. estimated from 2025–2026 pattern (2026 abstract April 10, paper April 15, held September 14–18, 2026 in Bucharest). Event likely late summer 2027."
+ },
+ {
+  "id": "colm-2026",
+  "name": "COLM",
+  "full": "Conference on Language Modeling",
+  "field": [
+   "nlp",
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2024,
+  "origin": "First held in Philadelphia in 2024 as an academic venue for language modeling research, with a board that includes Alexander Rush and Yoav Artzi.",
+  "url": "https://colm.cc/",
+  "edition": "COLM 2026",
+  "start": "2026-10-06",
+  "end": "2026-10-09",
+  "location": "San Francisco, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://colm.cc/",
+  "note": "Deadlines passed (abstract 2026-03-26, paper 2026-03-31)."
+ },
+ {
+  "id": "colm-2027",
+  "name": "COLM",
+  "full": "Conference on Language Modeling",
+  "field": [
+   "nlp",
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2024,
+  "origin": "First held in Philadelphia in 2024 as an academic venue for language modeling research, with a board that includes Alexander Rush and Yoav Artzi.",
+  "url": "https://colm.cc/",
+  "edition": "COLM 2027",
+  "start": "2027-10-05",
+  "end": "2027-10-08",
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-03-26",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-03-31",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://mldeadlines.com/conference/colm/",
+  "note": "estimated from 2025–2026 pattern (2024–2026 deadlines late March, event early October). Not announced."
+ },
+ {
+  "id": "colt-2027",
+  "name": "COLT",
+  "full": "Conference on Learning Theory",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1988,
+  "origin": "COLT has been the main venue for computational learning theory since 1988 and is run by the Association for Computational Learning.",
+  "url": "https://learningtheory.org/colt2027/",
+  "edition": "COLT 2027",
+  "start": "2027-06-28",
+  "end": "2027-07-02",
+  "location": "Tokyo, Japan",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-02-04",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://learningtheory.org/colt2027/",
+  "note": "Conference dates and city confirmed. Deadline TBD, estimated from 2025–2026 pattern (Feb 6, 2025 and Feb 4, 2026)."
+ },
+ {
+  "id": "cpal-2027",
+  "name": "CPAL",
+  "full": "Conference on Parsimony and Learning",
+  "field": [
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2024,
+  "origin": "First held at the University of Hong Kong in 2024 with Yi Ma and Harry Shum as general chairs, it focuses on low-dimensional structure in machine learning and publishes proceedings in PMLR.",
+  "url": "https://cpal.cc/",
+  "edition": "CPAL 2027",
+  "start": "2027-03-23",
+  "end": "2027-03-26",
+  "location": "Tokyo, Japan",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2026-11-23",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2026-12-05",
+    "tz": "AoE"
+   },
+   {
+    "label": "recent spotlight track",
+    "date": "2027-01-18",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://cpal.cc/",
+  "note": "Hitotsubashi Hall, Tokyo. All deadlines 23:59 AoE."
+ },
+ {
+  "id": "cpal-2028",
+  "name": "CPAL",
+  "full": "Conference on Parsimony and Learning",
+  "field": [
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2024,
+  "origin": "First held at the University of Hong Kong in 2024 with Yi Ma and Harry Shum as general chairs, it focuses on low-dimensional structure in machine learning and publishes proceedings in PMLR.",
+  "url": "https://cpal.cc/",
+  "edition": "CPAL 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-11-23",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-12-05",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://cpal.cc/",
+  "note": "Not announced. Deadlines estimated from the CPAL 2027 pattern, event likely spring 2028."
+ },
+ {
+  "id": "cpp-2027",
+  "name": "CPP",
+  "full": "ACM SIGPLAN International Conference on Certified Programs and Proofs",
+  "field": [
+   "verification"
+  ],
+  "kind": "flagship",
+  "since": 2011,
+  "origin": "The main proof-assistant venue co-located with POPL, increasingly publishing LLM-assisted proof and verified-code work in Lean, Rocq and Isabelle.",
+  "url": "https://popl27.sigplan.org/home/CPP-2027",
+  "edition": "CPP 2027",
+  "start": "2027-01-11",
+  "end": "2027-01-12",
+  "location": "Mexico City, Mexico",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://popl27.sigplan.org/home/CPP-2027",
+  "note": "Co-located with POPL 2027. Deadlines passed, notifications Nov 10 2026."
+ },
+ {
+  "id": "cpp-2028",
+  "name": "CPP",
+  "full": "ACM SIGPLAN International Conference on Certified Programs and Proofs",
+  "field": [
+   "verification"
+  ],
+  "kind": "flagship",
+  "since": 2011,
+  "origin": "The main proof-assistant venue co-located with POPL, increasingly publishing LLM-assisted proof and verified-code work in Lean, Rocq and Isabelle.",
+  "url": "https://www.sigplan.org/Conferences/CPP/",
+  "edition": "CPP 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-09-02",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-09-09",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://popl27.sigplan.org/home/CPP-2027",
+  "note": "Deadlines estimated from 2025–2026 pattern (early September). Event expected January 2028 with POPL 2028."
+ },
+ {
+  "id": "deeptest-2027",
+  "name": "DeepTest",
+  "full": "International Workshop on Deep Learning for Testing and Testing for Deep Learning (ICSE)",
+  "field": [
+   "se",
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2019,
+  "origin": "ICSE workshop held since 2019 on deep learning for testing and testing for deep learning.",
+  "url": "https://conf.researchr.org/series/deeptest",
+  "edition": "DeepTest 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-10-26",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/home/deeptest-2026",
+  "note": "Not yet announced and not among the ICSE 2027 workshops listed as of Oct 4, 2026. Deadline is a rough estimate from the 2026 pattern (2025-10-27)."
+ },
+ {
+  "id": "deeptest-2028",
+  "name": "DeepTest",
+  "full": "International Workshop on Deep Learning for Testing and Testing for Deep Learning (ICSE)",
+  "field": [
+   "se",
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2019,
+  "origin": "ICSE workshop held since 2019 on deep learning for testing and testing for deep learning.",
+  "url": "https://conf.researchr.org/series/deeptest",
+  "edition": "DeepTest 2028",
+  "start": null,
+  "end": null,
+  "location": "Hawaii, USA",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-10-25",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/home/deeptest-2026",
+  "note": "Not announced. Deadline estimated from 2026 pattern (late October)."
+ },
+ {
+  "id": "eacl-2027",
+  "name": "EACL",
+  "full": "Conference of the European Chapter of the ACL",
+  "field": [
+   "nlp"
+  ],
+  "kind": "flagship",
+  "since": 1983,
+  "origin": "EACL is the conference of the European chapter of the ACL, first held in 1983.",
+  "url": "https://2027.eacl.org/",
+  "edition": "EACL 2027",
+  "start": "2027-03-09",
+  "end": "2027-03-14",
+  "location": "Athens, Greece",
+  "deadlines": [
+   {
+    "label": "commitment",
+    "date": "2026-10-11",
+    "tz": "AoE"
+   },
+   {
+    "label": "notification",
+    "date": "2026-11-12",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://2027.eacl.org/calls/papers/",
+  "note": "Fed by the ARR August 2026 cycle (submission Aug 3, passed). Commitment of ARR-reviewed papers open until Oct 11. Camera-ready Nov 26, 2026."
+ },
+ {
+  "id": "emnlp-2026",
+  "name": "EMNLP",
+  "full": "Conference on Empirical Methods in Natural Language Processing",
+  "field": [
+   "nlp"
+  ],
+  "kind": "flagship",
+  "since": 1996,
+  "origin": "EMNLP was started in 1996 by the ACL special interest group SIGDAT to promote data driven NLP.",
+  "url": "https://2026.emnlp.org/",
+  "edition": "EMNLP 2026",
+  "start": "2026-10-24",
+  "end": "2026-10-29",
+  "location": "Budapest, Hungary",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://2026.emnlp.org/",
+  "note": "All deadlines passed (ARR May 25 cycle, commitment Aug 2, 2026). Conference upcoming."
+ },
+ {
+  "id": "emnlp-2027",
+  "name": "EMNLP",
+  "full": "Conference on Empirical Methods in Natural Language Processing",
+  "field": [
+   "nlp"
+  ],
+  "kind": "flagship",
+  "since": 1996,
+  "origin": "EMNLP was started in 1996 by the ACL special interest group SIGDAT to promote data driven NLP.",
+  "url": "https://www.aclweb.org/portal/",
+  "edition": "EMNLP 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "ARR submission",
+    "date": "2027-05-24",
+    "tz": "AoE"
+   },
+   {
+    "label": "commitment",
+    "date": "2027-08-01",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://aclrollingreview.org/dates",
+  "note": "estimated from 2025–2026 pattern (ARR May cycle, May 19 and May 25). Tentatively early Nov 2027 per ACL workshop call. City not announced."
+ },
+ {
+  "id": "fm-2027",
+  "name": "FM",
+  "full": "International Symposium on Formal Methods",
+  "field": [
+   "verification"
+  ],
+  "kind": "flagship",
+  "since": 1987,
+  "origin": "Formal Methods Europe's flagship symposium, which moves from every 18 months to a yearly autumn schedule starting in 2027.",
+  "url": "https://www.fmeurope.org/",
+  "edition": "FM 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-04-30",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://www.fmeurope.org/2025/09/14/fm-2027-call-for-organizers/",
+  "note": "Only a call for organizers exists. FM 2027 will be in autumn 2027, preferably in Europe. Deadline is a rough estimate (spring) based on earlier autumn editions and is low confidence."
+ },
+ {
+  "id": "fmcad-2027",
+  "name": "FMCAD",
+  "full": "Formal Methods in Computer-Aided Design",
+  "field": [
+   "verification"
+  ],
+  "kind": "flagship",
+  "since": 1996,
+  "origin": "The leading venue for formal methods in hardware and system design, held annually since 2006.",
+  "url": "https://fmcad.org/",
+  "edition": "FMCAD 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-05-03",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-05-10",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://fmcad.forsyte.at/FMCAD26/",
+  "note": "Not announced. Deadlines estimated from 2026 pattern (abstract May 4, paper May 11). Conference expected September or October 2027."
+ },
+ {
+  "id": "forge-2027",
+  "name": "FORGE",
+  "full": "ACM International Conference on AI Foundation Models and Software Engineering",
+  "field": [
+   "se",
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2024,
+  "origin": "Conference on AI Foundation Models and Software Engineering co-located with ICSE since 2024, whose first edition had general chairs David Lo and Xin Xia and program chairs Massimiliano Di Penta and Xing Hu.",
+  "url": "https://conf.researchr.org/home/forge-2027",
+  "edition": "FORGE 2027",
+  "start": "2027-04-26",
+  "end": "2027-04-27",
+  "location": "Dublin, Ireland",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2026-10-25",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2026-10-30",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/home/forge-2027",
+  "note": "Co-located with ICSE 2027. Research and Data and Benchmarking tracks."
+ },
+ {
+  "id": "forge-2028",
+  "name": "FORGE",
+  "full": "ACM International Conference on AI Foundation Models and Software Engineering",
+  "field": [
+   "se",
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2024,
+  "origin": "Conference on AI Foundation Models and Software Engineering co-located with ICSE since 2024, whose first edition had general chairs David Lo and Xin Xia and program chairs Massimiliano Di Penta and Xing Hu.",
+  "url": "https://conf.researchr.org/series/forge",
+  "edition": "FORGE 2028",
+  "start": null,
+  "end": null,
+  "location": "Hawaii, USA",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-10-24",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-10-29",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/home/forge-2027",
+  "note": "Not announced. Expected with ICSE 2028. Deadlines estimated from 2027 pattern (late October)."
+ },
+ {
+  "id": "fse-2027",
+  "name": "FSE",
+  "full": "ACM International Conference on the Foundations of Software Engineering (formerly ESEC/FSE)",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1993,
+  "origin": "ACM SIGSOFT's flagship conference, held jointly with ESEC for many years and published in PACMSE since 2024.",
+  "url": "https://conf.researchr.org/home/fse-2027",
+  "edition": "FSE 2027",
+  "start": "2027-07-12",
+  "end": "2027-07-16",
+  "location": "Shenzhen, China",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/dates/fse-2027",
+  "note": "Single research-paper deadline 2026-10-02 (passed two days ago). Industry papers 2027-01-23. Major revision submission 2027-03-05."
+ },
+ {
+  "id": "fse-2028",
+  "name": "FSE",
+  "full": "ACM International Conference on the Foundations of Software Engineering (formerly ESEC/FSE)",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1993,
+  "origin": "ACM SIGSOFT's flagship conference, held jointly with ESEC for many years and published in PACMSE since 2024.",
+  "url": "https://conf.researchr.org/series/fse",
+  "edition": "FSE 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-10-01",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/series/fse",
+  "note": "Not announced. Deadline estimated from 2026-2027 pattern (2025-09-11 and 2026-10-02). Conference expected June or July 2028."
+ },
+ {
+  "id": "iclr-2027",
+  "name": "ICLR",
+  "full": "International Conference on Learning Representations",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 2013,
+  "origin": "ICLR was founded in 2013 by Yoshua Bengio and Yann LeCun and pioneered fully public peer review on OpenReview.",
+  "url": "https://iclr.cc/Conferences/2027",
+  "edition": "ICLR 2027",
+  "start": "2027-04-26",
+  "end": "2027-04-30",
+  "location": "California, USA",
+  "deadlines": [
+   {
+    "label": "decision",
+    "date": "2026-12-16",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://iclr.cc/Conferences/2027/Dates",
+  "note": "Paper deadline passed (abstract Sep 18, paper Sep 25, 2026), in review. Reviews Nov 5. iclr.cc lists the location only as California with venue information TBA (a page image is captioned Moscone Center, San Francisco, but the venue is not formally announced)."
+ },
+ {
+  "id": "iclr-2028",
+  "name": "ICLR",
+  "full": "International Conference on Learning Representations",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 2013,
+  "origin": "ICLR was founded in 2013 by Yoshua Bengio and Yann LeCun and pioneered fully public peer review on OpenReview.",
+  "url": "https://iclr.cc",
+  "edition": "ICLR 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-09-17",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-09-24",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://iclr.cc/Conferences/2027/Dates",
+  "note": "estimated from 2025–2026 pattern (2025 cycle Sep 19/24, 2026 cycle Sep 18/25). Conference expected late Apr 2028."
+ },
+ {
+  "id": "icml-2027",
+  "name": "ICML",
+  "full": "International Conference on Machine Learning",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1980,
+  "origin": "ICML grew out of the first machine learning workshop held at Carnegie Mellon University in 1980.",
+  "url": "https://icml.cc",
+  "edition": "ICML 2027",
+  "start": null,
+  "end": null,
+  "location": "South America (city TBA)",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-01-22",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-01-28",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://icml.cc/Conferences/FutureMeetings",
+  "note": "estimated from 2025–2026 pattern (abstract ~Jan 23, paper Jan 28-30). Only the region is announced. Conference expected July 2027."
+ },
+ {
+  "id": "icse-2027",
+  "name": "ICSE",
+  "full": "IEEE/ACM International Conference on Software Engineering",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1975,
+  "origin": "The oldest and most selective general software engineering conference, sponsored by IEEE TCSE and ACM SIGSOFT since 1975.",
+  "url": "https://conf.researchr.org/home/icse-2027",
+  "edition": "ICSE 2027",
+  "start": "2027-04-25",
+  "end": "2027-05-01",
+  "location": "Dublin, Ireland",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
+  "note": "Research track used a single cycle this year (abstract 2026-06-23, paper 2026-06-30, both passed). Notifications 2026-10-20. SEIP track deadline 2026-10-23. Main conference days Apr 28-30."
+ },
+ {
+  "id": "icse-2028",
+  "name": "ICSE",
+  "full": "IEEE/ACM International Conference on Software Engineering",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1975,
+  "origin": "The oldest and most selective general software engineering conference, sponsored by IEEE TCSE and ACM SIGSOFT since 1975.",
+  "url": "https://icse-conferences.org/",
+  "edition": "ICSE 2028",
+  "start": "2028-04-30",
+  "end": "2028-05-06",
+  "location": "Waikoloa, Hawaii, USA",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-06-22",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-06-29",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://icse-conferences.org/",
+  "note": "Hawaii in April 2028 is announced on icse-conferences.org. Exact days come from an aggregator and are unverified. Deadlines estimated from the 2027 single-cycle pattern (late June), ICSE 2026 used two cycles (March and July), so a second cycle is possible."
+ },
+ {
+  "id": "icsme-2027",
+  "name": "ICSME",
+  "full": "IEEE International Conference on Software Maintenance and Evolution",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1983,
+  "origin": "Founded in 1983 as ICSM and renamed ICSME in 2014 to cover software evolution.",
+  "url": "https://conf.researchr.org/home/icsme-2027",
+  "edition": "ICSME 2027",
+  "start": "2027-09-07",
+  "end": "2027-09-11",
+  "location": "Toronto, Canada",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-03-05",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/home/icsme-2027",
+  "note": "Research paper deadline shown on the site while the CFP is still being finalized. An aggregator lists Sep 14-18, the official site says Sep 7-11."
+ },
+ {
+  "id": "icst-2027",
+  "name": "ICST",
+  "full": "IEEE International Conference on Software Testing, Verification and Validation",
+  "field": [
+   "se",
+   "verification"
+  ],
+  "kind": "flagship",
+  "since": 2008,
+  "origin": "IEEE's dedicated software testing conference, founded in 2008.",
+  "url": "https://conf.researchr.org/home/icst-2027",
+  "edition": "ICST 2027",
+  "start": "2027-05-17",
+  "end": "2027-05-21",
+  "location": "San Sebastian, Spain",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-11-02",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/home/icst-2027",
+  "note": "Research papers. NIER deadline 2027-01-13."
+ },
+ {
+  "id": "icst-2028",
+  "name": "ICST",
+  "full": "IEEE International Conference on Software Testing, Verification and Validation",
+  "field": [
+   "se",
+   "verification"
+  ],
+  "kind": "flagship",
+  "since": 2008,
+  "origin": "IEEE's dedicated software testing conference, founded in 2008.",
+  "url": "https://conf.researchr.org/series/icst",
+  "edition": "ICST 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-11-01",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/home/icst-2027",
+  "note": "Not announced. Deadline estimated from 2027 pattern (early November). Conference usually April to May."
+ },
+ {
+  "id": "ijcai-2027",
+  "name": "IJCAI",
+  "full": "International Joint Conference on Artificial Intelligence",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1969,
+  "origin": "IJCAI was first held in Washington DC in 1969 and is the longest running international AI conference.",
+  "url": "https://www.ijcai.org/future_conferences",
+  "edition": "IJCAI-27",
+  "start": "2027-08-07",
+  "end": "2027-08-17",
+  "location": "Kyoto, Japan and Hengqin, China",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-01-12",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-01-19",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://www.ijcai.org/future_conferences",
+  "note": "Conference dates confirmed (Kyoto Aug 7-13, Hengqin Aug 15-17). Deadlines estimated from 2025–2026 pattern (2026 Jan 12/19). IJCAI-28 deadline expected Jan 2028, outside range."
+ },
+ {
+  "id": "interrupt-2027",
+  "name": "Interrupt",
+  "full": "Interrupt: The Agent Conference by LangChain",
+  "field": [
+   "agents"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "LangChain launched Interrupt in San Francisco in 2025 as its agent conference, and the 2026 edition featured Andrew Ng in conversation with LangChain CEO Harrison Chase.",
+  "url": "https://interrupt.langchain.com/",
+  "edition": "Interrupt 2027",
+  "start": "2027-05-13",
+  "end": "2027-05-14",
+  "location": "San Francisco, USA",
+  "deadlines": [],
+  "confirmed": false,
+  "source": "https://blog.langchain.com/previewing-interrupt-2026-agents-at-enterprise-scale",
+  "note": "Estimated from 2025–2026 pattern (both editions May 13–14 at The Midway, San Francisco). Talks are mostly invited from production teams."
+ },
+ {
+  "id": "issre-2026",
+  "name": "ISSRE",
+  "full": "IEEE International Symposium on Software Reliability Engineering",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1990,
+  "origin": "The main IEEE venue for software reliability, dependability and failure analysis research.",
+  "url": "https://cyprusconferences.org/issre2026/",
+  "edition": "ISSRE 2026",
+  "start": "2026-10-20",
+  "end": "2026-10-23",
+  "location": "Limassol, Cyprus",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://cyprusconferences.org/issre2026/",
+  "note": "Research paper deadline was 2026-04-24 (passed)."
+ },
+ {
+  "id": "issre-2027",
+  "name": "ISSRE",
+  "full": "IEEE International Symposium on Software Reliability Engineering",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1990,
+  "origin": "The main IEEE venue for software reliability, dependability and failure analysis research.",
+  "url": "https://conf.researchr.org/series/issre",
+  "edition": "ISSRE 2027",
+  "start": "2027-10-19",
+  "end": "2027-10-22",
+  "location": "Macao, China",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-04-23",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/series/issre",
+  "note": "Dates and venue (Galaxy Macau, Taipa) listed on researchr. Deadline not announced, estimated from 2026 pattern (late April)."
+ },
+ {
+  "id": "issta-2026",
+  "name": "ISSTA",
+  "full": "ACM SIGSOFT International Symposium on Software Testing and Analysis",
+  "field": [
+   "se",
+   "verification"
+  ],
+  "kind": "flagship",
+  "since": 1989,
+  "origin": "ACM SIGSOFT's leading symposium on software testing and program analysis.",
+  "url": "https://conf.researchr.org/home/issta-2026",
+  "edition": "ISSTA 2026",
+  "start": "2026-10-04",
+  "end": "2026-10-09",
+  "location": "Oakland, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://2026.splashcon.org/dates",
+  "note": "Co-located with SPLASH 2026. Paper deadline was 2026-01-29 (passed)."
+ },
+ {
+  "id": "issta-2027",
+  "name": "ISSTA",
+  "full": "ACM SIGSOFT International Symposium on Software Testing and Analysis",
+  "field": [
+   "se",
+   "verification"
+  ],
+  "kind": "flagship",
+  "since": 1989,
+  "origin": "ACM SIGSOFT's leading symposium on software testing and program analysis.",
+  "url": "https://conf.researchr.org/home/issta-2027",
+  "edition": "ISSTA 2027",
+  "start": "2027-09-07",
+  "end": "2027-09-10",
+  "location": "Singapore",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-01-08",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-01-11",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/home/issta-2027",
+  "note": "Major revision submission 2027-05-20."
+ },
+ {
+  "id": "jmlr",
+  "name": "JMLR",
+  "full": "Journal of Machine Learning Research",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 2000,
+  "origin": "JMLR was founded in 2000 by Leslie Pack Kaelbling as a free open access alternative to commercial ML journals.",
+  "url": "https://jmlr.org/",
+  "edition": "JMLR (rolling)",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://jmlr.org/",
+  "note": "Journal with rolling submissions, no deadlines."
+ },
+ {
+  "id": "kdd-2027",
+  "name": "KDD",
+  "full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1995,
+  "origin": "KDD grew out of the knowledge discovery workshops Gregory Piatetsky-Shapiro started in 1989 and became a full ACM SIGKDD conference in 1995.",
+  "url": "https://kdd2027.kdd.org/",
+  "edition": "KDD 2027",
+  "start": "2027-08-01",
+  "end": "2027-08-05",
+  "location": "San Jose, USA",
+  "deadlines": [
+   {
+    "label": "abstract (cycle 2)",
+    "date": "2027-01-31",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (cycle 2)",
+    "date": "2027-02-07",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://kdd2027.kdd.org/research-track-call-for-papers/",
+  "note": "Conference dates and venue confirmed. Cycle 1 (Jul 19/26, 2026) passed and in review. Cycle 2 estimated from 2025–2026 pattern (Feb 3/10 2025, Feb 1/8 2026)."
+ },
+ {
+  "id": "kdd-2028",
+  "name": "KDD",
+  "full": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1995,
+  "origin": "KDD grew out of the knowledge discovery workshops Gregory Piatetsky-Shapiro started in 1989 and became a full ACM SIGKDD conference in 1995.",
+  "url": "https://kdd.org/conferences",
+  "edition": "KDD 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract (cycle 1)",
+    "date": "2027-07-18",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (cycle 1)",
+    "date": "2027-07-25",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://kdd2027.kdd.org/research-track-call-for-papers/",
+  "note": "estimated from 2025–2026 pattern (cycle 1 Jul 24/31 2025, Jul 19/26 2026). Conference expected Aug 2028."
+ },
+ {
+  "id": "l4dc-2027",
+  "name": "L4DC",
+  "full": "Learning for Dynamics and Control Conference",
+  "field": [
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2019,
+  "origin": "First held at MIT in 2019, organized by researchers including Ali Jadbabaie, Ben Recht, Pablo Parrilo, George Pappas and Melanie Zeilinger to bring together machine learning, robotics and control theory.",
+  "url": "https://l4dc2027.control.ee.ethz.ch",
+  "edition": "L4DC 2027",
+  "start": "2027-06-16",
+  "end": "2027-06-18",
+  "location": "Stockholm, Sweden",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-11-13",
+    "tz": "AoE"
+   },
+   {
+    "label": "late-breaking results",
+    "date": "2027-04-05",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://l4dc2027.control.ee.ethz.ch",
+  "note": "Held at KTH. Dates confirmed on the official site, paper decision Jan 25, 2027, timezone assumed AoE."
+ },
+ {
+  "id": "llm4code-2027",
+  "name": "LLM4Code",
+  "full": "International Workshop on Large Language Models for Code (ICSE)",
+  "field": [
+   "se",
+   "ml",
+   "nlp"
+  ],
+  "kind": "new",
+  "since": 2024,
+  "origin": "ICSE workshop on large language models for code held since 2024, whose first edition was organized by Prem Devanbu, Yiling Lou, Lin Tan and Lingming Zhang.",
+  "url": "https://llm4code.github.io/",
+  "edition": "LLM4Code 2027",
+  "start": null,
+  "end": null,
+  "location": "Dublin, Ireland",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-11-13",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/dates/icse-2027",
+  "note": "Fourth edition at ICSE 2027 (Apr 25 to May 1, Dublin). Deadline not yet announced on llm4code.github.io or the ICSE dates page, so the date is a rough estimate based on other ICSE 2027 workshops (mid November)."
+ },
+ {
+  "id": "llm4code-2028",
+  "name": "LLM4Code",
+  "full": "International Workshop on Large Language Models for Code (ICSE)",
+  "field": [
+   "se",
+   "ml",
+   "nlp"
+  ],
+  "kind": "new",
+  "since": 2024,
+  "origin": "ICSE workshop on large language models for code held since 2024, whose first edition was organized by Prem Devanbu, Yiling Lou, Lin Tan and Lingming Zhang.",
+  "url": "https://llm4code.github.io/",
+  "edition": "LLM4Code 2028",
+  "start": null,
+  "end": null,
+  "location": "Hawaii, USA",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-11-12",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/dates/icse-2027",
+  "note": "Not announced. Deadline estimated from 2027 pattern (mid November)."
+ },
+ {
+  "id": "log-2026",
+  "name": "LoG",
+  "full": "Learning on Graphs Conference",
+  "field": [
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2022,
+  "origin": "First held online in 2022 as a free virtual conference on graph learning organized by Bastian Rieck, Razvan Pascanu and colleagues, with an explicit aim of high review quality backed by reviewer awards.",
+  "url": "https://logconference.org/",
+  "edition": "LoG 2026",
+  "start": "2026-11-20",
+  "end": "2026-11-22",
+  "location": "Boston, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://logconference.org/cfp/",
+  "note": "Held at Northeastern University. Deadlines passed (abstract 2026-08-05, paper 2026-08-07, TMLR journal track 2026-09-30)."
+ },
+ {
+  "id": "log-2027",
+  "name": "LoG",
+  "full": "Learning on Graphs Conference",
+  "field": [
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2022,
+  "origin": "First held online in 2022 as a free virtual conference on graph learning organized by Bastian Rieck, Razvan Pascanu and colleagues, with an explicit aim of high review quality backed by reviewer awards.",
+  "url": "https://logconference.org/",
+  "edition": "LoG 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-08-05",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-08-07",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://logconference.org/cfp/",
+  "note": "Not announced. estimated from 2025–2026 pattern (2026 deadlines early August, event late November)."
+ },
+ {
+  "id": "mathai-2026",
+  "name": "MATH-AI",
+  "full": "Workshop on Mathematical Reasoning and AI (NeurIPS)",
+  "field": [
+   "ml",
+   "verification"
+  ],
+  "kind": "visibility",
+  "since": 2021,
+  "origin": "Workshop series on mathematical reasoning and AI that began at ICLR 2021 and has been held at NeurIPS annually since 2022, with organizers across editions including Sean Welleck, Pan Lu, Kaiyu Yang and Sanjeev Arora.",
+  "url": "https://mathai-2026.github.io/",
+  "edition": "MATH-AI 2026",
+  "start": "2026-12-12",
+  "end": "2026-12-12",
+  "location": "Atlanta, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://mathai-2026.github.io/",
+  "note": "NeurIPS 2026 Atlanta site. Submission closed, theme is agentic AI for mathematics."
+ },
+ {
+  "id": "mathai-2027",
+  "name": "MATH-AI",
+  "full": "Workshop on Mathematical Reasoning and AI (NeurIPS)",
+  "field": [
+   "ml",
+   "verification"
+  ],
+  "kind": "visibility",
+  "since": 2021,
+  "origin": "Workshop series on mathematical reasoning and AI that began at ICLR 2021 and has been held at NeurIPS annually since 2022, with organizers across editions including Sean Welleck, Pan Lu, Kaiyu Yang and Sanjeev Arora.",
+  "url": "https://mathai-2026.github.io/",
+  "edition": "MATH-AI 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-09-05",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://mathai-2026.github.io/",
+  "note": "Estimated from 2025–2026 pattern, assuming acceptance again as a NeurIPS 2027 workshop (December 2027, early-September deadline)."
+ },
+ {
+  "id": "mlops-world-2026",
+  "name": "MLOps World",
+  "full": "MLOps World | GenAI Summit",
+  "field": [
+   "systems",
+   "agents"
+  ],
+  "kind": "visibility",
+  "since": 2020,
+  "origin": "Organized by the Toronto Machine Learning Society since 2020, MLOps World is an annual practitioner conference on deploying machine learning and AI agents in production.",
+  "url": "https://mlopsworld.com/",
+  "edition": "MLOps World | GenAI Summit 2026",
+  "start": "2026-11-17",
+  "end": "2026-11-18",
+  "location": "Austin, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://mlopsworld.com/",
+  "note": "Virtual day 2026-11-16. Theme is AI agents and agentic workforces. Submit-to-speak link exists but no deadline published."
+ },
+ {
+  "id": "mlops-world-2027",
+  "name": "MLOps World",
+  "full": "MLOps World | GenAI Summit",
+  "field": [
+   "systems",
+   "agents"
+  ],
+  "kind": "visibility",
+  "since": 2020,
+  "origin": "Organized by the Toronto Machine Learning Society since 2020, MLOps World is an annual practitioner conference on deploying machine learning and AI agents in production.",
+  "url": "https://mlopsworld.com/",
+  "edition": "MLOps World | GenAI Summit 2027",
+  "start": null,
+  "end": null,
+  "location": "Austin, USA",
+  "deadlines": [],
+  "confirmed": false,
+  "source": "https://mlopsworld.com/",
+  "note": "Not announced. Recent editions were in Austin in October–November (2025 October 8–9, 2026 November 17–18). No reliable CFP pattern."
+ },
+ {
+  "id": "mlsys-2027",
+  "name": "MLSys",
+  "full": "Conference on Machine Learning and Systems",
+  "field": [
+   "ml",
+   "systems"
+  ],
+  "kind": "flagship",
+  "since": 2018,
+  "origin": "MLSys started in 2018 as the SysML conference at Stanford to bring machine learning and computer systems researchers together.",
+  "url": "https://mlsys.org/",
+  "edition": "MLSys 2027",
+  "start": "2027-06-21",
+  "end": "2027-06-25",
+  "location": "Bellevue, USA",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-10-30",
+    "tz": "12:00 PDT"
+   },
+   {
+    "label": "notification",
+    "date": "2027-02-28",
+    "tz": "13:00 PST"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://mlsys.org/Conferences/2027/Dates",
+  "note": "Submissions open Oct 10. Conference Jun 21-25, 2027."
+ },
+ {
+  "id": "mlsys-2028",
+  "name": "MLSys",
+  "full": "Conference on Machine Learning and Systems",
+  "field": [
+   "ml",
+   "systems"
+  ],
+  "kind": "flagship",
+  "since": 2018,
+  "origin": "MLSys started in 2018 as the SysML conference at Stanford to bring machine learning and computer systems researchers together.",
+  "url": "https://mlsys.org/",
+  "edition": "MLSys 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-10-29",
+    "tz": "12:00 PDT"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://mlsys.org/Conferences/2027/Dates",
+  "note": "estimated from 2025–2026 pattern (Oct 30-31 each year). Conference expected May-June 2028."
+ },
+ {
+  "id": "msr-2027",
+  "name": "MSR",
+  "full": "International Conference on Mining Software Repositories",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 2004,
+  "origin": "Started as an ICSE workshop in 2004 and grew into the premier venue for software analytics and mining development data.",
+  "url": "https://conf.researchr.org/home/msr-2027",
+  "edition": "MSR 2027",
+  "start": "2027-04-26",
+  "end": "2027-04-27",
+  "location": "Dublin, Ireland",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2026-10-20",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2026-10-23",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/home/msr-2027",
+  "note": "Co-located with ICSE 2027. Technical papers track."
+ },
+ {
+  "id": "msr-2028",
+  "name": "MSR",
+  "full": "International Conference on Mining Software Repositories",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 2004,
+  "origin": "Started as an ICSE workshop in 2004 and grew into the premier venue for software analytics and mining development data.",
+  "url": "https://conf.researchr.org/series/msr",
+  "edition": "MSR 2028",
+  "start": null,
+  "end": null,
+  "location": "Hawaii, USA",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-10-19",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-10-22",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/home/msr-2027",
+  "note": "Not announced. Expected co-located with ICSE 2028 in Hawaii. Deadlines estimated from 2027 pattern (late October)."
+ },
+ {
+  "id": "naacl-2027",
+  "name": "NAACL",
+  "full": "Annual Conference of the North American Chapter of the ACL",
+  "field": [
+   "nlp"
+  ],
+  "kind": "flagship",
+  "since": 2000,
+  "origin": "NAACL is the conference of the North American chapter of the ACL, first held as a standalone meeting in 2000.",
+  "url": "https://2027.naacl.org/",
+  "edition": "NAACL 2027",
+  "start": "2027-06-01",
+  "end": "2027-06-05",
+  "location": "San Francisco, USA",
+  "deadlines": [
+   {
+    "label": "ARR submission",
+    "date": "2026-10-12",
+    "tz": "AoE"
+   },
+   {
+    "label": "commitment",
+    "date": "2026-12-23",
+    "tz": "AoE"
+   },
+   {
+    "label": "notification",
+    "date": "2027-02-10",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://2027.naacl.org/",
+  "note": "Fed by the ARR October 2026 cycle, which also feeds COLING 2027."
+ },
+ {
+  "id": "neurips-2026",
+  "name": "NeurIPS",
+  "full": "Conference on Neural Information Processing Systems",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1987,
+  "origin": "NeurIPS began in 1987 in Denver as an interdisciplinary meeting on neural information processing and is now the largest machine learning conference.",
+  "url": "https://neurips.cc/Conferences/2026",
+  "edition": "NeurIPS 2026",
+  "start": "2026-12-06",
+  "end": "2026-12-12",
+  "location": "Sydney, Australia",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://neurips.cc/Conferences/2026/Dates",
+  "note": "Deadline passed (May 2026). Sydney Dec 6-12 (main Dec 8-10), satellite meetings in Atlanta and Paris Dec 9-13."
+ },
+ {
+  "id": "neurips-2027",
+  "name": "NeurIPS",
+  "full": "Conference on Neural Information Processing Systems",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1987,
+  "origin": "NeurIPS began in 1987 in Denver as an interdisciplinary meeting on neural information processing and is now the largest machine learning conference.",
+  "url": "https://neurips.cc",
+  "edition": "NeurIPS 2027",
+  "start": null,
+  "end": null,
+  "location": "Europe (city TBA)",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-05-07",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-05-11",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://neurips.cc/Conferences/FutureMeetings",
+  "note": "estimated from 2025–2026 pattern (2025 May 11/15, 2026 May 4/6). Only the region is announced. Conference expected early to mid Dec 2027."
+ },
+ {
+  "id": "neus-2027",
+  "name": "NeuS",
+  "full": "International Conference on Neuro-Symbolic Systems",
+  "field": [
+   "verification",
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2024,
+  "origin": "Held since 2024, with the 2025 edition at the University of Pennsylvania publishing PMLR proceedings edited by George Pappas, Pradeep Ravikumar and Sanjit Seshia on neurosymbolic systems.",
+  "url": "https://sites.google.com/usc.edu/neus2026/home",
+  "edition": "NeuS 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-02-01",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://lists.uni-paderborn.de/pipermail/fg-arc/2025-October/002967.html",
+  "note": "Estimated from 2025–2026 pattern (2025 Philadelphia May 28–30, 2026 USC June 16–18 co-located with L4DC, paper deadline Feb 1). Event expected late May to June 2027, venue rotates."
+ },
+ {
+  "id": "nlbse-2027",
+  "name": "NLBSE",
+  "full": "International Workshop on Natural Language-Based Software Engineering (ICSE)",
+  "field": [
+   "se",
+   "nlp"
+  ],
+  "kind": "new",
+  "since": 2022,
+  "origin": "ICSE workshop on natural language-based software engineering held since 2022, whose first edition was co-chaired by Andrea Di Sorbo and Sebastiano Panichella and included a tool competition.",
+  "url": "https://conf.researchr.org/home/icse-2027/nlbse-2027",
+  "edition": "NLBSE 2027",
+  "start": null,
+  "end": null,
+  "location": "Dublin, Ireland",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-11-13",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/home/icse-2027/nlbse-2027",
+  "note": "Sixth edition at ICSE 2027. Includes tool competitions and a GitHub agentic workflows challenge."
+ },
+ {
+  "id": "nlbse-2028",
+  "name": "NLBSE",
+  "full": "International Workshop on Natural Language-Based Software Engineering (ICSE)",
+  "field": [
+   "se",
+   "nlp"
+  ],
+  "kind": "new",
+  "since": 2022,
+  "origin": "ICSE workshop on natural language-based software engineering held since 2022, whose first edition was co-chaired by Andrea Di Sorbo and Sebastiano Panichella and included a tool competition.",
+  "url": "https://conf.researchr.org/series/nlbse",
+  "edition": "NLBSE 2028",
+  "start": null,
+  "end": null,
+  "location": "Hawaii, USA",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-11-12",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/home/icse-2027/nlbse-2027",
+  "note": "Not announced. Deadline estimated from 2027 pattern (mid November)."
+ },
+ {
+  "id": "gtc-2027",
+  "name": "NVIDIA GTC",
+  "full": "NVIDIA GPU Technology Conference",
+  "field": [
+   "systems",
+   "ml"
+  ],
+  "kind": "visibility",
+  "since": 2009,
+  "origin": "NVIDIA has held its GPU Technology Conference since 2009, and the San Jose event includes a poster gallery.",
+  "url": "https://www.nvidia.com/gtc/",
+  "edition": "GTC 2027",
+  "start": "2027-03-15",
+  "end": "2027-03-18",
+  "location": "San Jose, USA",
+  "deadlines": [
+   {
+    "label": "content interest survey",
+    "date": "2026-10-09",
+    "tz": "PT"
+   },
+   {
+    "label": "posters",
+    "date": "2026-11-10",
+    "tz": "PT"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://www.nvidia.com/en-us/gtc/call-for-submissions",
+  "note": "Pre-conference training on 2027-03-14."
+ },
+ {
+  "id": "gtc-2028",
+  "name": "NVIDIA GTC",
+  "full": "NVIDIA GPU Technology Conference",
+  "field": [
+   "systems",
+   "ml"
+  ],
+  "kind": "visibility",
+  "since": 2009,
+  "origin": "NVIDIA has held its GPU Technology Conference since 2009, and the San Jose event includes a poster gallery.",
+  "url": "https://www.nvidia.com/gtc/",
+  "edition": "GTC 2028",
+  "start": null,
+  "end": null,
+  "location": "San Jose, USA",
+  "deadlines": [
+   {
+    "label": "content interest survey",
+    "date": "2027-10-09",
+    "tz": "PT"
+   },
+   {
+    "label": "posters",
+    "date": "2027-11-10",
+    "tz": "PT"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://www.nvidia.com/en-us/gtc/call-for-submissions",
+  "note": "Not announced. estimated from 2025–2026 pattern (fall calls for a March event)."
+ },
+ {
+  "id": "oopsla-2026",
+  "name": "OOPSLA",
+  "full": "Object-Oriented Programming, Systems, Languages, and Applications (PACMPL OOPSLA, at SPLASH)",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1986,
+  "origin": "ACM SIGPLAN's broad programming languages and software venue, now published in PACMPL with two review rounds per year.",
+  "url": "https://2026.splashcon.org/",
+  "edition": "OOPSLA 2026 (SPLASH 2026)",
+  "start": "2026-10-04",
+  "end": "2026-10-09",
+  "location": "Oakland, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://2026.splashcon.org/dates",
+  "note": "Both rounds passed (2025-10-10 and 2026-03-17)."
+ },
+ {
+  "id": "oopsla-2027",
+  "name": "OOPSLA",
+  "full": "Object-Oriented Programming, Systems, Languages, and Applications (PACMPL OOPSLA, at SPLASH)",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1986,
+  "origin": "ACM SIGPLAN's broad programming languages and software venue, now published in PACMPL with two review rounds per year.",
+  "url": "https://conf.researchr.org/track/splash-2027/splashoopsla2027",
+  "edition": "OOPSLA 2027 (SPLASH 2027)",
+  "start": "2027-10-10",
+  "end": "2027-10-15",
+  "location": "Prague, Czechia",
+  "deadlines": [
+   {
+    "label": "round 1",
+    "date": "2026-10-14",
+    "tz": "AoE"
+   },
+   {
+    "label": "round 2",
+    "date": "2027-04-07",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/track/splash-2027/splashoopsla2027",
+  "note": "Two review rounds. New reserve-reviewer requirement and a limit of 5 submissions per author per round."
+ },
+ {
+  "id": "oopsla-2028",
+  "name": "OOPSLA",
+  "full": "Object-Oriented Programming, Systems, Languages, and Applications (PACMPL OOPSLA, at SPLASH)",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1986,
+  "origin": "ACM SIGPLAN's broad programming languages and software venue, now published in PACMPL with two review rounds per year.",
+  "url": "https://splashcon.org/",
+  "edition": "OOPSLA 2028 (SPLASH 2028)",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "round 1",
+    "date": "2027-10-13",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/track/splash-2027/splashoopsla2027",
+  "note": "Not announced. Round 1 estimated from 2026-2027 pattern (mid October)."
+ },
+ {
+  "id": "pldi-2027",
+  "name": "PLDI",
+  "full": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1979,
+  "origin": "ACM SIGPLAN's premier conference on programming language design, implementation and program analysis.",
+  "url": "https://pldi27.sigplan.org/",
+  "edition": "PLDI 2027",
+  "start": "2027-06-05",
+  "end": "2027-06-11",
+  "location": "Atlanta, USA",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-11-12",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://pldi27.sigplan.org/",
+  "note": "Part of FCRC 2027."
+ },
+ {
+  "id": "pldi-2028",
+  "name": "PLDI",
+  "full": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 1979,
+  "origin": "ACM SIGPLAN's premier conference on programming language design, implementation and program analysis.",
+  "url": "https://www.sigplan.org/Conferences/PLDI/",
+  "edition": "PLDI 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-11-11",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://pldi27.sigplan.org/",
+  "note": "Not announced. Deadline estimated from 2027 pattern (mid November)."
+ },
+ {
+  "id": "pytorch-na-2026",
+  "name": "PyTorch Conference",
+  "full": "PyTorch Conference North America",
+  "field": [
+   "ml",
+   "systems"
+  ],
+  "kind": "visibility",
+  "since": 2018,
+  "origin": "First held by Facebook in 2018 as the PyTorch Developer Conference, the event is now hosted by the PyTorch Foundation under the Linux Foundation.",
+  "url": "https://events.linuxfoundation.org/pytorch-conference-north-america/",
+  "edition": "PyTorch Conference North America 2026",
+  "start": "2026-10-20",
+  "end": "2026-10-21",
+  "location": "San Jose, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://events.linuxfoundation.org/pytorch-conference-north-america/",
+  "note": "CFPs passed (sessions 2026-06-07, posters 2026-07-26)."
+ },
+ {
+  "id": "pytorch-na-2027",
+  "name": "PyTorch Conference",
+  "full": "PyTorch Conference North America",
+  "field": [
+   "ml",
+   "systems"
+  ],
+  "kind": "visibility",
+  "since": 2018,
+  "origin": "First held by Facebook in 2018 as the PyTorch Developer Conference, the event is now hosted by the PyTorch Foundation under the Linux Foundation.",
+  "url": "https://events.linuxfoundation.org/pytorch-conference-north-america/",
+  "edition": "PyTorch Conference North America 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "talk proposals",
+    "date": "2027-06-07",
+    "tz": "PT"
+   },
+   {
+    "label": "posters",
+    "date": "2027-07-26",
+    "tz": "PT"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://pytorch.org/blog/call-for-proposals-open-for-pytorch-conference-north-america-2026/",
+  "note": "Not announced. estimated from 2025–2026 pattern (event in late October, session CFP early June)."
+ },
+ {
+  "id": "pytorch-eu-2027",
+  "name": "PyTorch Conference Europe",
+  "full": "PyTorch Conference Europe",
+  "field": [
+   "ml",
+   "systems"
+  ],
+  "kind": "visibility",
+  "since": 2026,
+  "origin": "The European edition of the PyTorch Conference, first held in Paris in April 2026 and hosted by the PyTorch Foundation under the Linux Foundation.",
+  "url": "https://events.linuxfoundation.org/pytorch-conference-europe/",
+  "edition": "PyTorch Conference Europe 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "talk proposals",
+    "date": "2027-02-08",
+    "tz": "CET"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://events.linuxfoundation.org/pytorch-conference-europe/program/cfp",
+  "note": "Not announced. Estimated from the 2026 edition (Paris, April 7–8, CFP closed February 8)."
+ },
+ {
+  "id": "qconai-boston-2027",
+  "name": "QCon AI",
+  "full": "QCon AI (InfoQ)",
+  "field": [
+   "agents",
+   "se"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "Launched in New York in 2025 by the team behind InfoQ and QCon, QCon AI is a conference for senior engineers whose sessions are chosen by a committee of practitioners and kept separate from sponsored talks.",
+  "url": "https://newyork.qcon.ai/",
+  "edition": "QCon AI Boston 2027",
+  "start": null,
+  "end": null,
+  "location": "Boston, USA",
+  "deadlines": [],
+  "confirmed": false,
+  "source": "https://www.infoq.com/qcon-ai-boston-2026/news",
+  "note": "Estimated from 2026 pattern (QCon AI Boston June 1–2, 2026). Expect early June 2027."
+ },
+ {
+  "id": "qconai-ny-2026",
+  "name": "QCon AI",
+  "full": "QCon AI (InfoQ)",
+  "field": [
+   "agents",
+   "se"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "Launched in New York in 2025 by the team behind InfoQ and QCon, QCon AI is a conference for senior engineers whose sessions are chosen by a committee of practitioners and kept separate from sponsored talks.",
+  "url": "https://newyork.qcon.ai/",
+  "edition": "QCon AI New York 2026",
+  "start": "2026-12-15",
+  "end": "2026-12-16",
+  "location": "Jersey City, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://newyork.qcon.ai/llms/newyork2026.md",
+  "note": "Westin Jersey City Newport. Program is committee-curated, complete program by early November."
+ },
+ {
+  "id": "qconai-ny-2027",
+  "name": "QCon AI",
+  "full": "QCon AI (InfoQ)",
+  "field": [
+   "agents",
+   "se"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "Launched in New York in 2025 by the team behind InfoQ and QCon, QCon AI is a conference for senior engineers whose sessions are chosen by a committee of practitioners and kept separate from sponsored talks.",
+  "url": "https://newyork.qcon.ai/",
+  "edition": "QCon AI New York 2027",
+  "start": null,
+  "end": null,
+  "location": "New York area, USA",
+  "deadlines": [],
+  "confirmed": false,
+  "source": "https://newyork.qcon.ai/",
+  "note": "Estimated from 2025–2026 pattern (December 2025 and Dec 15–16, 2026). Expect mid-December 2027."
+ },
+ {
+  "id": "ray-summit-2027",
+  "name": "Ray Summit",
+  "full": "Ray Summit",
+  "field": [
+   "systems",
+   "ml"
+  ],
+  "kind": "visibility",
+  "since": 2020,
+  "origin": "Hosted by Anyscale, the company founded by Ray's UC Berkeley creators including Ion Stoica and Robert Nishihara, Ray Summit has been held since 2020 for the Ray distributed computing community.",
+  "url": "https://www.anyscale.com/ray-summit",
+  "edition": "Ray Summit 2027",
+  "start": null,
+  "end": null,
+  "location": "San Francisco, USA",
+  "deadlines": [
+   {
+    "label": "talk proposals",
+    "date": "2027-06-30",
+    "tz": "PT"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://www.anyscale.com/ray-summit",
+  "note": "Not announced. estimated from 2025–2026 pattern (2025 CFP closed June 30, 2026 event August 24–26 in San Francisco)."
+ },
+ {
+  "id": "rlc-2027",
+  "name": "RLC",
+  "full": "Reinforcement Learning Conference",
+  "field": [
+   "ml",
+   "agents"
+  ],
+  "kind": "new",
+  "since": 2024,
+  "origin": "First held at UMass Amherst in 2024, organized by Amy Zhang, Eugene Vinitsky and Glenn Berseth with UMass faculty as a dedicated conference for reinforcement learning research.",
+  "url": "https://rl-conference.cc/",
+  "edition": "RLC 2027",
+  "start": null,
+  "end": null,
+  "location": "Providence, USA and Odense, Denmark",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-03-05",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://rl-conference.cc/2026/index.html",
+  "note": "Two locations announced (Brown University in early August 2027, Odense joint with EWRL in late August 2027), exact dates TBA. Deadline estimated from 2025–2026 pattern (2026 paper deadline March 5)."
+ },
+ {
+  "id": "sacmat-2027",
+  "name": "SACMAT",
+  "full": "ACM Symposium on Access Control Models and Technologies",
+  "field": [
+   "verification",
+   "systems"
+  ],
+  "kind": "flagship",
+  "since": 1995,
+  "origin": "An ACM SIGSAC symposium on access-control models and technologies that grew out of the ACM Workshop on Role-Based Access Control, first held in 1995, and took the SACMAT name in 2001.",
+  "url": "https://www.sacmat.org/2027/",
+  "edition": "SACMAT 2027",
+  "start": "2027-07-19",
+  "end": "2027-07-21",
+  "location": "Durham, UK",
+  "deadlines": [
+   {
+    "label": "paper (cycle 1)",
+    "date": "2026-10-30",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (cycle 2)",
+    "date": "2027-02-12",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://www.sacmat.org/2027/call-for-papers.php",
+  "note": "Event dates, venue and both cycle deadlines confirmed on the official call for papers. Cycle 1 notification Dec 21, 2026."
+ },
+ {
+  "id": "sacmat-2028",
+  "name": "SACMAT",
+  "full": "ACM Symposium on Access Control Models and Technologies",
+  "field": [
+   "verification",
+   "systems"
+  ],
+  "kind": "flagship",
+  "since": 1995,
+  "origin": "An ACM SIGSAC symposium on access-control models and technologies that grew out of the ACM Workshop on Role-Based Access Control, first held in 1995, and took the SACMAT name in 2001.",
+  "url": "https://www.sacmat.org/",
+  "edition": "SACMAT 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper (cycle 1)",
+    "date": "2027-10-29",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://www.sacmat.org/",
+  "note": "Cycle 1 deadline estimated from 2025–2026 pattern (late October to December). Event expected mid-2028."
+ },
+ {
+  "id": "saiv-2027",
+  "name": "SAIV",
+  "full": "International Symposium on AI Verification",
+  "field": [
+   "verification",
+   "ml"
+  ],
+  "kind": "visibility",
+  "since": 2024,
+  "origin": "International Symposium on AI Verification co-located with CAV since 2024, continuing the FoMLAS and WOLVERINE series and hosting VNN-COMP, with proceedings in Springer LNCS.",
+  "url": "https://link.springer.com/book/10.1007/978-3-032-32357-6",
+  "edition": "SAIV 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-03-25",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://link.springer.com/book/10.1007/978-3-032-32357-6",
+  "note": "Estimated from 2024–2026 pattern (co-located with CAV each July, 2026 Lisbon July 24–25 with paper deadline Mar 26). Location follows CAV 2027."
+ },
+ {
+  "id": "saner-2027",
+  "name": "SANER",
+  "full": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 2015,
+  "origin": "Formed in 2015 by merging CSMR and WCRE, the two main reverse engineering and maintenance venues.",
+  "url": "https://conf.researchr.org/home/saner-2027",
+  "edition": "SANER 2027",
+  "start": "2027-03-09",
+  "end": "2027-03-12",
+  "location": "Richmond, USA",
+  "deadlines": [
+   {
+    "label": "abstract (ERA, RENE, industry, Agentic AI4SE)",
+    "date": "2026-10-19",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (ERA, RENE, industry, Agentic AI4SE)",
+    "date": "2026-10-23",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://conf.researchr.org/home/saner-2027",
+  "note": "Research track deadlines passed (abstract Sep 21, paper Sep 25, 2026). The listed deadlines are for the ERA, RENE, industrial and new Agentic AI4SE tracks."
+ },
+ {
+  "id": "saner-2028",
+  "name": "SANER",
+  "full": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
+  "field": [
+   "se"
+  ],
+  "kind": "flagship",
+  "since": 2015,
+  "origin": "Formed in 2015 by merging CSMR and WCRE, the two main reverse engineering and maintenance venues.",
+  "url": "https://conf.researchr.org/series/saner",
+  "edition": "SANER 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-10-18",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-10-22",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://conf.researchr.org/home/saner-2027",
+  "note": "Not announced. Deadlines estimated from 2027 pattern (late October). Conference usually March."
+ },
+ {
+  "id": "satml-2027",
+  "name": "SaTML",
+  "full": "IEEE Conference on Secure and Trustworthy Machine Learning",
+  "field": [
+   "ml"
+  ],
+  "kind": "new",
+  "since": 2023,
+  "origin": "First held in Raleigh in 2023 under sponsorship of the IEEE Computer Society Technical Committee on Security and Privacy, co-created by Nicolas Papernot, who co-chaired the program with Patrick McDaniel.",
+  "url": "https://satml.org/",
+  "edition": "SaTML 2027",
+  "start": null,
+  "end": null,
+  "location": "Reykjavik, Iceland",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://satml.org/",
+  "note": "Event announced only as early May 2027, exact days TBA. Deadlines already passed."
+ },
+ {
+  "id": "satml-2028",
+  "name": "SaTML",
+  "full": "IEEE Conference on Secure and Trustworthy Machine Learning",
+  "field": [
+   "ml",
+   "verification"
+  ],
+  "kind": "new",
+  "since": 2023,
+  "origin": "First held in Raleigh in 2023 under sponsorship of the IEEE Computer Society Technical Committee on Security and Privacy, co-created by Nicolas Papernot, who co-chaired the program with Patrick McDaniel.",
+  "url": "https://satml.org/",
+  "edition": "SaTML 2028",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-09-22",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-09-29",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://mldeadlines.com/conference/satml/",
+  "note": "Not announced. Estimated from the 2026–2027 pattern (late September deadline)."
+ },
+ {
+  "id": "tacas-2027",
+  "name": "TACAS",
+  "full": "International Conference on Tools and Algorithms for the Construction and Analysis of Systems (ETAPS)",
+  "field": [
+   "verification"
+  ],
+  "kind": "flagship",
+  "since": 1995,
+  "origin": "A core ETAPS conference focused on verification tools and algorithms, home of the SV-COMP competition.",
+  "url": "https://etaps.org/2027/conferences/tacas/",
+  "edition": "TACAS 2027 (ETAPS 2027)",
+  "start": "2027-04-12",
+  "end": "2027-04-15",
+  "location": "Copenhagen, Denmark",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2026-10-15",
+    "tz": "AoE"
+   },
+   {
+    "label": "artifact",
+    "date": "2026-10-29",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": true,
+  "source": "https://www.etaps.org/2027/cfp",
+  "note": "Mandatory artifact deadline for tool papers is two weeks after the paper deadline. Satellite events Apr 10-11."
+ },
+ {
+  "id": "tacas-2028",
+  "name": "TACAS",
+  "full": "International Conference on Tools and Algorithms for the Construction and Analysis of Systems (ETAPS)",
+  "field": [
+   "verification"
+  ],
+  "kind": "flagship",
+  "since": 1995,
+  "origin": "A core ETAPS conference focused on verification tools and algorithms, home of the SV-COMP competition.",
+  "url": "https://etaps.org/",
+  "edition": "TACAS 2028 (ETAPS 2028)",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-10-14",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://www.etaps.org/2027/cfp",
+  "note": "Not announced. Deadline estimated from 2026-2027 pattern (mid October). ETAPS usually April."
+ },
+ {
+  "id": "tmlr",
+  "name": "TMLR",
+  "full": "Transactions on Machine Learning Research",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 2022,
+  "origin": "TMLR launched in 2022 as an OpenReview based journal that reviews for correctness rather than perceived impact.",
+  "url": "https://jmlr.org/tmlr/",
+  "edition": "TMLR (rolling)",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://jmlr.org/tmlr/",
+  "note": "Journal with rolling submissions, no deadlines."
+ },
+ {
+  "id": "uai-2027",
+  "name": "UAI",
+  "full": "Conference on Uncertainty in Artificial Intelligence",
+  "field": [
+   "ml"
+  ],
+  "kind": "flagship",
+  "since": 1985,
+  "origin": "UAI was first held in 1985 and is the main venue for probabilistic reasoning and decision making under uncertainty.",
+  "url": "https://www.auai.org",
+  "edition": "UAI 2027",
+  "start": null,
+  "end": null,
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-02-25",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://www.auai.org",
+  "note": "estimated from 2025–2026 pattern (UAI 2026 deadline Feb 25). Not announced. Conference expected Jul-Aug 2027 (UAI 2026 was Aug 17-21 in Amsterdam)."
+ },
+ {
+  "id": "vericodegen-2026",
+  "name": "VeriCodeGen",
+  "full": "VeriCodeGen: AI for Verifiable Coding (NeurIPS Workshop)",
+  "field": [
+   "verification",
+   "se",
+   "agents"
+  ],
+  "kind": "visibility",
+  "since": 2026,
+  "origin": "New NeurIPS 2026 workshop on AI for verifiable coding, where agents work with proof assistants, model checkers and solvers to produce machine-checkable code, organized by Wuyang Chen, Soonho Kong, Hakjoo Oh and others.",
+  "url": "https://vericodegen.github.io/",
+  "edition": "VeriCodeGen 2026",
+  "start": "2026-12-12",
+  "end": "2026-12-12",
+  "location": "Atlanta, USA",
+  "deadlines": [],
+  "confirmed": true,
+  "source": "https://vericodegen.github.io/",
+  "note": "First edition, NeurIPS 2026 Atlanta site. Deadlines passed. Also relevant at NeurIPS 2026 Sydney site: Verify-Agents and Meta-Agents workshops."
+ },
+ {
+  "id": "verifai-2027",
+  "name": "VerifAI",
+  "full": "Workshop on AI Verification in the Wild (ICLR)",
+  "field": [
+   "verification",
+   "ml",
+   "se"
+  ],
+  "kind": "visibility",
+  "since": 2025,
+  "origin": "ICLR workshop first held in 2025 on combining generative AI with formal verification, organized by Celine Lee, Wenting Zhao, Ameesh Shah, Theo X. Olausson, Tao Yu and Sean Welleck.",
+  "url": "https://www.iclr.cc/virtual/2026/workshop/10000774",
+  "edition": "VerifAI-3 (ICLR 2027)",
+  "start": "2027-04-29",
+  "end": "2027-04-30",
+  "location": null,
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-02-05",
+    "tz": "AoE"
+   }
+  ],
+  "confirmed": false,
+  "source": "https://iclr.cc/Conferences/2027/Dates",
+  "note": "Estimated from 2025–2026 pattern (VerifAI-1 at ICLR 2025, VerifAI-2 at ICLR 2026), assuming a third edition is accepted. ICLR 2027 workshop days are Apr 29–30, location listed as TBA officially (third-party listings say San Francisco)."
+ }
+]

@@ -99,7 +99,7 @@ time, .num { font-variant-numeric: lining-nums tabular-nums; }
   :root:not([data-theme="light"]) .i-sun { display: block; }
   :root:not([data-theme="light"]) .i-moon { display: none; }
 }
-@media (max-width: 560px) { .top { margin-bottom: 48px; } .tool kbd { display: none; } }
+@media (max-width: 560px) { .top { margin-bottom: 48px; } .tool kbd { display: none; } .top__nav { gap: 13px; flex-wrap: wrap; letter-spacing: 0.03em; } }
 
 .progress { position: fixed; left: 0; top: 0; height: 2px; width: calc(var(--p, 0) * 100%); background: var(--red); z-index: 50; }
 body:not(.is-post) .progress { display: none; }
@@ -479,3 +479,51 @@ body:not(.is-post) .progress { display: none; }
   }
   .cn-prose .prose .figure, .cn-prose .prose .code, .cn-prose .prose table, .cn-prose .math-display, .cn-prose .cn-break { clear: both; }
 }
+
+/* ---------- conferences: a calendar ---------- */
+.cn-month .cue .yr { color: var(--ink-3); font-weight: 400; }
+.cal { display: grid; grid-template-columns: 13.5rem minmax(0, 1fr); gap: 0 var(--gap); align-items: start; }
+.mini { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; font-size: 13px; line-height: 1; font-variant-numeric: lining-nums tabular-nums; text-align: center; }
+.mini .w { color: var(--ink-3); font-variant: small-caps; padding-bottom: 6px; }
+.mini .d { position: relative; padding: 6px 0 9px; color: var(--ink-2); border-radius: 3px; transition: background 0.15s, color 0.15s; }
+.mini .d.is-past { color: var(--line-2); }
+.mini .d.is-today { box-shadow: inset 0 0 0 1px var(--ink-3); }
+.mini .d.has-ev { background: var(--accent-soft); color: var(--ink); }
+.mini .d.has-dl { color: var(--ink); font-weight: 600; }
+.mini .d.has-dl::after { content: ""; position: absolute; left: 50%; bottom: 3px; width: 4px; height: 4px; margin-left: -2px; border-radius: 50%; background: var(--red); }
+.mini .d.has-nt::after { content: ""; position: absolute; left: 50%; bottom: 3px; width: 4px; height: 4px; margin-left: -2px; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--ink-3); }
+.mini .d.has-dl.has-nt::after { background: var(--red); box-shadow: none; }
+.mini .d.is-hl { background: var(--highlight); color: var(--ink); }
+.agenda { list-style: none; margin: 0; padding: 0; }
+.ag { display: grid; grid-template-columns: 5.4rem minmax(0, 1fr); gap: 0 12px; padding: 3px 0 5px; line-height: 1.4; }
+.ag__day { color: var(--ink-3); font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
+.ag--dl .ag__day { color: var(--red); }
+.ag--nt .ag__name, .ag--nt .ag__what { color: var(--ink-3); }
+.ag__name { text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 3px; transition: text-decoration-color 0.15s; }
+.ag a:hover .ag__name { text-decoration-color: var(--ink); }
+.ag__what { color: var(--ink-3); font-style: italic; }
+.ag.is-est .ag__name { font-style: italic; color: var(--ink-2); }
+.ag .kd, .venues .kd { font-variant: small-caps; letter-spacing: 0.05em; color: var(--ink-3); font-size: 0.9em; margin-left: 7px; }
+.confs .est { font-variant: small-caps; letter-spacing: 0.05em; color: var(--ink-3); margin-left: 6px; text-decoration: none; border-bottom: 1px dotted var(--line-2); cursor: help; }
+.ag .cd { font-family: var(--hand); font-size: 1.2em; line-height: 1; color: var(--red); margin-left: 10px; white-space: nowrap; display: inline-block; transform: rotate(-2deg); }
+.ag.is-closed { opacity: 0.45; }
+.agenda--next .ag { grid-template-columns: 5.4rem minmax(0, 1fr); }
+.cn-month.is-empty .cn-body::after { content: "Nothing yet."; color: var(--line-2); font-style: italic; }
+.cn-month.is-empty .cal { display: none; }
+.venues { list-style: none; margin: 0; padding: 0; max-width: var(--col); }
+.venues li { margin: 0 0 10px; line-height: 1.5; }
+.venues .ti { font-style: italic; text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 3px; }
+.venues .ve { color: var(--ink-3); }
+.venues .why { display: block; color: var(--ink-2); font-size: 0.95em; }
+.conf-foot { color: var(--ink-3); font-size: 15px; font-style: italic; margin: 28px 0 0; max-width: var(--col); }
+@media (max-width: 760px) {
+  .cal { grid-template-columns: minmax(0, 1fr); row-gap: 14px; }
+  .mini { max-width: 15rem; }
+}
+@media (max-width: 900px) {
+  .confs .cn-row { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+  .ag, .agenda--next .ag { grid-template-columns: 3.9rem minmax(0, 1fr); gap: 0 8px; }
+}
+.ag__body { min-width: 0; overflow-wrap: break-word; }
