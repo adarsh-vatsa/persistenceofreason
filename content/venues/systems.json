@@ -1,0 +1,760 @@
+[
+ {
+  "id": "osdi-2027",
+  "name": "OSDI",
+  "full": "USENIX Symposium on Operating Systems Design and Implementation",
+  "areas": [
+   "systems"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1994,
+  "url": "https://www.usenix.org/conference/osdi27",
+  "edition": "OSDI 2027",
+  "start": "2027-07-07",
+  "end": "2027-07-09",
+  "location": "Baltimore, USA",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2026-12-01",
+    "tz": "ET",
+    "time": "17:59"
+   },
+   {
+    "label": "paper",
+    "date": "2026-12-08",
+    "tz": "ET",
+    "time": "17:59"
+   }
+  ],
+  "notification": "2027-03-16",
+  "confirmed": true,
+  "source": "https://www.usenix.org/conference/osdi27/call-for-papers",
+  "note": "Both deadlines are at 5.59 pm Eastern (just before 23.00 UTC), not end of day. Held at the Hyatt Regency Baltimore Inner Harbor."
+ },
+ {
+  "id": "sosp-2027",
+  "name": "SOSP",
+  "full": "ACM Symposium on Operating Systems Principles",
+  "areas": [
+   "systems"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1967,
+  "url": "https://sigops.org/s/conferences/sosp/",
+  "edition": "SOSP 2027",
+  "start": "2027-10-04",
+  "end": "2027-10-07",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-04-01",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-04-08",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-07-09",
+  "confirmed": false,
+  "source": "https://sigops.org/s/conferences/sosp/2026/cfp.html",
+  "note": "No SOSP 2027 call yet. Dates are estimated from SOSP 2025 (paper 17 April) and SOSP 2026 (paper 1 April, Prague, late September), and the location and conference dates are unknown."
+ },
+ {
+  "id": "eurosys-2028",
+  "name": "EuroSys",
+  "full": "European Conference on Computer Systems",
+  "areas": [
+   "systems"
+  ],
+  "type": "conference",
+  "core": "A",
+  "since": 2006,
+  "url": "https://www.eurosys.org/",
+  "edition": "EuroSys 2028",
+  "start": "2028-04-24",
+  "end": "2028-04-28",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "abstract (spring cycle)",
+    "date": "2027-05-06",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (spring cycle)",
+    "date": "2027-05-13",
+    "tz": "AoE"
+   },
+   {
+    "label": "abstract (fall cycle)",
+    "date": "2027-09-16",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (fall cycle)",
+    "date": "2027-09-23",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-08-20",
+  "confirmed": false,
+  "source": "https://2027.eurosys.org/cfp.html",
+  "note": "Both EuroSys 2027 cycles closed by 24 September 2026, so the next deadlines belong to EuroSys 2028, which is not announced. Dates are estimated from the 2026 and 2027 calls, fall cycle notification would be around late January 2028."
+ },
+ {
+  "id": "atc-2027",
+  "name": "ATC",
+  "full": "ACM SIGOPS Annual Technical Conference (formerly USENIX ATC)",
+  "areas": [
+   "systems"
+  ],
+  "type": "conference",
+  "core": "A",
+  "since": 1975,
+  "url": "https://atc.sigops.org/",
+  "edition": "ATC 2027",
+  "start": "2027-07-12",
+  "end": "2027-07-14",
+  "location": "France",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-01-14",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-04-23",
+  "confirmed": false,
+  "source": "https://en.wikipedia.org/wiki/ACM_SIGOPS_Annual_Technical_Conference",
+  "note": "USENIX ended ATC after 2025 and ACM SIGOPS took it over, with ATC 2026 in Hong Kong in November. ATC 2027 is reported to return to a January deadline and a July conference in France, so the exact dates are estimated from the ATC 2025 call and the city is unknown."
+ },
+ {
+  "id": "asplos-2028",
+  "name": "ASPLOS",
+  "full": "ACM International Conference on Architectural Support for Programming Languages and Operating Systems",
+  "areas": [
+   "arch",
+   "systems",
+   "pl"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1982,
+  "url": "https://www.asplos-conference.org/",
+  "edition": "ASPLOS 2028",
+  "start": "2028-04-03",
+  "end": "2028-04-07",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "paper (April cycle)",
+    "date": "2027-04-14",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (September cycle)",
+    "date": "2027-09-08",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-07-26",
+  "confirmed": false,
+  "source": "https://www.asplos-conference.org/?p=8512",
+  "note": "Both ASPLOS 2027 cycles (15 April and 9 September 2026) have closed, so the next deadlines belong to ASPLOS 2028, which is not announced. Dates follow the ASPLOS 2027 pattern of an April and a September cycle with no separate abstract deadline, and ASPLOS 2026 used March and August instead."
+ },
+ {
+  "id": "isca-2027",
+  "name": "ISCA",
+  "full": "ACM/IEEE International Symposium on Computer Architecture",
+  "areas": [
+   "arch"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1973,
+  "url": "https://www.iscaconf.org/",
+  "edition": "ISCA 2027",
+  "start": "2027-06-05",
+  "end": "2027-06-11",
+  "location": "Atlanta, USA",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2026-11-12",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2026-11-19",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-03-19",
+  "confirmed": false,
+  "source": "https://www.sigarch.org/call-contributions/isca-2026/",
+  "note": "The ISCA 2027 call was not found yet, so deadlines are estimated from ISCA 2025 and 2026 (mid November). The PLDI 2027 site confirms ISCA is part of FCRC 2027 in Atlanta from 5 to 11 June 2027, and the exact ISCA days within that week are not announced."
+ },
+ {
+  "id": "micro-2027",
+  "name": "MICRO",
+  "full": "IEEE/ACM International Symposium on Microarchitecture",
+  "areas": [
+   "arch"
+  ],
+  "type": "conference",
+  "core": null,
+  "since": 1968,
+  "url": "https://www.microarch.org/",
+  "edition": "MICRO 2027",
+  "start": "2027-10-23",
+  "end": "2027-10-27",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-04-02",
+    "tz": "ET"
+   },
+   {
+    "label": "paper",
+    "date": "2027-04-09",
+    "tz": "ET"
+   }
+  ],
+  "notification": "2027-07-10",
+  "confirmed": false,
+  "source": "https://www.microarch.org/micro59/submit/papers.php",
+  "note": "No MICRO 2027 call yet, so dates are estimated from MICRO 2025 (paper 11 April) and MICRO 2026 (paper 7 April, Athens). CORE2023 lists MICRO as TBR rather than a rank."
+ },
+ {
+  "id": "hpca-2028",
+  "name": "HPCA",
+  "full": "IEEE International Symposium on High-Performance Computer Architecture",
+  "areas": [
+   "arch"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1995,
+  "url": "https://www.hpca-conf.org/",
+  "edition": "HPCA 2028",
+  "start": "2028-02-26",
+  "end": "2028-03-01",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-07-23",
+    "tz": "UTC"
+   },
+   {
+    "label": "paper",
+    "date": "2027-07-30",
+    "tz": "UTC"
+   }
+  ],
+  "notification": "2027-11-05",
+  "confirmed": false,
+  "source": "https://www.sigarch.org/call-contributions/hpca-2027/",
+  "note": "HPCA 2027 (Salt Lake City) closed on 31 July 2026, so the next deadline belongs to HPCA 2028, which is not announced. Dates are estimated from HPCA 2026 (1 August 2025, UTC) and HPCA 2027 (31 July 2026)."
+ },
+ {
+  "id": "fast-2028",
+  "name": "FAST",
+  "full": "USENIX Conference on File and Storage Technologies",
+  "areas": [
+   "systems"
+  ],
+  "type": "conference",
+  "core": "A",
+  "since": 2002,
+  "url": "https://www.usenix.org/conference/fast28",
+  "edition": "FAST 2028",
+  "start": "2028-02-22",
+  "end": "2028-02-24",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "paper (spring)",
+    "date": "2027-03-16",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (fall)",
+    "date": "2027-09-14",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-06-03",
+  "confirmed": false,
+  "source": "https://www.usenix.org/conference/fast27/call-for-papers",
+  "note": "FAST 2027 had spring and fall deadlines (17 March and 15 September 2026), both closed, so the next ones belong to FAST 2028, whose call is not out. Dates follow the identical FAST 2026 and 2027 pattern with no abstract deadline, and fall notification would be around early December 2027."
+ },
+ {
+  "id": "sc-2027",
+  "name": "SC",
+  "full": "International Conference for High Performance Computing, Networking, Storage, and Analysis",
+  "areas": [
+   "systems",
+   "arch"
+  ],
+  "type": "conference",
+  "core": "A",
+  "since": 1988,
+  "url": "https://supercomputing.org/",
+  "edition": "SC27",
+  "start": "2027-11-14",
+  "end": "2027-11-19",
+  "location": "Denver, USA",
+  "deadlines": [
+   {
+    "label": "abstract",
+    "date": "2027-04-05",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper",
+    "date": "2027-04-12",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-07-01",
+  "confirmed": false,
+  "source": "https://sc26.supercomputing.org/program/papers/",
+  "note": "No SC27 call yet. Deadlines are estimated from SC25 (abstract 7 April, paper 14 April) and SC26 (abstract 1 April, paper 8 April), and the Denver location and dates come from third-party listings, not the official site."
+ },
+ {
+  "id": "socc-2027",
+  "name": "SoCC",
+  "full": "ACM Symposium on Cloud Computing",
+  "areas": [
+   "systems",
+   "db"
+  ],
+  "type": "conference",
+  "core": null,
+  "since": 2010,
+  "url": "https://acmsocc.org/",
+  "edition": "SoCC 2027",
+  "start": "2027-11-17",
+  "end": "2027-11-19",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "abstract (round 1)",
+    "date": "2027-02-05",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (round 1)",
+    "date": "2027-02-12",
+    "tz": "AoE"
+   },
+   {
+    "label": "abstract (round 2)",
+    "date": "2027-07-07",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (round 2)",
+    "date": "2027-07-14",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-04-29",
+  "confirmed": false,
+  "source": "https://acmsocc.org/2026/papers.html",
+  "note": "No SoCC 2027 call yet. SoCC 2026 introduced two rounds (February and July) while SoCC 2025 had only the July deadline, so the February round is less certain. SoCC is not listed in CORE2023."
+ },
+ {
+  "id": "sigmod-2027",
+  "name": "SIGMOD",
+  "full": "ACM SIGMOD International Conference on Management of Data",
+  "areas": [
+   "db"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1975,
+  "url": "https://2027.sigmodconf.hosting.acm.org/",
+  "edition": "SIGMOD 2027",
+  "start": "2027-06-13",
+  "end": "2027-06-19",
+  "location": "Huntington Beach, USA",
+  "deadlines": [
+   {
+    "label": "abstract (round 4)",
+    "date": "2026-10-10",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (round 4)",
+    "date": "2026-10-17",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-01-19",
+  "confirmed": true,
+  "source": "https://2027.sigmodconf.hosting.acm.org/calls_papers_important_dates.shtml",
+  "note": "Only the fourth of four rounds is still open, papers appear in PACMMOD. Abstract and conflicts are due a week before the paper."
+ },
+ {
+  "id": "sigmod-2028",
+  "name": "SIGMOD",
+  "full": "ACM SIGMOD International Conference on Management of Data",
+  "areas": [
+   "db"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1975,
+  "url": "https://2028.sigmod.org/",
+  "edition": "SIGMOD 2028",
+  "start": "2028-06-11",
+  "end": "2028-06-16",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "abstract (round 1)",
+    "date": "2027-01-10",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (round 1)",
+    "date": "2027-01-17",
+    "tz": "AoE"
+   },
+   {
+    "label": "abstract (round 2)",
+    "date": "2027-04-10",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (round 2)",
+    "date": "2027-04-17",
+    "tz": "AoE"
+   },
+   {
+    "label": "abstract (round 3)",
+    "date": "2027-07-10",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (round 3)",
+    "date": "2027-07-17",
+    "tz": "AoE"
+   },
+   {
+    "label": "abstract (round 4)",
+    "date": "2027-10-10",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (round 4)",
+    "date": "2027-10-17",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-04-19",
+  "confirmed": false,
+  "source": "https://2027.sigmodconf.hosting.acm.org/calls_papers_important_dates.shtml",
+  "note": "The SIGMOD 2028 site is still a placeholder. Dates assume the same 10th and 17th of January, April, July and October used by both SIGMOD 2026 and 2027."
+ },
+ {
+  "id": "vldb-2027",
+  "name": "VLDB",
+  "full": "International Conference on Very Large Data Bases (PVLDB)",
+  "areas": [
+   "db"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1975,
+  "url": "https://vldb.org/2027/",
+  "edition": "VLDB 2027",
+  "start": "2027-08-23",
+  "end": "2027-08-27",
+  "location": "Athens, Greece",
+  "deadlines": [
+   {
+    "label": "paper (Nov 2026 round)",
+    "date": "2026-11-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (Dec 2026 round)",
+    "date": "2026-12-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (Jan 2027 round)",
+    "date": "2027-01-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (Feb 2027 round)",
+    "date": "2027-02-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (Mar 2027 round)",
+    "date": "2027-03-01",
+    "tz": "PT",
+    "time": "17:00"
+   }
+  ],
+  "notification": "2026-12-15",
+  "confirmed": true,
+  "source": "https://www.vldb.org/pvldb/volumes/20/submission",
+  "note": "PVLDB Volume 20 deadlines fall on the 1st of each month at 5 pm Pacific, with a mandatory abstract by the 25th of the previous month, and the last one is 1 March 2027. Initial reviews come back around the 15th of the following month."
+ },
+ {
+  "id": "vldb-2028",
+  "name": "VLDB",
+  "full": "International Conference on Very Large Data Bases (PVLDB)",
+  "areas": [
+   "db"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1975,
+  "url": "https://vldb.org/",
+  "edition": "VLDB 2028",
+  "start": "2028-08-28",
+  "end": "2028-09-01",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "paper (Apr 2027 round)",
+    "date": "2027-04-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (May 2027 round)",
+    "date": "2027-05-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (Jun 2027 round)",
+    "date": "2027-06-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (Jul 2027 round)",
+    "date": "2027-07-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (Aug 2027 round)",
+    "date": "2027-08-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (Sep 2027 round)",
+    "date": "2027-09-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (Oct 2027 round)",
+    "date": "2027-10-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (Nov 2027 round)",
+    "date": "2027-11-01",
+    "tz": "PT",
+    "time": "17:00"
+   },
+   {
+    "label": "paper (Dec 2027 round)",
+    "date": "2027-12-01",
+    "tz": "PT",
+    "time": "17:00"
+   }
+  ],
+  "notification": "2027-05-15",
+  "confirmed": false,
+  "source": "https://www.vldb.org/pvldb/volumes/20/submission",
+  "note": "Volume 21 is not announced, so this assumes it keeps the Volume 20 pattern of monthly deadlines from 1 April 2027, each with an abstract due on the 25th of the previous month. The VLDB 2028 location and dates are unknown."
+ },
+ {
+  "id": "icde-2027",
+  "name": "ICDE",
+  "full": "IEEE International Conference on Data Engineering",
+  "areas": [
+   "db"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1984,
+  "url": "https://icde2027.github.io/",
+  "edition": "ICDE 2027",
+  "start": "2027-05-17",
+  "end": "2027-05-21",
+  "location": "Copenhagen, Denmark",
+  "deadlines": [
+   {
+    "label": "paper (round 2)",
+    "date": "2026-11-11",
+    "tz": "PT"
+   }
+  ],
+  "notification": "2027-02-10",
+  "confirmed": true,
+  "source": "https://icde2027.github.io/cf-research-papers.html",
+  "note": "Round 1 closed in June 2026, round 2 closes at 5 pm Pacific. Decisions are accept or reject with no revision option."
+ },
+ {
+  "id": "icde-2028",
+  "name": "ICDE",
+  "full": "IEEE International Conference on Data Engineering",
+  "areas": [
+   "db"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1984,
+  "url": "https://ieee-icde.org/",
+  "edition": "ICDE 2028",
+  "start": "2028-05-15",
+  "end": "2028-05-19",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "paper (round 1)",
+    "date": "2027-06-15",
+    "tz": "PT"
+   },
+   {
+    "label": "paper (round 2)",
+    "date": "2027-11-05",
+    "tz": "PT"
+   }
+  ],
+  "notification": "2027-09-01",
+  "confirmed": false,
+  "source": "https://icde2027.github.io/cf-research-papers.html",
+  "note": "ICDE 2028 is not announced. Round dates are estimated from ICDE 2026 (18 June and 27 October 2025) and ICDE 2027 (11 June and 11 November 2026)."
+ },
+ {
+  "id": "pods-2027",
+  "name": "PODS",
+  "full": "ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems",
+  "areas": [
+   "db",
+   "theory"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1982,
+  "url": "https://2027.sigmodconf.hosting.acm.org/",
+  "edition": "PODS 2027",
+  "start": "2027-06-13",
+  "end": "2027-06-19",
+  "location": "Huntington Beach, USA",
+  "deadlines": [
+   {
+    "label": "abstract (cycle 2)",
+    "date": "2026-12-03",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (cycle 2)",
+    "date": "2026-12-10",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-02-08",
+  "confirmed": true,
+  "source": "https://databasetheory.org/node/155",
+  "note": "Cycle 1 closed in May 2026. The notification date is the initial decision, with final decisions after revisions on 1 March 2027."
+ },
+ {
+  "id": "pods-2028",
+  "name": "PODS",
+  "full": "ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems",
+  "areas": [
+   "db",
+   "theory"
+  ],
+  "type": "conference",
+  "core": "A*",
+  "since": 1982,
+  "url": "https://databasetheory.org/PODS",
+  "edition": "PODS 2028",
+  "start": "2028-06-11",
+  "end": "2028-06-16",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "abstract (cycle 1)",
+    "date": "2027-05-28",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (cycle 1)",
+    "date": "2027-06-04",
+    "tz": "AoE"
+   },
+   {
+    "label": "abstract (cycle 2)",
+    "date": "2027-12-03",
+    "tz": "AoE"
+   },
+   {
+    "label": "paper (cycle 2)",
+    "date": "2027-12-10",
+    "tz": "AoE"
+   }
+  ],
+  "notification": "2027-08-11",
+  "confirmed": false,
+  "source": "https://databasetheory.org/node/155",
+  "note": "PODS 2028 is not announced. Cycle 1 is estimated between the PODS 2026 (10 June) and PODS 2027 (30 May) dates, and cycle 2 assumes the 10 December date both years used."
+ },
+ {
+  "id": "cidr-2028",
+  "name": "CIDR",
+  "full": "Conference on Innovative Data Systems Research",
+  "areas": [
+   "db",
+   "systems"
+  ],
+  "type": "conference",
+  "core": "A",
+  "since": 2003,
+  "url": "https://www.cidrdb.org/",
+  "edition": "CIDR 2028",
+  "start": "2028-01-23",
+  "end": "2028-01-26",
+  "location": "TBA",
+  "deadlines": [
+   {
+    "label": "paper",
+    "date": "2027-08-04",
+    "tz": "PT"
+   }
+  ],
+  "notification": "2027-10-06",
+  "confirmed": false,
+  "source": "https://www.cidrdb.org/cidr2027/cfp.html",
+  "note": "CIDR 2027 (Amsterdam, January 2027) closed on 4 August 2026. CIDR 2028 is not announced, and the estimate follows the 5 August 2025 and 4 August 2026 deadlines, both at end of day Pacific time."
+ }
+]

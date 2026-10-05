@@ -1,0 +1,516 @@
+[
+  {
+    "id": "jmlr",
+    "name": "JMLR",
+    "full": "Journal of Machine Learning Research",
+    "areas": [
+      "ml"
+    ],
+    "type": "journal",
+    "publisher": "JMLR (Microtome)",
+    "since": 2000,
+    "url": "https://www.jmlr.org/",
+    "submission": "rolling",
+    "openAccess": true,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "Papers can be presented at NeurIPS, ICML or ICLR through the joint Journal-to-Conference track, and at the AAAI journal track",
+    "note": "The flagship open access journal of machine learning, founded when its editorial board left a commercial journal."
+  },
+  {
+    "id": "tmlr",
+    "name": "TMLR",
+    "full": "Transactions on Machine Learning Research",
+    "areas": [
+      "ml"
+    ],
+    "type": "journal",
+    "publisher": "JMLR (Microtome)",
+    "since": 2022,
+    "url": "https://jmlr.org/tmlr/",
+    "submission": "rolling, reviewed on OpenReview",
+    "openAccess": true,
+    "core": null,
+    "turnaround": "",
+    "conferenceTrack": "Papers with a J2C, Featured or Outstanding certification can be presented at NeurIPS, ICML or ICLR",
+    "note": "A fast open review journal on OpenReview that accepts papers for correctness and interest rather than perceived novelty."
+  },
+  {
+    "id": "tpami",
+    "name": "TPAMI",
+    "full": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "areas": [
+      "cv",
+      "ml"
+    ],
+    "type": "journal",
+    "publisher": "IEEE Computer Society",
+    "since": 1979,
+    "url": "https://www.computer.org/csdl/journal/tp",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "The top IEEE journal for computer vision and pattern recognition, often carrying extended versions of CVPR and ICCV work."
+  },
+  {
+    "id": "ijcv",
+    "name": "IJCV",
+    "full": "International Journal of Computer Vision",
+    "areas": [
+      "cv"
+    ],
+    "type": "journal",
+    "publisher": "Springer",
+    "since": 1987,
+    "url": "https://link.springer.com/journal/11263",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "Papers can be presented at the AAAI journal track",
+    "note": "A leading computer vision journal known for long, thorough articles and special issues tied to the main vision conferences."
+  },
+  {
+    "id": "aij",
+    "name": "AIJ",
+    "full": "Artificial Intelligence",
+    "areas": [
+      "ai"
+    ],
+    "type": "journal",
+    "publisher": "Elsevier",
+    "since": 1970,
+    "url": "https://www.sciencedirect.com/journal/artificial-intelligence",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "Papers can be presented at the IJCAI and AAAI journal tracks",
+    "note": "The oldest general AI journal, covering knowledge representation, reasoning, planning, search and learning."
+  },
+  {
+    "id": "jair",
+    "name": "JAIR",
+    "full": "Journal of Artificial Intelligence Research",
+    "areas": [
+      "ai"
+    ],
+    "type": "journal",
+    "publisher": "AI Access Foundation",
+    "since": 1993,
+    "url": "https://www.jair.org/",
+    "submission": "rolling",
+    "openAccess": true,
+    "core": "A",
+    "turnaround": "",
+    "conferenceTrack": "Papers can be presented at the IJCAI and AAAI journal tracks",
+    "note": "One of the first open access journals in computing, publishing across all areas of AI."
+  },
+  {
+    "id": "tacl",
+    "name": "TACL",
+    "full": "Transactions of the Association for Computational Linguistics",
+    "areas": [
+      "nlp"
+    ],
+    "type": "journal",
+    "publisher": "MIT Press for the ACL",
+    "since": 2013,
+    "url": "https://transacl.org/",
+    "submission": "rolling, with monthly deadlines on the 1st of each month",
+    "openAccess": true,
+    "core": null,
+    "turnaround": "",
+    "conferenceTrack": "Accepted papers can be presented at ACL, NAACL, EACL, AACL or EMNLP",
+    "note": "The ACL journal with conference length papers and journal style review, whose papers are presented at the main ACL conferences."
+  },
+  {
+    "id": "cl",
+    "name": "CL",
+    "full": "Computational Linguistics",
+    "areas": [
+      "nlp"
+    ],
+    "type": "journal",
+    "publisher": "MIT Press for the ACL",
+    "since": 1974,
+    "url": "https://direct.mit.edu/coli",
+    "submission": "rolling",
+    "openAccess": true,
+    "core": "A*",
+    "turnaround": "about 46 days on average to first decision",
+    "conferenceTrack": "Papers can be presented at ACL conferences such as ACL and EMNLP, and at the AAAI journal track",
+    "note": "The flagship ACL journal for long articles and surveys in computational linguistics, open access since 2009."
+  },
+  {
+    "id": "nmi",
+    "name": "NMI",
+    "full": "Nature Machine Intelligence",
+    "areas": [
+      "ml",
+      "ai"
+    ],
+    "type": "journal",
+    "publisher": "Springer Nature",
+    "since": 2019,
+    "url": "https://www.nature.com/natmachintell/",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": null,
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "A Nature family journal for high visibility machine learning, AI and robotics work, including its scientific and societal impact."
+  },
+  {
+    "id": "tse",
+    "name": "TSE",
+    "full": "IEEE Transactions on Software Engineering",
+    "areas": [
+      "se"
+    ],
+    "type": "journal",
+    "publisher": "IEEE Computer Society",
+    "since": 1975,
+    "url": "https://www.computer.org/csdl/journal/ts",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "Journal-first papers can be presented at ICSE, FSE and other software engineering conferences",
+    "note": "The oldest and most cited software engineering journal."
+  },
+  {
+    "id": "tosem",
+    "name": "TOSEM",
+    "full": "ACM Transactions on Software Engineering and Methodology",
+    "areas": [
+      "se"
+    ],
+    "type": "journal",
+    "publisher": "ACM",
+    "since": 1992,
+    "url": "https://dl.acm.org/journal/tosem",
+    "submission": "rolling",
+    "openAccess": true,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "Journal-first papers can be presented at ICSE, FSE and other software engineering conferences",
+    "note": "The premier ACM software engineering journal, with an emphasis on methods and rigorous evaluation."
+  },
+  {
+    "id": "emse",
+    "name": "EMSE",
+    "full": "Empirical Software Engineering",
+    "areas": [
+      "se"
+    ],
+    "type": "journal",
+    "publisher": "Springer",
+    "since": 1996,
+    "url": "https://link.springer.com/journal/10664",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A",
+    "turnaround": "",
+    "conferenceTrack": "Journal-first papers can be presented at ICSE and other software engineering conferences",
+    "note": "The main journal for empirical studies in software engineering, from mining repositories to controlled experiments."
+  },
+  {
+    "id": "toplas",
+    "name": "TOPLAS",
+    "full": "ACM Transactions on Programming Languages and Systems",
+    "areas": [
+      "pl"
+    ],
+    "type": "journal",
+    "publisher": "ACM",
+    "since": 1979,
+    "url": "https://dl.acm.org/journal/toplas",
+    "submission": "rolling",
+    "openAccess": true,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "Journal-first papers can be presented at partner conferences such as POPL, PLDI, OOPSLA and ECOOP",
+    "note": "The premier programming languages journal, covering language design, semantics, type systems, compilers and analysis."
+  },
+  {
+    "id": "fmsd",
+    "name": "FMSD",
+    "full": "Formal Methods in System Design",
+    "areas": [
+      "verification"
+    ],
+    "type": "journal",
+    "publisher": "Springer",
+    "since": 1992,
+    "url": "https://link.springer.com/journal/10703",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "A journal for formal verification of hardware and software systems, often carrying extended CAV and FMCAD papers."
+  },
+  {
+    "id": "jar",
+    "name": "JAR",
+    "full": "Journal of Automated Reasoning",
+    "areas": [
+      "logic",
+      "verification"
+    ],
+    "type": "journal",
+    "publisher": "Springer",
+    "since": 1985,
+    "url": "https://link.springer.com/journal/10817",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "The main journal for automated and interactive theorem proving, SAT and SMT solving and their applications."
+  },
+  {
+    "id": "lmcs",
+    "name": "LMCS",
+    "full": "Logical Methods in Computer Science",
+    "areas": [
+      "logic",
+      "theory",
+      "pl"
+    ],
+    "type": "journal",
+    "publisher": "LMCS (Episciences)",
+    "since": 2005,
+    "url": "https://lmcs.episciences.org/",
+    "submission": "rolling",
+    "openAccess": true,
+    "core": "A",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "A free diamond open access journal for logic in computer science, from semantics to verification."
+  },
+  {
+    "id": "jacm",
+    "name": "JACM",
+    "full": "Journal of the ACM",
+    "areas": [
+      "theory"
+    ],
+    "type": "journal",
+    "publisher": "ACM",
+    "since": 1954,
+    "url": "https://dl.acm.org/journal/jacm",
+    "submission": "rolling",
+    "openAccess": true,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "The most prestigious general journal in computer science, publishing foundational results across theory and beyond."
+  },
+  {
+    "id": "sicomp",
+    "name": "SICOMP",
+    "full": "SIAM Journal on Computing",
+    "areas": [
+      "theory"
+    ],
+    "type": "journal",
+    "publisher": "SIAM",
+    "since": 1972,
+    "url": "https://epubs.siam.org/journal/smjcat",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "A leading theory journal for algorithms and complexity, including special issues from STOC and FOCS."
+  },
+  {
+    "id": "tdsc",
+    "name": "TDSC",
+    "full": "IEEE Transactions on Dependable and Secure Computing",
+    "areas": [
+      "security"
+    ],
+    "type": "journal",
+    "publisher": "IEEE Computer Society",
+    "since": 2004,
+    "url": "https://www.computer.org/csdl/journal/tq",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "An IEEE journal covering security together with dependability and fault tolerance of computing systems."
+  },
+  {
+    "id": "tifs",
+    "name": "TIFS",
+    "full": "IEEE Transactions on Information Forensics and Security",
+    "areas": [
+      "security"
+    ],
+    "type": "journal",
+    "publisher": "IEEE Signal Processing Society",
+    "since": 2006,
+    "url": "https://signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "A leading security journal spanning biometrics, forensics, applied cryptography and network security."
+  },
+  {
+    "id": "tops",
+    "name": "TOPS",
+    "full": "ACM Transactions on Privacy and Security",
+    "areas": [
+      "security"
+    ],
+    "type": "journal",
+    "publisher": "ACM",
+    "since": 1998,
+    "url": "https://dl.acm.org/journal/tops",
+    "submission": "rolling",
+    "openAccess": true,
+    "core": "A",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "The main ACM security journal, known as TISSEC until 2016."
+  },
+  {
+    "id": "joc",
+    "name": "JoC",
+    "full": "Journal of Cryptology",
+    "areas": [
+      "crypto"
+    ],
+    "type": "journal",
+    "publisher": "Springer for the IACR",
+    "since": 1988,
+    "url": "https://link.springer.com/journal/145",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "The flagship journal of the IACR, publishing full versions of major cryptography results."
+  },
+  {
+    "id": "tocs",
+    "name": "TOCS",
+    "full": "ACM Transactions on Computer Systems",
+    "areas": [
+      "systems"
+    ],
+    "type": "journal",
+    "publisher": "ACM",
+    "since": 1983,
+    "url": "https://dl.acm.org/journal/tocs",
+    "submission": "rolling",
+    "openAccess": true,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "The premier systems journal, often carrying extended versions of SOSP and OSDI papers."
+  },
+  {
+    "id": "tods",
+    "name": "TODS",
+    "full": "ACM Transactions on Database Systems",
+    "areas": [
+      "db"
+    ],
+    "type": "journal",
+    "publisher": "ACM",
+    "since": 1976,
+    "url": "https://dl.acm.org/journal/tods",
+    "submission": "rolling",
+    "openAccess": true,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "The premier ACM database journal, covering data management theory and systems."
+  },
+  {
+    "id": "vldbj",
+    "name": "VLDBJ",
+    "full": "The VLDB Journal",
+    "areas": [
+      "db"
+    ],
+    "type": "journal",
+    "publisher": "Springer for the VLDB Endowment",
+    "since": 1992,
+    "url": "https://link.springer.com/journal/778",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "A leading database journal, frequently publishing extended versions of VLDB and SIGMOD papers."
+  },
+  {
+    "id": "tochi",
+    "name": "TOCHI",
+    "full": "ACM Transactions on Computer-Human Interaction",
+    "areas": [
+      "hci"
+    ],
+    "type": "journal",
+    "publisher": "ACM",
+    "since": 1994,
+    "url": "https://dl.acm.org/journal/tochi",
+    "submission": "rolling",
+    "openAccess": true,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "Selected papers are invited to be presented at CHI",
+    "note": "The flagship HCI journal of ACM SIGCHI."
+  },
+  {
+    "id": "ton",
+    "name": "ToN",
+    "full": "IEEE Transactions on Networking (formerly IEEE/ACM Transactions on Networking)",
+    "areas": [
+      "networks"
+    ],
+    "type": "journal",
+    "publisher": "IEEE",
+    "since": 1993,
+    "url": "https://www.comsoc.org/publications/journals/ieee-tnet",
+    "submission": "rolling",
+    "openAccess": false,
+    "core": "A*",
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "The leading networking journal, published jointly with ACM from 1993 to 2024 and by IEEE alone since 2025."
+  },
+  {
+    "id": "cacm",
+    "name": "CACM",
+    "full": "Communications of the ACM",
+    "areas": [
+      "theory",
+      "systems",
+      "ai",
+      "se",
+      "security",
+      "hci"
+    ],
+    "type": "journal",
+    "publisher": "ACM",
+    "since": 1958,
+    "url": "https://cacm.acm.org/",
+    "submission": "Research Highlights by nomination from SIGs and the editorial board, research articles rolling",
+    "openAccess": true,
+    "core": null,
+    "turnaround": "",
+    "conferenceTrack": "",
+    "note": "The ACM flagship magazine, whose Research Highlights section reprints standout conference papers for a broad computing audience."
+  }
+]

@@ -1,0 +1,614 @@
+[
+  {
+    "id": "cvpr-2027",
+    "name": "CVPR",
+    "full": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "areas": [
+      "cv"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1983,
+    "url": "https://cvpr.thecvf.com/Conferences/2027",
+    "edition": "CVPR 2027",
+    "start": "2027-06-20",
+    "end": "2027-06-25",
+    "location": "Seattle, USA",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2026-11-10",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2026-11-16",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-02-25",
+    "confirmed": true,
+    "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers",
+    "note": "The abstract date is the mandatory paper registration on OpenReview. Supplementary material is due 2026-11-23 and the organisers say the deadline will not be extended."
+  },
+  {
+    "id": "iccv-2027",
+    "name": "ICCV",
+    "full": "IEEE/CVF International Conference on Computer Vision",
+    "areas": [
+      "cv"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1987,
+    "url": "https://iccv.thecvf.com/",
+    "edition": "ICCV 2027",
+    "start": "2027-10-02",
+    "end": "2027-10-08",
+    "location": "Hong Kong, China",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-03-01",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-03-05",
+        "tz": "AoE"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://iccv.thecvf.com/Conferences/2025",
+    "note": "Dates and venue (HKCEC) are on the official site but the call for papers is not out yet. Deadlines are estimated from ICCV 2025 (registration March 3, paper March 7) and ICCV 2023 (paper March 8)."
+  },
+  {
+    "id": "wacv-2028",
+    "name": "WACV",
+    "full": "IEEE/CVF Winter Conference on Applications of Computer Vision",
+    "areas": [
+      "cv"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1992,
+    "url": "https://wacv.thecvf.com/",
+    "edition": "WACV 2028",
+    "start": null,
+    "end": null,
+    "location": "Waikoloa, USA",
+    "deadlines": [
+      {
+        "label": "paper (cycle 1)",
+        "date": "2027-07-09",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (cycle 2)",
+        "date": "2027-09-10",
+        "tz": "AoE"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://www.thecvf.com/?page_id=100",
+    "note": "Both WACV 2027 rounds closed before the window (June 26 and August 28, 2026), so WACV 2028 is the next edition. The CVF lists Waikoloa, Hawaii as host, and the two round deadlines are estimated from WACV 2026 (July and September 2025) and WACV 2027 (June and August 2026)."
+  },
+  {
+    "id": "bmvc-2027",
+    "name": "BMVC",
+    "full": "British Machine Vision Conference",
+    "areas": [
+      "cv"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1990,
+    "url": "https://www.bmva.org/bmvc",
+    "edition": "BMVC 2027",
+    "start": null,
+    "end": null,
+    "location": null,
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-05-21",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-05-28",
+        "tz": "AoE"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://bmvc2026.bmva.org/calls/call-for-papers/",
+    "note": "BMVC 2027 host city and dates are not announced. Deadlines are estimated from BMVC 2026 (abstract May 22, paper May 29) and BMVC 2025 which used the same late May pattern."
+  },
+  {
+    "id": "icra-2028",
+    "name": "ICRA",
+    "full": "IEEE International Conference on Robotics and Automation",
+    "areas": [
+      "robotics"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1984,
+    "url": "https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra",
+    "edition": "ICRA 2028",
+    "start": "2028-05-15",
+    "end": "2028-05-19",
+    "location": "Guadalajara, Mexico",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-09-15",
+        "tz": "PT"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://2027.ieee-icra.org/announcements/call-for-technical-papers/",
+    "note": "The ICRA 2027 deadline (September 16, 2026 PT) fell before the window, so ICRA 2028 is the next edition. Its deadline is estimated from the usual mid September cutoff, and the Guadalajara venue and May dates come from secondary listings since no official ICRA 2028 site was found."
+  },
+  {
+    "id": "iros-2027",
+    "name": "IROS",
+    "full": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+    "areas": [
+      "robotics"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1988,
+    "url": "https://2027.ieee-iros.org/",
+    "edition": "IROS 2027",
+    "start": "2027-09-26",
+    "end": "2027-10-01",
+    "location": "Florence, Italy",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-03-01",
+        "tz": "PT"
+      }
+    ],
+    "notification": null,
+    "confirmed": true,
+    "source": "https://www.ieee-ras.org/events/category/deadlines/",
+    "note": "The IEEE RAS deadline calendar lists March 1, 2027 for IROS 2027 papers. The Pacific time zone follows previous IROS editions since the full call for papers is not yet posted."
+  },
+  {
+    "id": "rss-2027",
+    "name": "RSS",
+    "full": "Robotics: Science and Systems",
+    "areas": [
+      "robotics"
+    ],
+    "type": "conference",
+    "core": null,
+    "since": 2005,
+    "url": "https://roboticsconference.org/",
+    "edition": "RSS 2027",
+    "start": "2027-07-06",
+    "end": "2027-07-11",
+    "location": "Athens, Greece",
+    "deadlines": [
+      {
+        "label": "abstract (stage 1)",
+        "date": "2026-12-04",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (stage 2)",
+        "date": "2027-04-16",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-04-30",
+    "confirmed": true,
+    "source": "https://roboticsconference.org/information/cfp/",
+    "note": "RSS 2027 uses a new two stage process where a 6 page extended abstract is reviewed first (decisions February 5, 2027) and only accepted abstracts proceed to the full 8 page paper in April. CORE2023 lists RSS as TBR so the rank is null."
+  },
+  {
+    "id": "corl-2027",
+    "name": "CoRL",
+    "full": "Conference on Robot Learning",
+    "areas": [
+      "robotics",
+      "ml"
+    ],
+    "type": "conference",
+    "core": null,
+    "since": 2017,
+    "url": "https://www.corl.org/",
+    "edition": "CoRL 2027",
+    "start": null,
+    "end": null,
+    "location": null,
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-05-24",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-05-27",
+        "tz": "AoE"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://2026.corl.org/contributions/instruction-for-authors",
+    "note": "CoRL 2027 host and dates are not announced. Deadlines are estimated from CoRL 2026 (abstract May 25, paper May 28) but CoRL 2025 closed about a month earlier, so the real date could fall in late April or May. CORE2023 lists CoRL as Unranked."
+  },
+  {
+    "id": "chi-2028",
+    "name": "CHI",
+    "full": "ACM CHI Conference on Human Factors in Computing Systems",
+    "areas": [
+      "hci"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1982,
+    "url": "https://chi2028.acm.org/",
+    "edition": "CHI 2028",
+    "start": "2028-05-06",
+    "end": "2028-05-12",
+    "location": "Cape Town, South Africa",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-09-09",
+        "tz": "AoE"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://chi2027.acm.org/for-authors/papers/",
+    "note": "The CHI 2027 paper deadline (September 10, 2026) fell before the window, so CHI 2028 is the next edition. Venue and dates are on the official CHI 2028 site but the deadline is estimated from CHI 2026 and CHI 2027, both in the second week of September."
+  },
+  {
+    "id": "uist-2027",
+    "name": "UIST",
+    "full": "ACM Symposium on User Interface Software and Technology",
+    "areas": [
+      "hci"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1988,
+    "url": "https://uist.acm.org/",
+    "edition": "UIST 2027",
+    "start": null,
+    "end": null,
+    "location": null,
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-03-30",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-04-06",
+        "tz": "AoE"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://uist.acm.org/2026/cfp",
+    "note": "UIST has a single paper cycle. UIST 2027 location and dates are not announced, and deadlines are estimated from UIST 2026 (abstract March 24, paper March 31) and UIST 2025 (early April)."
+  },
+  {
+    "id": "cscw-2027",
+    "name": "CSCW",
+    "full": "ACM Conference on Computer-Supported Cooperative Work and Social Computing",
+    "areas": [
+      "hci"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1986,
+    "url": "https://cscw.acm.org/2026/rolling.html",
+    "edition": "CSCW 2027",
+    "start": null,
+    "end": null,
+    "location": null,
+    "deadlines": [],
+    "notification": null,
+    "confirmed": true,
+    "source": "https://cscw.acm.org/2026/rolling.html",
+    "note": "From CSCW 2027 onward papers are submitted on a rolling basis to PACM HCI with no fixed deadlines, and accepted papers are presented at the next conference whose program has not yet closed. Some trackers list an October 15, 2026 deadline but the official site does not, and CSCW 2027 location and dates are not announced."
+  },
+  {
+    "id": "sigir-2027",
+    "name": "SIGIR",
+    "full": "ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "areas": [
+      "ir"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1978,
+    "url": "https://sigir2027.org/",
+    "edition": "SIGIR 2027",
+    "start": "2027-07-18",
+    "end": "2027-07-24",
+    "location": "San Jose, USA",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-01-14",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-01-21",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-04-05",
+    "confirmed": true,
+    "source": "https://sigir2027.org/",
+    "note": "This is the 50th anniversary edition. The time zone is assumed AoE as in SIGIR 2025 and 2026 since the official page lists only dates."
+  },
+  {
+    "id": "www-2027",
+    "name": "WWW",
+    "full": "The ACM Web Conference",
+    "areas": [
+      "ir",
+      "dm"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1994,
+    "url": "https://www2027.thewebconf.org/",
+    "edition": "WWW 2027",
+    "start": "2027-05-10",
+    "end": "2027-05-14",
+    "location": "Dublin, Ireland",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2026-10-18",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2026-10-25",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-01-04",
+    "confirmed": true,
+    "source": "https://www2027.thewebconf.org/?p=296",
+    "note": "Submissions go through OpenReview with a rebuttal period of December 15 to 20, 2026."
+  },
+  {
+    "id": "wsdm-2028",
+    "name": "WSDM",
+    "full": "ACM International Conference on Web Search and Data Mining",
+    "areas": [
+      "ir",
+      "dm"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2008,
+    "url": "https://www.wsdm-conference.org/",
+    "edition": "WSDM 2028",
+    "start": null,
+    "end": null,
+    "location": null,
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-08-16",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-08-23",
+        "tz": "AoE"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://wsdm-conference.org/2027/cffp.html",
+    "note": "WSDM 2027 full papers closed August 24, 2026, so WSDM 2028 is the next edition. Its deadlines are estimated from WSDM 2026 and 2027 which both closed in mid to late August, and its location is not announced."
+  },
+  {
+    "id": "cikm-2027",
+    "name": "CIKM",
+    "full": "ACM International Conference on Information and Knowledge Management",
+    "areas": [
+      "ir",
+      "dm",
+      "db"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1992,
+    "url": "https://www.cikmconference.org/",
+    "edition": "CIKM 2027",
+    "start": "2027-10-25",
+    "end": "2027-10-29",
+    "location": "Sydney, Australia",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-05-16",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-05-23",
+        "tz": "AoE"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://cikm2026.diag.uniroma1.it/",
+    "note": "Sydney and late October 2027 were reported as tentative at the CIKM business meeting and no official CIKM 2027 site was found. Deadlines are estimated from CIKM 2026 (abstract May 16, paper May 23) and CIKM 2025 which used a similar mid to late May pattern."
+  },
+  {
+    "id": "recsys-2027",
+    "name": "RecSys",
+    "full": "ACM Conference on Recommender Systems",
+    "areas": [
+      "ir"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2007,
+    "url": "https://recsys.acm.org/recsys27/",
+    "edition": "RecSys 2027",
+    "start": "2027-08-23",
+    "end": "2027-08-27",
+    "location": "Honolulu, USA",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-04-13",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-04-20",
+        "tz": "AoE"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://recsys.acm.org/recsys26/call/",
+    "note": "Venue and dates are official but the call for papers is not out. Deadlines are estimated from RecSys 2026 (abstract April 14, paper April 21) and RecSys 2025, though the conference is about a month earlier than usual so the deadline may move earlier too."
+  },
+  {
+    "id": "icdm-2027",
+    "name": "ICDM",
+    "full": "IEEE International Conference on Data Mining",
+    "areas": [
+      "dm",
+      "ml"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 2001,
+    "url": "https://icdm2027-website.onrender.com/",
+    "edition": "ICDM 2027",
+    "start": "2027-11-15",
+    "end": "2027-11-18",
+    "location": "Brisbane, Australia",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-06-06",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-08-16",
+    "confirmed": false,
+    "source": "https://icdm2027-website.onrender.com/",
+    "note": "An early ICDM 2027 site lists June 6, 2027 and August 16 notification, which are the same calendar dates as ICDM 2026. It is not yet linked from an official call so treat them as provisional."
+  },
+  {
+    "id": "sdm-2027",
+    "name": "SDM",
+    "full": "SIAM International Conference on Data Mining",
+    "areas": [
+      "dm",
+      "ml"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2001,
+    "url": "https://www.siam.org/conferences-events/siam-conferences/",
+    "edition": "SDM 2027",
+    "start": null,
+    "end": null,
+    "location": null,
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-04-09",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-04-16",
+        "tz": "AoE"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://www.siam.org/conferences-events/siam-conferences/sdm26/",
+    "note": "SDM shifted schedule recently, with SDM25 in May 2025 (October 2024 deadline) and SDM26 in November 2026 in Salt Lake City (April 2026 deadline). Nothing on SDM27 was found, so this April 2027 estimate follows the SDM26 pattern and is low confidence."
+  },
+  {
+    "id": "ecai-2027",
+    "name": "ECAI",
+    "full": "European Conference on Artificial Intelligence",
+    "areas": [
+      "ai"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1974,
+    "url": "https://ecai2027.org/",
+    "edition": "ECAI 2027",
+    "start": "2027-10-02",
+    "end": "2027-10-07",
+    "location": "Athens, Greece",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-04-14",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-07-15",
+    "confirmed": true,
+    "source": "https://ecai2027.org/",
+    "note": "The official site lists the full paper deadline, a phase 1 notification on May 15 and a rebuttal on June 15 to 18, 2027. No abstract deadline or time zone is given yet, so AoE is assumed from past ECAI editions."
+  },
+  {
+    "id": "ecml-pkdd-2027",
+    "name": "ECML-PKDD",
+    "full": "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+    "areas": [
+      "ml",
+      "dm"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2001,
+    "url": "https://ecmlpkdd.org/2027/",
+    "edition": "ECML-PKDD 2027",
+    "start": "2027-08-30",
+    "end": "2027-09-03",
+    "location": "Eindhoven, Netherlands",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-03-05",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-03-12",
+        "tz": "AoE"
+      }
+    ],
+    "notification": null,
+    "confirmed": false,
+    "source": "https://ecmlpkdd.org/2026/submissions-research-track/",
+    "note": "Venue and dates are on the official site but the research track call is not out. Deadlines are estimated from ECML-PKDD 2026 (March 5 and 12) and 2025 (March 7 and 14), and the separate journal track runs on its own rolling cutoffs."
+  }
+]

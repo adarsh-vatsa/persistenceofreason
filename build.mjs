@@ -182,7 +182,7 @@ let ASSET = {};
 function copyAssets() {
   fs.cpSync(DIR.static, DIR.out, { recursive: true });
   const h = (f) => createHash('sha256').update(fs.readFileSync(path.join(DIR.out, f))).digest('hex').slice(0, 10);
-  ASSET = Object.fromEntries(['site.css', 'site.js', 'vault.js', 'vault.css', 'favicon.svg']
+  ASSET = Object.fromEntries(['site.css', 'site.js', 'vault.js', 'vault.css', 'favicon.svg', 'conferences.js']
     .map((f) => [f, `/${f}?v=${h(f)}`]));
 }
 
@@ -407,106 +407,83 @@ function aboutBody() {
 </div>`;
 }
 
-// ---------- conferences (a calendar of deadlines and meetings) ----------
+// ---------- conferences (deadlines, filtered like CSRankings) ----------
 
-const FIELDS = { ml: 'machine learning', nlp: 'language', agents: 'agents', se: 'software engineering', verification: 'verification', systems: 'systems' };
-const KINDS = { flagship: { label: 'flagship', blurb: 'The established venues of each field.' },
-  new: { label: 'new', blurb: 'Recent venues started by people who shaped their fields.' },
-  visibility: { label: 'visibility', blurb: 'Talks and events that matter mostly for being seen.' } };
-const CAL_END = '2027-12-31';
+const AREAS = {
+  ai: { label: 'Artificial intelligence', short: 'ai', group: 'AI' },
+  ml: { label: 'Machine learning', short: 'ml', group: 'AI' },
+  nlp: { label: 'Natural language', short: 'nlp', group: 'AI' },
+  cv: { label: 'Computer vision', short: 'vision', group: 'AI' },
+  agents: { label: 'Agents', short: 'agents', group: 'AI' },
+  robotics: { label: 'Robotics', short: 'robotics', group: 'AI' },
+  ir: { label: 'Web and retrieval', short: 'ir', group: 'AI' },
+  dm: { label: 'Data mining', short: 'data mining', group: 'AI' },
+  systems: { label: 'Operating and distributed systems', short: 'systems', group: 'Systems' },
+  arch: { label: 'Computer architecture', short: 'architecture', group: 'Systems' },
+  networks: { label: 'Networks', short: 'networks', group: 'Systems' },
+  db: { label: 'Databases', short: 'databases', group: 'Systems' },
+  security: { label: 'Security and privacy', short: 'security', group: 'Systems' },
+  se: { label: 'Software engineering', short: 'se', group: 'Systems' },
+  pl: { label: 'Programming languages', short: 'pl', group: 'Systems' },
+  verification: { label: 'Formal methods', short: 'formal methods', group: 'Theory' },
+  theory: { label: 'Algorithms and complexity', short: 'theory', group: 'Theory' },
+  logic: { label: 'Logic and automated reasoning', short: 'logic', group: 'Theory' },
+  crypto: { label: 'Cryptography', short: 'crypto', group: 'Theory' },
+  hci: { label: 'Human-computer interaction', short: 'hci', group: 'Interdisciplinary' },
+};
+const AREA_GROUPS = ['AI', 'Systems', 'Theory', 'Interdisciplinary'];
+const LEGACY_FIELD = { ml: 'ml', nlp: 'nlp', agents: 'agents', se: 'se', verification: 'verification', systems: 'systems' };
 
-function loadConferences() {
-  const f = path.join(DIR.content, 'conferences.json');
-  return fs.existsSync(f) ? JSON.parse(read(f)) : [];
+// The deadlines that matter are the ones you submit papers to. Everything else is detail.
+const isPrimary = (label) => /abstract|paper|submission|round|cycle|commitment/i.test(label) &&
+  !/talk|poster|survey|workshop|tutorial|blue sky|late.breaking|spotlight|fast track|artifact|notif|decision|camera|rebuttal|demo|industry|doctoral|student/i.test(label);
+
+function loadVenueData() {
+  const readJson = (f, d) => (fs.existsSync(f) ? JSON.parse(read(f)) : d);
+  const core = readJson(path.join(DIR.content, 'venues', 'core.json'), {});
+  const journals = readJson(path.join(DIR.content, 'journals.json'), []);
+  const journalNames = new Set(journals.map((j) => j.name));
+  const legacy = readJson(path.join(DIR.content, 'conferences.json'), [])
+    .filter((c) => !journalNames.has(c.name))
+    .map((c) => ({
+      ...c,
+      areas: c.areas || [...new Set([...(c.field || []).map((f) => LEGACY_FIELD[f]).filter(Boolean), ...(['AAAI', 'IJCAI'].includes(c.name) ? ['ai'] : [])])],
+      type: c.type || (c.kind === 'visibility' ? 'event' : 'conference'),
+      isNew: c.kind === 'new',
+      core: c.core !== undefined ? c.core : core[c.name] ?? null,
+    }));
+  const dir = path.join(DIR.content, 'venues');
+  const extra = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.json') && f !== 'core.json').flatMap((f) => readJson(path.join(dir, f), [])) : [];
+  const byId = new Map();
+  for (const e of [...legacy, ...extra]) byId.set(e.id, { ...(byId.get(e.id) || {}), ...e });
+  const editions = [...byId.values()].map((e) => ({
+    id: e.id, name: e.name, full: e.full, edition: e.edition, areas: (e.areas || []).filter((a) => AREAS[a]), type: e.type || 'conference',
+    isNew: !!e.isNew, core: e.core ?? null, since: e.since, url: e.url, start: e.start, end: e.end, location: e.location,
+    confirmed: !!e.confirmed, source: e.source, note: e.note, origin: e.origin, notification: e.notification,
+    deadlines: (e.deadlines || []).map((d) => ({ label: d.label, date: d.date, tz: d.tz || 'AoE', ...(d.time ? { time: d.time } : {}), primary: isPrimary(d.label) })),
+  })).filter((e) => e.areas.length);
+  return { editions, journals: journals.map((j) => ({ ...j, areas: (j.areas || []).filter((a) => AREAS[a]) })) };
 }
 
-const isoDay = (t) => new Date(t).toISOString().slice(0, 10);
-const addDays = (d, n) => isoDay(Date.parse(d + 'T12:00:00Z') + n * 86400e3);
-const daysBetween = (a, b) => { const out = []; for (let d = a; d <= b; d = addDays(d, 1)) out.push(d); return out; };
-const dayNum = (d) => Number(d.slice(8, 10));
-
-// One calendar item per deadline and one per meeting, dated today or later.
-function confItems(confs, asOf) {
-  const items = [];
-  for (const c of confs) {
-    const base = { c, fields: (c.field || []).filter((f) => FIELDS[f]), est: !c.confirmed };
-    for (const d of c.deadlines || []) {
-      if (d.date < asOf || d.date > CAL_END) continue;
-      // Organizer calls (workshops, tutorials, artifacts) are not submission deadlines for papers or talks.
-      if (/workshop|tutorial|artifact|camera|rebuttal|author response/i.test(d.label)) continue;
-      // Results days (notification, decisions) are dates to know, not things to submit by.
-      const result = /notif|decision|accept|result/i.test(d.label);
-      const what = result ? d.label.replace(/\s*deadline$/i, '').replace(/^notification$/i, 'notifications') : /deadline/i.test(d.label) ? d.label : `${d.label} deadline`;
-      items.push({ ...base, type: result ? 'nt' : 'dl', date: d.date, days: [d.date], what, tz: d.tz || 'AoE' });
-    }
-    if (c.start && (c.end || c.start) >= asOf && c.start <= CAL_END) {
-      const end = c.end || c.start;
-      items.push({ ...base, type: 'ev', date: c.start < asOf ? asOf : c.start, start: c.start, end, days: daysBetween(c.start, end), what: c.location || 'meeting' });
-    }
-  }
-  return items.sort((a, b) => a.date.localeCompare(b.date) || (a.type === 'dl' ? -1 : 1) || a.c.name.localeCompare(b.c.name));
-}
-
-const itemAttrs = (it) => `data-field="${it.fields.join(' ')}" data-kind="${esc(it.c.kind)}" data-days="${it.days.join(' ')}" data-text="${esc([it.c.name, it.c.full, it.c.edition, it.c.location, it.what, it.fields.map((f) => FIELDS[f]).join(' ')].join(' ').toLowerCase())}"`;
-const estMark = (it) => it.est ? '<abbr class="est" title="Not announced yet. Estimated from past editions.">est.</abbr>' : '';
-const kindMark = (it) => it.c.kind !== 'flagship' ? `<span class="kd">${esc(KINDS[it.c.kind]?.label || it.c.kind)}</span>` : '';
-
-function agendaItem(it, month) {
-  const span = it.type === 'ev' && it.end !== it.start
-    ? `${it.start.slice(0, 7) === month ? dayNum(it.start) : fmtShort(it.start)}–${it.end.slice(0, 7) === month ? dayNum(it.end) : fmtShort(it.end)}`
-    : String(dayNum(it.date));
-  return `<li class="ag ag--${it.type}${it.est ? ' is-est' : ''}" ${itemAttrs(it)}${it.type === 'dl' ? ` data-deadline="${it.date}" data-tz="${esc(it.tz)}"` : ''}>
-          <span class="ag__day">${span}</span>
-          <span class="ag__body"><a href="${esc(it.c.url)}" class="ext" rel="noopener" title="${esc(it.c.full || it.c.name)}"><span class="ag__name">${esc(it.c.edition || it.c.name)}</span></a>${kindMark(it)} <span class="ag__what">${esc(it.what)}</span>${estMark(it)}</span>
-        </li>`;
-}
-
-function miniMonth(month, items, asOf) {
-  const first = month + '-01';
-  const lead = (new Date(first + 'T12:00:00Z').getUTCDay() + 6) % 7; // weeks start on Monday
-  const last = addDays(isoDay(Date.UTC(+month.slice(0, 4), +month.slice(5, 7), 1)), -1);
-  const dl = new Set(), ev = new Set(), nt = new Set();
-  items.forEach((it) => it.days.forEach((d) => ({ dl, ev, nt })[it.type].add(d)));
-  const cells = daysBetween(first, last).map((d) => `<span class="d${d < asOf ? ' is-past' : ''}${d === asOf ? ' is-today' : ''}${dl.has(d) ? ' has-dl' : ''}${ev.has(d) ? ' has-ev' : ''}${nt.has(d) ? ' has-nt' : ''}" data-day="${d}">${dayNum(d)}</span>`);
-  return `<div class="mini" aria-hidden="true">
-        ${['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((w) => `<span class="w">${w}</span>`).join('')}
-        ${'<span></span>'.repeat(lead)}${cells.join('')}
-      </div>`;
-}
-
-function conferencesBody(confs, asOf) {
-  const items = confItems(confs, asOf);
-  const months = [];
-  for (let m = asOf.slice(0, 7); m <= CAL_END.slice(0, 7); m = isoDay(Date.UTC(+m.slice(0, 4), +m.slice(5, 7), 1)).slice(0, 7)) months.push(m);
-  const inMonth = (m) => items.filter((it) => it.days.some((d) => d.startsWith(m) && d >= asOf));
-  const fieldsUsed = Object.keys(FIELDS).filter((f) => confs.some((c) => (c.field || []).includes(f)));
-  const next = items.filter((it) => it.type === 'dl').slice(0, 5);
-  const venues = [...new Map(confs.map((c) => [c.name, c])).values()]
-    .sort((a, b) => Object.keys(KINDS).indexOf(a.kind) - Object.keys(KINDS).indexOf(b.kind) || a.name.localeCompare(b.name));
+function conferencesBody(data) {
+  const payload = JSON.stringify({ areas: AREAS, groups: AREA_GROUPS, editions: data.editions, journals: data.journals }).replace(/</g, '\\u003c');
   return `
 <header class="titleblock">
   <h1>Conferences</h1>
 </header>
-<div class="cornell confs">
-  ${row('Filter', `<div class="filters" role="search">
-    <label class="filter-search">${icon('search')}<input type="search" placeholder="Filter by name, place or topic" data-filter-text aria-label="Filter conferences"></label>
-    <div class="filter-group" data-filter-field>
-      <button type="button" class="chip is-on" data-v="">all</button>
-      ${fieldsUsed.map((f) => `<button type="button" class="chip" data-v="${f}">${esc(FIELDS[f])}</button>`).join('')}
-    </div>
-    <div class="filter-group" data-filter-kind>
-      <button type="button" class="chip is-on" data-v="">every kind</button>
-      ${Object.entries(KINDS).map(([k, v]) => `<button type="button" class="chip" data-v="${k}" title="${esc(v.blurb)}">${v.label}</button>`).join('')}
-    </div>
-  </div>`, { cls: 'cn-filters' })}
-  ${next.length ? row('Next up', `<ol class="agenda agenda--next">${next.map((it) => agendaItem({ ...it }, it.date.slice(0, 7)).replace('<span class="ag__day">' + dayNum(it.date) + '</span>', `<span class="ag__day">${fmtShort(it.date)}</span>`)).join('')}</ol>`, { cls: 'cn-next' }) : ''}
-  ${months.map((m) => { const its = inMonth(m); return `<div data-group>${row(`<span class="num">${new Date(m + '-15T12:00:00Z').toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' })}</span> <span class="yr">${m.slice(0, 4)}</span>`,
-    `<div class="cal">${miniMonth(m, its, asOf)}<ol class="agenda">${its.map((it) => agendaItem(it, m)).join('')}</ol></div>`,
-    { cls: 'cn-month' + (its.length ? '' : ' is-empty') })}</div>`; }).join('')}
-  <p class="empty" data-empty hidden>Nothing matches.</p>
-  ${row('Venues', `<ol class="venues">${venues.map((c) => `<li data-field="${(c.field || []).join(' ')}" data-kind="${esc(c.kind)}"><a class="ti" href="${esc(c.url)}" rel="noopener">${esc(c.full || c.name)}</a> <span class="ve">${esc(c.name)}${c.since ? `, since ${c.since}` : ''}.</span>${c.kind !== 'flagship' ? `<span class="kd">${esc(KINDS[c.kind]?.label || '')}</span>` : ''}${c.origin && c.kind !== 'flagship' ? ` <span class="why">${esc(c.origin)}</span>` : ''}</li>`).join('')}</ol>`, { cls: 'cn-venues' })}
-  <p class="conf-foot">Deadlines are anywhere on earth unless marked. Italic entries marked est. are not announced yet and follow each venue's past schedule. Checked ${fmtDate(asOf)}.</p>
-</div>`;
+<div class="confx" data-confx>
+  <aside class="confx__panel">
+    <button type="button" class="confx__toggle" data-panel-toggle>filters</button>
+    <div data-panel></div>
+  </aside>
+  <section class="confx__main">
+    <p class="confx__count" data-count></p>
+    <div data-stage><noscript><p class="empty">This page needs JavaScript for its filters.</p></noscript></div>
+    <p class="conf-foot">Deadlines close at the end of the day in the time zone each venue gives, anywhere on earth unless noted, and are shown here in your own time zone. Entries marked est. are not announced yet and follow each venue's past schedule. Ranks are from CORE. Checked ${fmtDate(today())}.</p>
+  </section>
+</div>
+<script type="application/json" id="conf-data">${payload}</script>
+<script src="${ASSET['conferences.js']}" defer></script>`;
 }
 
 const notFoundBody = () => `
@@ -576,8 +553,7 @@ async function build() {
   write('index.html', layout({ body: homeBody(posts), bodyClass: 'is-home' }));
   write('writing/index.html', layout({ title: 'Writing', section: '/writing/', canonical: '/writing/', body: archiveBody(posts, tags) }));
   write('research/index.html', layout({ title: 'Research', section: '/research/', canonical: '/research/', body: researchBody() }));
-  const confs = loadConferences();
-  write('conferences/index.html', layout({ title: 'Conferences', description: 'Deadlines for machine learning, language, agents and software engineering venues.', section: '/conferences/', canonical: '/conferences/', body: conferencesBody(confs, today()) }));
+  write('conferences/index.html', layout({ title: 'Conferences', description: 'Upcoming paper deadlines across computer science, filterable by area and CORE rank, plus leading journals.', section: '/conferences/', canonical: '/conferences/', body: conferencesBody(loadVenueData()), bodyClass: 'is-confs' }));
   write('about/index.html', layout({ title: 'About', section: '/about/', canonical: '/about/', body: aboutBody() }));
   write('404.html', layout({ title: 'Not found', body: notFoundBody(), bodyClass: 'is-lost' }));
 
@@ -587,7 +563,7 @@ async function build() {
     { kind: 'page', title: 'Writing', url: '/writing/', summary: 'All writing, by year.' },
     { kind: 'page', title: 'Research', url: '/research/', summary: 'Papers.' },
     { kind: 'page', title: 'About', url: '/about/', summary: 'Background and contact.' },
-    { kind: 'page', title: 'Conferences', url: '/conferences/', summary: 'Upcoming deadlines in machine learning, language, agents and software engineering.' },
+    { kind: 'page', title: 'Conferences', url: '/conferences/', summary: 'Upcoming paper deadlines across computer science, by area and CORE rank.' },
     ...posts.map((p) => ({ kind: 'post', title: p.title, url: postHref(p), summary: p.summary, date: fmtDate(p.date),
       status: p.status, mark: p.status ? STATUS[p.status].mark : '', statusLabel: p.status ? STATUS[p.status].label : '',
       tags: p.tags, minutes: p.minutes, headings: p.toc.map((h) => ({ id: h.id, text: h.text })), text: p.text.slice(0, 20000) })),

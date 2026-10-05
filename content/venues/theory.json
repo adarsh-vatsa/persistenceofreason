@@ -1,0 +1,699 @@
+[
+  {
+    "id": "stoc-2027",
+    "name": "STOC",
+    "full": "ACM Symposium on Theory of Computing",
+    "areas": [
+      "theory"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1969,
+    "url": "https://acm-stoc.org/stoc2027/",
+    "edition": "STOC 2027",
+    "start": "2027-06-06",
+    "end": "2027-06-10",
+    "location": "Atlanta, USA",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2026-11-02",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-02-01",
+    "confirmed": true,
+    "source": "https://acm-stoc.org/stoc2027/stoc2027-cfp.html",
+    "note": "Part of TheoryFest with a TCS+AI day on June 11. Videos for accepted-paper review are due November 16, 2026."
+  },
+  {
+    "id": "stoc-2028",
+    "name": "STOC",
+    "full": "ACM Symposium on Theory of Computing",
+    "areas": [
+      "theory"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1969,
+    "url": "https://acm-stoc.org/",
+    "edition": "STOC 2028",
+    "start": "2028-06-12",
+    "end": "2028-06-16",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-11-02",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2028-02-01",
+    "confirmed": false,
+    "source": "https://acm-stoc.org/stoc2027/stoc2027-cfp.html",
+    "note": "Not announced. Deadline estimated from early November deadlines in 2025 and 2026, and conference dates and notification are rough June and February estimates."
+  },
+  {
+    "id": "focs-2027",
+    "name": "FOCS",
+    "full": "IEEE Symposium on Foundations of Computer Science",
+    "areas": [
+      "theory"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1960,
+    "url": "https://focs.computer.org/",
+    "edition": "FOCS 2027",
+    "start": "2027-11-07",
+    "end": "2027-11-10",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-04-01",
+        "tz": "ET"
+      }
+    ],
+    "notification": "2027-07-05",
+    "confirmed": false,
+    "source": "https://focs.computer.org/",
+    "note": "Not announced. Deadline estimated from April 3, 2025 and April 1, 2026 (both US Eastern evening), and conference dates are a guess between the November 2026 and December 2025 editions."
+  },
+  {
+    "id": "soda-2028",
+    "name": "SODA",
+    "full": "ACM-SIAM Symposium on Discrete Algorithms",
+    "areas": [
+      "theory"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1990,
+    "url": "https://www.siam.org/conferences-events/siam-conferences/",
+    "edition": "SODA 2028",
+    "start": "2028-01-16",
+    "end": "2028-01-19",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-07-12",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-10-01",
+    "confirmed": false,
+    "source": "https://soda27.hotcrp.com/deadlines",
+    "note": "Not announced. Deadline estimated from July 14, 2025 and July 9, 2026 (AoE), and conference dates and notification are rough estimates for a mid-January meeting."
+  },
+  {
+    "id": "icalp-2027",
+    "name": "ICALP",
+    "full": "EATCS International Colloquium on Automata, Languages and Programming",
+    "areas": [
+      "theory",
+      "logic"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1972,
+    "url": "https://icalp.uj.edu.pl/",
+    "edition": "ICALP 2027",
+    "start": "2027-07-05",
+    "end": "2027-07-09",
+    "location": "Kraków, Poland",
+    "deadlines": [
+      {
+        "label": "paper (Track A)",
+        "date": "2027-02-05",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (Track B round 2)",
+        "date": "2027-02-05",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-04-20",
+    "confirmed": false,
+    "source": "https://icalp.uj.edu.pl/track-b/",
+    "note": "Conference dates are confirmed but deadlines are not. Track B runs two rounds for the first time and its round 1 deadline was September 15, 2026, while Track A and Track B round 2 are estimated from the early February 2026 deadline."
+  },
+  {
+    "id": "ccc-2027",
+    "name": "CCC",
+    "full": "Computational Complexity Conference",
+    "areas": [
+      "theory"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1986,
+    "url": "https://computationalcomplexity.org/",
+    "edition": "CCC 2027",
+    "start": "2027-07-19",
+    "end": "2027-07-22",
+    "location": "Seattle, USA",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-02-05",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-04-30",
+    "confirmed": false,
+    "source": "https://computationalcomplexity.org/",
+    "note": "Dates and venue (University of Washington) are confirmed but the call for papers is not out. Deadline estimated from February 7, 2025 and February 6, 2026."
+  },
+  {
+    "id": "itcs-2028",
+    "name": "ITCS",
+    "full": "Innovations in Theoretical Computer Science",
+    "areas": [
+      "theory"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2010,
+    "url": "https://itcs-conf.org/",
+    "edition": "ITCS 2028",
+    "start": "2028-01-11",
+    "end": "2028-01-14",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-09-01",
+        "tz": "PT"
+      },
+      {
+        "label": "paper",
+        "date": "2027-09-03",
+        "tz": "PT"
+      }
+    ],
+    "notification": "2027-11-05",
+    "confirmed": false,
+    "source": "https://itcs-conf.org/",
+    "note": "Not announced. The ITCS 2027 deadline (September 4, 2026) has passed, so this estimates the next cycle from early September deadlines in 2025 and 2026."
+  },
+  {
+    "id": "lics-2027",
+    "name": "LICS",
+    "full": "ACM/IEEE Symposium on Logic in Computer Science",
+    "areas": [
+      "logic",
+      "theory"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1986,
+    "url": "https://lics.siglog.org/lics27/",
+    "edition": "LICS 2027",
+    "start": "2027-06-21",
+    "end": "2027-06-24",
+    "location": "Montreal, Canada",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-01-14",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-01-21",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-04-08",
+    "confirmed": false,
+    "source": "https://lics.siglog.org/lics27/",
+    "note": "Dates and city are confirmed but deadlines are not yet posted. Estimated from the mid to late January deadlines of 2025 and 2026, and the earlier June meeting may pull them forward."
+  },
+  {
+    "id": "cade-2027",
+    "name": "CADE",
+    "full": "International Conference on Automated Deduction",
+    "areas": [
+      "logic",
+      "verification"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1974,
+    "url": "https://fscd-cade.science.ru.nl/",
+    "edition": "CADE-31 (2027)",
+    "start": "2027-08-21",
+    "end": "2027-08-27",
+    "location": "Nijmegen, Netherlands",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-02-15",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-02-22",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-05-17",
+    "confirmed": true,
+    "source": "https://fscd-cade.science.ru.nl/",
+    "note": "CADE-31 is co-located with FSCD and the dates span the joint event. The site gives no time zone so AoE is assumed, and IJCAR next runs in 2028 with a deadline outside this window."
+  },
+  {
+    "id": "csl-2028",
+    "name": "CSL",
+    "full": "EACSL Annual Conference on Computer Science Logic",
+    "areas": [
+      "logic"
+    ],
+    "type": "conference",
+    "core": "B",
+    "since": 1987,
+    "url": "https://www.eacsl.org/",
+    "edition": "CSL 2028",
+    "start": "2028-01-24",
+    "end": "2028-01-28",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-07-07",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-07-14",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-10-14",
+    "confirmed": false,
+    "source": "https://csl2027.github.io/",
+    "note": "Not announced. The CSL 2027 deadline (July 15, 2026) has passed, so this estimates the next cycle from mid July deadlines in 2025 and 2026."
+  },
+  {
+    "id": "popl-2028",
+    "name": "POPL",
+    "full": "ACM SIGPLAN Symposium on Principles of Programming Languages",
+    "areas": [
+      "pl"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1973,
+    "url": "https://conf.researchr.org/series/popl",
+    "edition": "POPL 2028",
+    "start": "2028-01-09",
+    "end": "2028-01-15",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-07-08",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-10-04",
+    "confirmed": false,
+    "source": "https://popl27.sigplan.org/track/POPL-2027-popl-research-papers",
+    "note": "Not announced. The POPL 2027 deadline (July 9, 2026) has passed, so this estimates the next cycle from early July deadlines in 2025 and 2026."
+  },
+  {
+    "id": "icfp-2027",
+    "name": "ICFP",
+    "full": "ACM SIGPLAN International Conference on Functional Programming",
+    "areas": [
+      "pl"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1996,
+    "url": "https://icfp27.sigplan.org/",
+    "edition": "ICFP 2027",
+    "start": "2027-09-26",
+    "end": "2027-10-01",
+    "location": "Nijmegen, Netherlands",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-02-25",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-05-07",
+    "confirmed": true,
+    "source": "https://icfp27.sigplan.org/track/icfp-2027-icfp-papers",
+    "note": "Papers appear in PACMPL. The notification date is the conditional acceptance, with final notification on June 11, 2027."
+  },
+  {
+    "id": "esop-2027",
+    "name": "ESOP",
+    "full": "European Symposium on Programming",
+    "areas": [
+      "pl"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1986,
+    "url": "https://etaps.org/2027/conferences/esop/",
+    "edition": "ESOP 2027",
+    "start": "2027-04-12",
+    "end": "2027-04-15",
+    "location": "Copenhagen, Denmark",
+    "deadlines": [
+      {
+        "label": "paper (round 2)",
+        "date": "2026-10-15",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2026-12-22",
+    "confirmed": true,
+    "source": "https://etaps.org/2027/cfp",
+    "note": "Part of ETAPS 2027 (April 10 to 15 with satellite events). ESOP has two rounds and round 1 closed May 28, 2026."
+  },
+  {
+    "id": "esop-2028",
+    "name": "ESOP",
+    "full": "European Symposium on Programming",
+    "areas": [
+      "pl"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1986,
+    "url": "https://etaps.org/2028",
+    "edition": "ESOP 2028",
+    "start": "2028-04-02",
+    "end": "2028-04-07",
+    "location": "Karlsruhe, Germany",
+    "deadlines": [
+      {
+        "label": "paper (round 1)",
+        "date": "2027-05-27",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (round 2)",
+        "date": "2027-10-14",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-12-21",
+    "confirmed": false,
+    "source": "https://etaps.org/2028",
+    "note": "ETAPS 2028 dates and city are confirmed but the call is not out. Both rounds are estimated from the ESOP 2027 schedule, and the dates shown span all of ETAPS."
+  },
+  {
+    "id": "ecoop-2027",
+    "name": "ECOOP",
+    "full": "European Conference on Object-Oriented Programming",
+    "areas": [
+      "pl",
+      "se"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1987,
+    "url": "https://2027.ecoop.org/",
+    "edition": "ECOOP 2027",
+    "start": "2027-06-28",
+    "end": "2027-07-02",
+    "location": "Turin, Italy",
+    "deadlines": [
+      {
+        "label": "paper (round 1)",
+        "date": "2026-11-19",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (round 2)",
+        "date": "2027-02-11",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-04-08",
+    "confirmed": true,
+    "source": "https://2027.ecoop.org/track/ecoop-2027-technical-papers",
+    "note": "Two submission rounds. Round 1 notification is January 28, 2027 and the date shown is the round 2 notification."
+  },
+  {
+    "id": "ecoop-2028",
+    "name": "ECOOP",
+    "full": "European Conference on Object-Oriented Programming",
+    "areas": [
+      "pl",
+      "se"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1987,
+    "url": "https://conf.researchr.org/series/ecoop",
+    "edition": "ECOOP 2028",
+    "start": "2028-06-26",
+    "end": "2028-06-30",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "paper (round 1)",
+        "date": "2027-11-18",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2028-01-27",
+    "confirmed": false,
+    "source": "https://2027.ecoop.org/track/ecoop-2027-technical-papers",
+    "note": "Not announced. Round 1 is estimated from late November deadlines in 2025 and 2026, and round 2 would fall in February 2028, outside this window."
+  },
+  {
+    "id": "sas-2027",
+    "name": "SAS",
+    "full": "Static Analysis Symposium",
+    "areas": [
+      "pl",
+      "verification"
+    ],
+    "type": "conference",
+    "core": "B",
+    "since": 1994,
+    "url": "https://www.staticanalysis.org",
+    "edition": "SAS 2027",
+    "start": "2027-10-11",
+    "end": "2027-10-13",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-05-07",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-07-07",
+    "confirmed": false,
+    "source": "https://conf.researchr.org/home/splash-issta-2026/sas-2026",
+    "note": "Not announced. Deadline estimated from May 11, 2025 and May 1, 2026, and SAS has recently co-located with SPLASH, which is in Prague on October 10 to 15, 2027, though that pairing is not confirmed."
+  },
+  {
+    "id": "vmcai-2028",
+    "name": "VMCAI",
+    "full": "International Conference on Verification, Model Checking, and Abstract Interpretation",
+    "areas": [
+      "verification",
+      "pl"
+    ],
+    "type": "conference",
+    "core": "B",
+    "since": 2000,
+    "url": "https://conf.researchr.org/series/vmcai",
+    "edition": "VMCAI 2028",
+    "start": "2028-01-10",
+    "end": "2028-01-11",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-09-16",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-09-23",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-11-05",
+    "confirmed": false,
+    "source": "https://conf.researchr.org/home/VMCAI-2027",
+    "note": "Not announced. The VMCAI 2027 deadline (September 30, 2026) has passed, so this estimates the next cycle from deadlines of September 15, 2025 and September 30, 2026, with co-location at POPL 2028 assumed."
+  },
+  {
+    "id": "concur-2027",
+    "name": "CONCUR",
+    "full": "International Conference on Concurrency Theory",
+    "areas": [
+      "theory",
+      "verification"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1990,
+    "url": "https://concurrency-theory.org/events/concur/",
+    "edition": "CONCUR 2027",
+    "start": "2027-08-31",
+    "end": "2027-09-03",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-04-12",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-04-19",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-06-07",
+    "confirmed": false,
+    "source": "https://lists.seas.upenn.edu/pipermail/types-announce/2025/012219.html",
+    "note": "Not announced and no host is listed yet. Estimated from April 2025 and April 2026 deadlines, which moved by almost three weeks between editions."
+  },
+  {
+    "id": "itp-2027",
+    "name": "ITP",
+    "full": "International Conference on Interactive Theorem Proving",
+    "areas": [
+      "logic",
+      "verification"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2010,
+    "url": "https://itp-conference.github.io/",
+    "edition": "ITP 2027",
+    "start": "2027-09-06",
+    "end": "2027-09-09",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-02-25",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-03-04",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-05-10",
+    "confirmed": false,
+    "source": "https://itp-conference-2026.github.io/",
+    "note": "Not announced and the series page still lists 2026 as next. Deadlines estimated from mid March 2025 and mid February 2026, and conference dates are a rough guess."
+  },
+  {
+    "id": "sat-2027",
+    "name": "SAT",
+    "full": "International Conference on Theory and Applications of Satisfiability Testing",
+    "areas": [
+      "logic",
+      "ai"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1996,
+    "url": "https://satassociation.org/",
+    "edition": "SAT 2027",
+    "start": "2027-08-02",
+    "end": "2027-08-05",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-03-05",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-03-12",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-05-14",
+    "confirmed": false,
+    "source": "https://satlive.org/2025/12/12/sat26-cfp.html",
+    "note": "Not announced. Estimated from late March 2025 and late February 2026 deadlines (the 2026 edition was early because of FLoC), and conference dates are a rough guess."
+  },
+  {
+    "id": "cp-2027",
+    "name": "CP",
+    "full": "International Conference on Principles and Practice of Constraint Programming",
+    "areas": [
+      "ai"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1995,
+    "url": "https://www.a4cp.org/events/cp-conference-series",
+    "edition": "CP 2027",
+    "start": "2027-08-23",
+    "end": "2027-08-27",
+    "location": "TBA",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-03-12",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-03-19",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-05-21",
+    "confirmed": false,
+    "source": "https://satlive.org/2026/01/20/cp26-cfp.html",
+    "note": "Not announced. Estimated from late March 2025 and early March 2026 deadlines (2026 was early because of FLoC), and conference dates are a rough guess."
+  },
+  {
+    "id": "kr-2027",
+    "name": "KR",
+    "full": "International Conference on Principles of Knowledge Representation and Reasoning",
+    "areas": [
+      "ai",
+      "logic"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1989,
+    "url": "https://kr.org/",
+    "edition": "KR 2027",
+    "start": "2027-11-01",
+    "end": "2027-11-05",
+    "location": "Buenos Aires, Argentina",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-05-06",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-05-11",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-07-09",
+    "confirmed": false,
+    "source": "https://kr.org/KR2026/call_main_track.html",
+    "note": "Buenos Aires is announced but dates are not. KR deadlines track the meeting date (May 2025 for a November meeting, February 2026 for a July one), so this assumes a late-year meeting like KR 2025 and could shift by months."
+  }
+]

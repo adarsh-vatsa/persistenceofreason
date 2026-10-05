@@ -1,0 +1,746 @@
+[
+  {
+    "id": "sp-2027",
+    "name": "S&P",
+    "full": "IEEE Symposium on Security and Privacy",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1980,
+    "url": "https://sp2027.ieee-security.org/",
+    "edition": "S&P 2027",
+    "start": "2027-05-17",
+    "end": "2027-05-20",
+    "location": "Montreal, Canada",
+    "deadlines": [
+      {
+        "label": "abstract (cycle 2)",
+        "date": "2026-11-10",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (cycle 2)",
+        "date": "2026-11-17",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-03-05",
+    "confirmed": true,
+    "source": "https://sp2027.ieee-security.org/cfpapers.html",
+    "note": "The first cycle closed on June 11, 2026, so only the second cycle remains. May 20 is the workshop day."
+  },
+  {
+    "id": "sp-2028",
+    "name": "S&P",
+    "full": "IEEE Symposium on Security and Privacy",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1980,
+    "url": "https://www.ieee-security.org/TC/SP-Index.html",
+    "edition": "S&P 2028",
+    "start": "2028-05-15",
+    "end": "2028-05-18",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "abstract (cycle 1)",
+        "date": "2027-06-03",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (cycle 1)",
+        "date": "2027-06-10",
+        "tz": "AoE"
+      },
+      {
+        "label": "abstract (cycle 2)",
+        "date": "2027-11-09",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (cycle 2)",
+        "date": "2027-11-16",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://sp2027.ieee-security.org/cfpapers.html",
+    "note": "Not announced yet. Dates and meeting week are estimated from the 2026 and 2027 cycles (early June and mid November, abstracts one week before papers)."
+  },
+  {
+    "id": "usenixsec-2027",
+    "name": "USENIX Security",
+    "full": "USENIX Security Symposium",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1990,
+    "url": "https://www.usenix.org/conference/usenixsecurity27",
+    "edition": "USENIX Security 2027",
+    "start": "2027-08-11",
+    "end": "2027-08-13",
+    "location": "Denver, CO, USA",
+    "deadlines": [
+      {
+        "label": "abstract (cycle 2)",
+        "date": "2027-01-19",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (cycle 2)",
+        "date": "2027-01-26",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-05-06",
+    "confirmed": true,
+    "source": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
+    "note": "Cycle 1 closed on August 25, 2026. The abstract entry is the mandatory paper registration deadline."
+  },
+  {
+    "id": "usenixsec-2028",
+    "name": "USENIX Security",
+    "full": "USENIX Security Symposium",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1990,
+    "url": "https://www.usenix.org/conference/usenixsecurity28",
+    "edition": "USENIX Security 2028",
+    "start": "2028-08-09",
+    "end": "2028-08-11",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "abstract (cycle 1)",
+        "date": "2027-08-17",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (cycle 1)",
+        "date": "2027-08-24",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
+    "note": "Only a placeholder page exists. Cycle 1 dates are estimated from the 2026 and 2027 pattern of late August Tuesdays, and cycle 2 would fall in January 2028 outside this window."
+  },
+  {
+    "id": "ccs-2027",
+    "name": "CCS",
+    "full": "ACM Conference on Computer and Communications Security",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1993,
+    "url": "https://www.sigsac.org/ccs/CCS2027/",
+    "edition": "CCS 2027",
+    "start": "2027-10-11",
+    "end": "2027-10-15",
+    "location": "Atlanta, GA, USA",
+    "deadlines": [
+      {
+        "label": "abstract (cycle 1)",
+        "date": "2027-01-06",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (cycle 1)",
+        "date": "2027-01-13",
+        "tz": "AoE"
+      },
+      {
+        "label": "abstract (cycle 2)",
+        "date": "2027-04-21",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (cycle 2)",
+        "date": "2027-04-28",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://sigsac.org/ccs/CCS2026/call-for/call-for-papers.html",
+    "note": "Meeting dates and city are on the official site but the call for papers is not out. Deadlines are estimated from CCS 2025 and 2026 and may move earlier because the 2027 meeting is in October rather than November."
+  },
+  {
+    "id": "ndss-2028",
+    "name": "NDSS",
+    "full": "Network and Distributed System Security Symposium",
+    "areas": [
+      "security",
+      "networks"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1993,
+    "url": "https://www.ndss-symposium.org/",
+    "edition": "NDSS 2028",
+    "start": "2028-02-28",
+    "end": "2028-03-03",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "paper (summer cycle)",
+        "date": "2027-04-28",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (fall cycle)",
+        "date": "2027-08-11",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
+    "note": "Both NDSS 2027 cycles have closed. NDSS 2028 dates are estimated from the 2026 and 2027 cycles (late April to early May and early to mid August), and the meeting week is a rough guess."
+  },
+  {
+    "id": "eurosp-2027",
+    "name": "EuroS&P",
+    "full": "IEEE European Symposium on Security and Privacy",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2016,
+    "url": "https://eurosp2027.ieee-security.org/",
+    "edition": "EuroS&P 2027",
+    "start": "2027-07-05",
+    "end": "2027-07-09",
+    "location": "Madrid, Spain",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2026-11-25",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2026-12-02",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-03-18",
+    "confirmed": true,
+    "source": "https://eurosp2027.ieee-security.org/cfp.html",
+    "note": "Single submission deadline with an early reject round and rebuttal."
+  },
+  {
+    "id": "eurosp-2028",
+    "name": "EuroS&P",
+    "full": "IEEE European Symposium on Security and Privacy",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2016,
+    "url": "https://www.ieee-security.org/",
+    "edition": "EuroS&P 2028",
+    "start": "2028-07-03",
+    "end": "2028-07-07",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-11-18",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-11-25",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://eurosp2027.ieee-security.org/cfp.html",
+    "note": "Not announced. Deadlines are estimated from the 2026 and 2027 calls, which fell between mid November and early December."
+  },
+  {
+    "id": "crypto-2027",
+    "name": "CRYPTO",
+    "full": "International Cryptology Conference",
+    "areas": [
+      "crypto",
+      "security"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1981,
+    "url": "https://crypto.iacr.org/2027/",
+    "edition": "CRYPTO 2027",
+    "start": "2027-08-15",
+    "end": "2027-08-19",
+    "location": "Santa Barbara, CA, USA",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-02-11",
+        "tz": "PT"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://crypto.iacr.org/2026/callforpapers.php",
+    "note": "The 2027 site confirms Santa Barbara but says dates are to be announced. The deadline is estimated from 2025 and 2026, which both closed in mid February at end of day US Pacific time."
+  },
+  {
+    "id": "eurocrypt-2028",
+    "name": "EUROCRYPT",
+    "full": "International Conference on the Theory and Applications of Cryptographic Techniques",
+    "areas": [
+      "crypto",
+      "security"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1982,
+    "url": "https://eurocrypt.iacr.org/",
+    "edition": "EUROCRYPT 2028",
+    "start": "2028-05-07",
+    "end": "2028-05-11",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-09-30",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://eurocrypt.iacr.org/2027/callforpapers.php",
+    "note": "Eurocrypt 2027 closed on September 17, 2026. The 2028 deadline is estimated between the 2026 and 2027 deadlines (October 2 and September 17), and location and meeting dates are not announced."
+  },
+  {
+    "id": "asiacrypt-2027",
+    "name": "ASIACRYPT",
+    "full": "International Conference on the Theory and Application of Cryptology and Information Security",
+    "areas": [
+      "crypto",
+      "security"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1991,
+    "url": "https://asiacrypt.iacr.org/",
+    "edition": "ASIACRYPT 2027",
+    "start": "2027-12-06",
+    "end": "2027-12-10",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-05-20",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://asiacrypt.iacr.org/2026/callforpapers.php",
+    "note": "Not announced. The deadline is estimated from 2025 (May 16) and 2026 (May 21), and the meeting is usually in early December."
+  },
+  {
+    "id": "sigcomm-2027",
+    "name": "SIGCOMM",
+    "full": "ACM SIGCOMM Conference",
+    "areas": [
+      "networks"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1981,
+    "url": "https://conferences.sigcomm.org/sigcomm/2027/",
+    "edition": "SIGCOMM 2027",
+    "start": "2027-08-08",
+    "end": "2027-08-12",
+    "location": "Bangkok, Thailand",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-01-29",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-02-05",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://conferences.sigcomm.org/sigcomm/2026/cfp/",
+    "note": "Meeting dates and venue are confirmed but the main track deadlines are still listed as TBA. Deadlines are estimated from SIGCOMM 2026 (January 30 and February 6)."
+  },
+  {
+    "id": "nsdi-2028",
+    "name": "NSDI",
+    "full": "USENIX Symposium on Networked Systems Design and Implementation",
+    "areas": [
+      "networks",
+      "systems"
+    ],
+    "type": "conference",
+    "core": null,
+    "since": 2004,
+    "url": "https://www.usenix.org/conference/nsdi28",
+    "edition": "NSDI 2028",
+    "start": "2028-05-01",
+    "end": "2028-05-03",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "abstract (spring)",
+        "date": "2027-04-15",
+        "tz": "ET"
+      },
+      {
+        "label": "paper (spring)",
+        "date": "2027-04-22",
+        "tz": "ET"
+      },
+      {
+        "label": "abstract (fall)",
+        "date": "2027-09-09",
+        "tz": "ET"
+      },
+      {
+        "label": "paper (fall)",
+        "date": "2027-09-16",
+        "tz": "ET"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://www.usenix.org/conference/nsdi27/call-for-papers",
+    "note": "Both NSDI 2027 deadlines have passed and NSDI 2028 has only a placeholder page. Dates are estimated from 2026 and 2027, and the time zone was US Eastern in 2027 but US Pacific in 2026. CORE2023 lists NSDI only as National USA, so no letter rank is given."
+  },
+  {
+    "id": "imc-2027",
+    "name": "IMC",
+    "full": "ACM Internet Measurement Conference",
+    "areas": [
+      "networks"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2001,
+    "url": "https://conferences.sigcomm.org/imc/",
+    "edition": "IMC 2027",
+    "start": "2027-10-25",
+    "end": "2027-10-28",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "abstract (cycle 1)",
+        "date": "2026-11-12",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (cycle 1)",
+        "date": "2026-11-19",
+        "tz": "AoE"
+      },
+      {
+        "label": "abstract (cycle 2)",
+        "date": "2027-04-22",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (cycle 2)",
+        "date": "2027-04-29",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://conferences.sigcomm.org/imc/2026/cfp/",
+    "note": "No IMC 2027 call was found yet even though cycle 1 should close soon. Dates are estimated from IMC 2025 and 2026, which had a mid November and a late April to mid May deadline."
+  },
+  {
+    "id": "imc-2028",
+    "name": "IMC",
+    "full": "ACM Internet Measurement Conference",
+    "areas": [
+      "networks"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2001,
+    "url": "https://conferences.sigcomm.org/imc/",
+    "edition": "IMC 2028",
+    "start": "2028-10-23",
+    "end": "2028-10-26",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "abstract (cycle 1)",
+        "date": "2027-11-11",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (cycle 1)",
+        "date": "2027-11-18",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://conferences.sigcomm.org/imc/2026/cfp/",
+    "note": "Estimated from the two deadline pattern of IMC 2025 and 2026. Cycle 2 would fall in spring 2028 outside this window."
+  },
+  {
+    "id": "mobicom-2027",
+    "name": "MobiCom",
+    "full": "ACM International Conference on Mobile Computing and Networking",
+    "areas": [
+      "networks",
+      "systems"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1995,
+    "url": "https://www.sigmobile.org/mobicom/2027/",
+    "edition": "MobiCom 2027",
+    "start": "2027-10-18",
+    "end": "2027-10-22",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "abstract (winter)",
+        "date": "2027-03-05",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (winter)",
+        "date": "2027-03-12",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://sigmobile.org/mobicom/2027/cfp.html",
+    "note": "The summer cycle closed on September 2, 2026 and the winter cycle is still listed as TBD. Winter dates are estimated from MobiCom 2026 (March 6 and March 13), and the location is not on the site."
+  },
+  {
+    "id": "mobicom-2028",
+    "name": "MobiCom",
+    "full": "ACM International Conference on Mobile Computing and Networking",
+    "areas": [
+      "networks",
+      "systems"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1995,
+    "url": "https://www.sigmobile.org/mobicom/",
+    "edition": "MobiCom 2028",
+    "start": "2028-10-16",
+    "end": "2028-10-20",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "abstract (summer)",
+        "date": "2027-08-25",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (summer)",
+        "date": "2027-09-01",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://sigmobile.org/mobicom/2027/cfp.html",
+    "note": "Not announced. The summer cycle is estimated from 2026 and 2027, which both closed in late August to early September, and the winter cycle would fall in March 2028."
+  },
+  {
+    "id": "infocom-2028",
+    "name": "INFOCOM",
+    "full": "IEEE International Conference on Computer Communications",
+    "areas": [
+      "networks"
+    ],
+    "type": "conference",
+    "core": "A*",
+    "since": 1982,
+    "url": "https://infocom.info/",
+    "edition": "INFOCOM 2028",
+    "start": "2028-05-15",
+    "end": "2028-05-18",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "abstract",
+        "date": "2027-07-16",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper",
+        "date": "2027-07-23",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://www.comsoc.org/conferences-events/ieee-international-conference-computer-communications-2027",
+    "note": "INFOCOM 2027 closed in July 2026. The 2028 deadlines are estimated from the last two years, and the meeting dates come from an unofficial aggregator that also names Santa Clara, which could not be confirmed."
+  },
+  {
+    "id": "pets-2027",
+    "name": "PETS",
+    "full": "Privacy Enhancing Technologies Symposium (PoPETs)",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2000,
+    "url": "https://petsymposium.org/2027/",
+    "edition": "PETS 2027",
+    "start": "2027-07-19",
+    "end": "2027-07-24",
+    "location": "Delft, Netherlands",
+    "deadlines": [
+      {
+        "label": "paper (issue 3)",
+        "date": "2026-11-30",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (issue 4)",
+        "date": "2027-02-28",
+        "tz": "AoE"
+      }
+    ],
+    "notification": "2027-02-01",
+    "confirmed": true,
+    "source": "https://petsymposium.org/cfp27.php",
+    "note": "Issues 1 and 2 have closed. Issue 3 notification is February 1, 2027 and issue 4 notification is May 1, 2027."
+  },
+  {
+    "id": "pets-2028",
+    "name": "PETS",
+    "full": "Privacy Enhancing Technologies Symposium (PoPETs)",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 2000,
+    "url": "https://petsymposium.org/",
+    "edition": "PETS 2028",
+    "start": "2028-07-17",
+    "end": "2028-07-22",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "paper (issue 1)",
+        "date": "2027-05-31",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (issue 2)",
+        "date": "2027-08-31",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (issue 3)",
+        "date": "2027-11-30",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://petsymposium.org/cfp27.php",
+    "note": "Not announced. PoPETs has used the same quarterly deadlines (May 31, August 31, November 30, February 28) for years, so these are likely but unconfirmed."
+  },
+  {
+    "id": "raid-2027",
+    "name": "RAID",
+    "full": "International Symposium on Research in Attacks, Intrusions and Defenses",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1998,
+    "url": "https://raid2026.org/",
+    "edition": "RAID 2027",
+    "start": "2027-10-11",
+    "end": "2027-10-13",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-04-22",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://raid2026.org/",
+    "note": "No RAID 2027 site was found. The deadline is estimated from 2025 (April 24) and 2026 (April 16), and the meeting is usually in late September to mid October."
+  },
+  {
+    "id": "acsac-2027",
+    "name": "ACSAC",
+    "full": "Annual Computer Security Applications Conference",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1985,
+    "url": "https://www.acsac.org/",
+    "edition": "ACSAC 2027",
+    "start": "2027-12-06",
+    "end": "2027-12-10",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "paper",
+        "date": "2027-05-27",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://www.acsac.org/2026/submissions/papers/",
+    "note": "Not announced. The deadline is estimated from 2025 (May 30) and 2026 (May 26), and the meeting is usually in early December."
+  },
+  {
+    "id": "esorics-2027",
+    "name": "ESORICS",
+    "full": "European Symposium on Research in Computer Security",
+    "areas": [
+      "security"
+    ],
+    "type": "conference",
+    "core": "A",
+    "since": 1990,
+    "url": "https://www.ieee-security.org/Calendar/cfps/cfp-ESORICS2026.html",
+    "edition": "ESORICS 2027",
+    "start": "2027-09-20",
+    "end": "2027-09-24",
+    "location": "",
+    "deadlines": [
+      {
+        "label": "paper (winter cycle)",
+        "date": "2027-01-08",
+        "tz": "AoE"
+      },
+      {
+        "label": "paper (spring cycle)",
+        "date": "2027-04-21",
+        "tz": "AoE"
+      }
+    ],
+    "confirmed": false,
+    "source": "https://www.ieee-security.org/Calendar/cfps/cfp-ESORICS2026.html",
+    "note": "No ESORICS 2027 call was found. Both cycles are estimated from 2025 and 2026 (around January 9 and April 21), with abstract and paper due the same day."
+  }
+]
